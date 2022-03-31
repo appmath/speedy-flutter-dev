@@ -1,0 +1,1402 @@
+<templateSet group="user">
+  <template name="el" value="else {&#10;    $END$     &#10;}" description="else" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="forArrayList" value="for (int i = 0; i &lt; $LIST$.size(); i++) {&#10;                 &#10;}" description="Iterates over an ArrayList using the size as an index" toReformat="true" toShortenFQNames="true">
+    <variable name="LIST" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fora" value="for (int i = 0; i &lt; $ARRAY$.length; i++) {&#10;    $END$    &#10;}&#10;" shortcut="TAB" description="array traversal" toReformat="false" toShortenFQNames="false">
+    <variable name="ARRAY" expression="arrayVariable()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="forlx2" value="for (int $PROPER$ = 0; $PROPER$ &lt; $VALUE$; $PROPER$++) {&#10;&#9;for (int $PROPER2$ = 0; $PROPER2$ &lt; $VALUE2$; $PROPER2$++) {&#10;&#9;&#9;$END$&#10;&#9;}&#10;}" shortcut="TAB" description="double for loops with LESS" toReformat="true" toShortenFQNames="false">
+    <variable name="PROPER" expression="i" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPER2" expression="j" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="forle" value="for (int $INDEX$ = 0; $INDEX$ &lt;= $VALUE$; $INDEX$++) {&#10;    $END$    &#10;}" shortcut="TAB" description="for LESS or EQUAL" toReformat="false" toShortenFQNames="false">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifntIAE" value="if($VAR$ == null){&#10;  throw new IllegalArgumentException(&quot;$VAR$ cannot be null.&quot;);$END$&#10;}" shortcut="TAB" description="if Null Throw IllegalArgumentException" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="ife" value="if ($VARS$) {&#10;   $INPUT$ &#10;}else {&#10;    $END$    &#10;}&#10;" shortcut="TAB" description="if else" toReformat="true" toShortenFQNames="false">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INPUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ifeif" value="if ($VARS$) {&#10;  $END$&#10;} else if ($PROPERTY$) {&#10;    &#10;}&#10;" shortcut="SPACE" description="if (else if)" toReformat="true" toShortenFQNames="false">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ital" value="for(int $INDEX$ = 0; $INDEX$ &lt; $ARRAYLIST$.size(); $INDEX$++) {&#10;  $ELEMENT_TYPE$ $VAR$ = ($ELEMENT_TYPE$)$ARRAYLIST$.get($INDEX$);&#10;  $END$&#10;}" description="Iterates elements of java.util.ArrayList" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAYLIST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ELEMENT_TYPE" expression="guessElementType(VECTOR)" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="itarp" value="for(int $INDEX$ = 0; $INDEX$ &lt; $ARRAY$.length; $INDEX$++) {&#10;  System.out.println($ARRAY$[$INDEX$]);&#10;}$END$&#10;" description="Iterate elements of array and  print them" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestIndexName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="arrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="logger" value="private static final Logger LOGGER = Logger.getLogger($NAME$.class.getName());&#10;$END$" description="Creates a logger instance" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="look" value="UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());" shortcut="TAB" description="Set Look and Feel" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="m" value="private void $EXPR$(){&#10;$END$   &#10;}" shortcut="TAB" description="method declaration" toReformat="true" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="main" value="public static void main(String[] args) {&#10;try {&#10;$END$   &#10;} catch (Exception e) {&#10;e.printStackTrace();&#10;}&#10;} " description="main method" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mainp" value="public static void main(String[] args) {&#10;    try {&#10;UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());&#10;JFrame frame = new JFrame();&#10;frame.setLocation(400, 200);&#10;$TYPE$ panel = new $TYPE$();&#10;frame.getContentPane().add(panel);&#10;frame.setSize(panel.getSize());&#10;frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);&#10;frame.setVisible(true);&#10;} catch (Exception exception) {&#10;System.err.println(&quot;Exception occurred in main()&quot;);&#10;exception.printStackTrace(System.out);&#10;}&#10;} // -- end method main--" description="main for Panel" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="md" value="void $EXPR$($TYPE$ $NAME$){&#10;$END$   &#10;}" shortcut="TAB" description="default method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="mdr" value="$VAR$ $EXPR$($TYPE$ $NAME$){&#10;    $VALUE$   &#10;    return $PROPERTY$;&#10;}" shortcut="TAB" description="method  default WITH RETURN" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="mex" value="private void $EXPR$() throws Exception{&#10;   &#10;}" shortcut="TAB" description="method declaration WITH EXCEPTION" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="mp" value="public void $EXPR$($TYPE$ $VAR$){&#10;$END$&#10;}" shortcut="TAB" description="Public method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpget" value="/**&#10; * method com&#10; */&#10;public $EXPR$ get$PROPERTY$() {&#10;    return $VARS$;&#10;}//-end method get$PROPERTY$--" shortcut="TAB" description="method with ATTRIBUTE return declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpr" value="public $VARS$ $EXPR$($CLAZ$ $PARAM$) { &#10;    $STATEMENT$&#9;&#10;    return $VAR$;&#10;}&#10;$END$" shortcut="TAB" description="Public method with return" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLAZ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpro" value="protected void $EXPR$($TYPE$ $VAR$){&#10;     $END$&#10;}" shortcut="TAB" description="Protected method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpro2r" value="protected $VARS$ $EXPR$($TYPE$ $VAR$, $TYPE2$ $VAR2$) {&#10;    return $END$&#10;}" shortcut="TAB" description="Protected method with return" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mps" value="public static void $EXPR$($ARG$){&#10;    $END$&#10;}" shortcut="TAB" description="Public Static method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpsr" value="public static $VAR$ $EXPR$($ARG$){&#10;&#9;$END$   &#10;    return ;&#10;}" shortcut="TAB" description="Public Static WITH RETURN" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpsy" value="public synchronized void $EXPR$(){&#10;     $END$&#10;}//-end method $EXPR$--" shortcut="TAB" description="Public synchronized method declaration" toReformat="false" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mr1" value="private $VAR$ $EXPR$($TYPE$ $PARAM$){&#10;    $END$    &#10;    return $PROPERTY$;&#10;}" shortcut="TAB" description="method  private with 1 parameter and a return type" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ms" value="private static void $EXPR$(){&#10;    $END$   &#10;}" shortcut="TAB" description="method private static" toReformat="false" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="msr" value="private static $VAR$ $EXPR$($AA$){&#10;    $END$    &#10;     return $PROPERTY$;&#10;}" shortcut="TAB" description="method  private Static WITH RETURN" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="AA" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mssy" value="private synchronized void static $EXPR$(){&#10;    $END$   &#10;}//-end method $EXPR$--" shortcut="TAB" description="method private static synchronized" toReformat="false" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mt" value="@Test&#10;public void test$EXPR$(){&#10;     $END$&#10;}" shortcut="TAB" description="test method" toReformat="false" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mtf" value="public void test$EXPR$() throws Exception {&#10;  fail(&quot;Implement this&quot;);&#10;$END$&#10;}" shortcut="TAB" description="test method with fail statement." toReformat="true" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pri" value="private int $FIELD$;" description="private int" toReformat="true" toShortenFQNames="true">
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prs" value="private String $FIELD$;" description="private String" toReformat="false" toShortenFQNames="true">
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="rel" value="/**&#10; * Release all the resources that prevent the GC from removing the componenents.&#10; */&#10;public void release(){&#10;&#10;}" description="Release method" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sleep" value="try {&#10;    Thread.sleep($END$00);&#10;}&#10;catch (InterruptedException ex) {&#10;}&#10;" shortcut="TAB" description="try / thread.sleep" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="strbfr" value="StringBuffer buffer = new StringBuffer();&#10;buffer.append();" description="StringBuffer" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="switch5" value="switch ($PARAM$) {&#10;    case $PARAM1$:&#10;      $PARAM2$;&#10;      break;&#10;    case $PARAM3$:&#10;      $PARAM4$;&#10;        break;&#10;  case $PARAM5$:&#10;    $PARAM6$;&#10;  break;&#10;  case $PARAM7$:&#10;    $PARAM8$;&#10;  break;&#10;  case $PARAM9$:&#10;    $PARAM10$;&#10;  break;&#10;}&#10;" shortcut="SPACE" description="switch statement with 5 Case statements" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM8" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM7" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM10" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sync" value="synchronized($VARS$) {&#10;            &#10;}" description="synchonized block" toReformat="false" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="syst" value="System.out.println(&quot;$VARS$&quot;); $END$&#10;" shortcut="TAB" description="System.out.println" toReformat="false" toShortenFQNames="false">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="syst1" value="System.out.println(&quot;$VARS$ = &quot; + $VARS$);" shortcut="TAB" description="System.out.println 1 argument" toReformat="false" toShortenFQNames="false">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="syst1.5" value="System.out.println(&quot;$VALUE$&quot; + &quot;, $VARS$ = &quot; + $VARS$);" shortcut="TAB" description="System.out.println 1.5 argument" toReformat="false" toShortenFQNames="false">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="syst1cv" value="System.out.println(&quot;$PROPERTY$ = &quot; + $VARS$);" shortcut="TAB" description="System.out.println with Comment and Var" toReformat="false" toShortenFQNames="false">
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="syst2cv" value="System.out.println(&quot;$PROPERTY$ = &quot; + $VARS$ + &quot;, $VALUE$ = &quot; + $INFO$);" shortcut="TAB" description="System.out.println with 2 Comments and Vars" toReformat="false" toShortenFQNames="false">
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INFO" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="systv" value="System.out.println(&quot;$VARS$ :&quot; + $VARS$);" shortcut="TAB" description="Variable System.out.println" toReformat="false" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="te" value=" throws Exception " description="throws Exception" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="wh" value="while ($VARS$) {&#10;    $END$&#10;}" shortcut="TAB" description="while" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifeife" value="if ($VARS$) {&#10;   $END$ &#10;} else if ($PROPERTY1$) {&#10;    &#10;} else {&#10;&#10;}" shortcut="SPACE" description="if (else if) else" toReformat="true" toShortenFQNames="false">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="strblder" value="StringBuilder builder = new StringBuilder();&#10;builder.append();" description="StringBuilder" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="obslist" value="ObservableList $NAME$ = FXCollections.observableArrayList(&#10;  $END$&#10;);" description="ObservableList" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($VARS$) {&#10;   $INPUT$ $END$ &#10;}&#10;" shortcut="TAB" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="suggestFirstVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="INPUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ifeif2e" value="if ($VARS$) {&#10;   $END$ &#10;} else if ($PROPERTY1$) {&#10;    &#10;} else if ($PROPERTY2$) {&#10;&#10;} else {&#10;&#10;}" shortcut="SPACE" description="if (else if) (else if) else" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="boolinv" value="$BOOLEAN$ = !$BOOLEAN$; $END$" description="boolean = !boolean" toReformat="false" toShortenFQNames="true">
+    <variable name="BOOLEAN" expression="variableOfType(&quot;boolean')" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpfr" value="public final $VARS$ $EXPR$() {&#10;return $END$&#10;}" shortcut="TAB" description="Public FINAL method with return" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpf" value="public final void $EXPR$($TYPE$ $PROPERTY$) {&#10;$END$&#10;}" shortcut="TAB" description="Public FINAL method" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mp2" value="public void $EXPR$($TYPE$ $VAR$, $TYPE2$ $VAR2$){&#10;$END$&#10;}" shortcut="TAB" description="Public method declaration with 2 parameters and return" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpr2" value="public $RTYPE$ $EXPR$($TYPE$ $VAR$, $TYPE2$ $VAR2$){&#10;return $END$&#10;}" shortcut="TAB" description="Public method declaration with 2 parameters" toReformat="true" toShortenFQNames="true">
+    <variable name="RTYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fxbc+" value="&quot;-fx-background-color: &quot; + $ARG$" description="fx background color + ARGUMENT" toReformat="true" toShortenFQNames="true">
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fxbc" value="&quot;-fx-background-color: $ARG$&quot;" description="fx background color" toReformat="true" toShortenFQNames="true">
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fxbow" value="&quot;-fx-border-width: $ARG$&quot;" description="fx border width" toReformat="true" toShortenFQNames="true">
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fxboc" value="&quot;-fx-border-color: $ARG$&quot;" description="fx border color" toReformat="true" toShortenFQNames="true">
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fxsp" value="private StringProperty $VAR$;&#10;public void set$VARNAME$ (final String $VAR$){ $VAR$Property().set($VAR$);}&#10;public String get$VARNAME$ () { return $VAR$Property().get();}&#10;public StringProperty $VAR$Property () {&#10;    if ($VAR$ == null) {&#10;        $VAR$ = new SimpleStringProperty(this, &quot;$VAR$&quot;);&#10;    }&#10;    return $VAR$;&#10;}" description="fx String property instance and accessors" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARNAME" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mr" value="private $VAR$ $EXPR$(){&#10;    $END$    &#10;    return $PROPERTY$;&#10;}" shortcut="TAB" description="method  private with return" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="GROOVY_STATEMENT" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="switchStr" value="switch ($PARAM$) {&#10;    case &quot;$PARAM1$&quot;:&#10;      $PARAM2$&#10;      break;&#10;    case &quot;$PARAM3$&quot;:&#10;      $PARAM4$&#10;        break;&#10;  case &quot;$PARAM5$&quot;:&#10;    $PARAM6$&#10;  break;&#10;  case &quot;$PARAM7$&quot;:&#10;    $PARAM8$&#10;  break;&#10;  case &quot;$PARAM9$&quot;:&#10;    $PARAM10$&#10;  break;&#10;}&#10;" shortcut="SPACE" description="switch String statement" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM7" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM8" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM10" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fxmlf" value="@FXML&#10;$CLASS$ $NAME$" description="creates an fxml field" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="fxmlm" value="@FXML&#10;private void $METHOD$(ActionEvent event) {&#10;    if($FIELD$ != null) {&#10;      $END$&#10;    }&#10;}" description="fxml method" toReformat="false" toShortenFQNames="true">
+    <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sppr" value="&lt;property name=&quot;$VAR$&quot; ref=&quot;$VAR2$&quot;/&gt;" description="Spring PROPERTY REFERENCE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbs_" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot; scope=&quot;$VAR2$&quot;&gt;&#10;    $END$ &#10;&lt;/bean&gt;   " description="Spring bean scope MULTI-LINE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spb_" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    $END$ &#10;&lt;/bean&gt;   " description="Spring bean MULTI-LINE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spp" value="&lt;property name=&quot;$VAR$&quot; value=&quot;$VAR2$&quot;/&gt;" description="Spring PROPERTY" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spPPC" value="&lt;!--&lt;start id=&quot;PropertyPlaceholderConfigurer_bean&quot;/&gt;--&gt;&#10;&lt;bean class=&quot;org.springframework.beans.factory.config.PropertyPlaceholderConfigurer&quot;&gt;&#10;        &lt;property name=&quot;location&quot; value=&quot;classpath:$VAR$&quot;/&gt;&#10; &lt;/bean&gt; &#10;&lt;!--&lt;end id=&quot;PropertyPlaceholderConfigurer_bean&quot;/&gt;--&gt;&#10;$END$ " description="Spring bean PROPERTY PLACEHOLDER CONFIGURER" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="splistrp" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;list&gt; &#10;        &lt;ref bean=&quot;$REF1$&quot;/&gt;&#10;        &lt;ref bean=&quot;$REF2$&quot;/&gt;&#10;        &lt;ref bean=&quot;$REF3$&quot;/&gt;&#10;    &lt;/list&gt;&#10;&lt;/property&gt;" description="Spring list REF PROPERTY" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spmaprp" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;map&gt; &#10;        &lt;entry key =&quot;$KEY1$&quot; value-ref=&quot;$VALUE1$&quot;/&gt;&#10;        &lt;entry key =&quot;$KEY2$&quot; value-ref=&quot;$VALUE2$&quot;/&gt;&#10;        &lt;entry key =&quot;$KEY3$&quot; value-ref=&quot;$VALUE3$&quot;/&gt;&#10;    &lt;/map&gt;&#10;&lt;/property&gt;" description="Spring map REF property" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="splistp" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;list&gt; &#10;        &lt;value&gt;&quot;$VALUE1$&quot;&lt;/value&gt;&#10;        &lt;value&gt;&quot;$VALUE2$&quot;&lt;/value&gt;&#10;        &lt;value&gt;&quot;$VALUE3$&quot;&lt;/value&gt;&#10;    &lt;/list&gt;&#10;&lt;/property&gt;" description="Spring LIST  PROPERTY" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spmapp" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;map&gt; &#10;        &lt;entry key =&quot;$KEY1$&quot; value=&quot;$VALUE1$&quot;/&gt;&#10;        &lt;entry key =&quot;$KEY2$&quot; value=&quot;$VALUE2$&quot;/&gt;&#10;        &lt;entry key =&quot;$KEY3$&quot; value=&quot;$VALUE3$&quot;/&gt;&#10;    &lt;/map&gt;&#10;&lt;/property&gt;" description="Spring MAP  PROPERTY" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sppropsp" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;props&gt;&#10;       &lt;prop key=&quot;$KEY1$&quot;&gt;$PROP1$&lt;/prop&gt;&#10;       &lt;prop key=&quot;$KEY2$&quot;&gt;$PROP2$&lt;/prop&gt;&#10;       &lt;prop key=&quot;$KEY3$&quot;&gt;$PROP3$&lt;/prop&gt;&#10;   &lt;/props&gt;&#10;&lt;/property&gt;&#10;" description="Spring PROPERTIES  PROPERTY" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sppc" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;bean class=&quot;$VAR2$&quot;/&gt;&#10;&lt;/property&gt;" description="Spring PROPERTY CLASS" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="mte" value="@Test(expected = $EXCEPTION$.class)&#10;public void test$EXPR$(){&#10;     $END$&#10;}" shortcut="TAB" description="test method with expected Exception" toReformat="false" toShortenFQNames="false">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="forl" value="for (int i = 0; i &lt; $VALUE$; i++) {&#10;    $END$    &#10;}" shortcut="TAB" description="for LESS" toReformat="false" toShortenFQNames="false">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="docwl" value="document.writeln($VAR$);" description="document.writeline" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="spb" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;/&gt;&#10;$END$" description="Spring bean SINGLE LINE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="itmap" value="for (Map.Entry&lt;$INDEX1$, $INDEX1$&gt; entry : $MAP$.entrySet()) {&#10;    entry.getKey(), entry.getValue()&#10;}&#10;$END$" description="Iterate over map entries" toReformat="true" toShortenFQNames="true">
+    <variable name="INDEX1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="spmappen" value="&lt;entry key=&quot;$KEY1$&quot;&gt;&#10;       &lt;value&gt;&quot;$VALUE1$&quot;&lt;/value&gt;&#10;&lt;/entry&gt;&#10;$END$" description="Spring MAP  ENTRY" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spmappenref" value="&lt;entry key=&quot;$KEY1$&quot;&gt;&#10;       &lt;ref bean=&quot;$VALUE1$&quot;/&gt;&#10;&lt;/entry&gt;&#10;$END$" description="Spring map  ENTRY with value REFERENCE" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="spproutil" value="&lt;util:properties id=&quot;$VAR$&quot;&gt;&#10;       &lt;prop key=&quot;$KEY1$&quot;&gt;$PROP1$&lt;/prop&gt;&#10;       &lt;prop key=&quot;$KEY2$&quot;&gt;$PROP2$&lt;/prop&gt;&#10;&lt;/util:properties&gt;&#10;$END$" description="Spring UTIL:PROPERTIES" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spsetutil" value="&lt;util:set id=&quot;$VAR$&quot;&gt;&#10;       &lt;value&gt;$VALUE$&lt;/value&gt;&#10;       &lt;ref bean=&quot;$VALUE2$&quot;/&gt;&#10;&lt;/util:set&gt;&#10;$END$" description="Spring UTIL:SET" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sputillist" value="&lt;util:list id=&quot;$VAR$&quot;&gt;&#10;       &lt;value&gt;$VALUE$&lt;/value&gt;&#10;       &lt;ref bean=&quot;$VALUE2$&quot;/&gt;&#10;&lt;/util:list&gt;&#10;$END$" description="Spring UTIL:LIST" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spanotres" value="@Resource(name=&quot;$VALUE$&quot;)$END$&#10;" description="Spring annotation resource" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="spcomment" value="&lt;!-- $END$ --&gt;" description="Spring COMMENT" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbauto" value="&lt;bean id=&quot;$VAR$&quot; autowire=&quot;$VAR1$&quot; class=&quot;$CLASS$&quot; lazy-init=&quot;$VAR2$&quot;/&gt;" description="Spring bean Single Line AUTOWIRE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="mavendepscope" value="&lt;dependency&gt;&#10;    &lt;groupId&gt;$GROUP$&lt;/groupId&gt;&#10;    &lt;artifactId&gt;$ARTIFACT$&lt;/artifactId&gt;&#10;    &lt;version&gt;$VERSION$&lt;/version&gt;&#10;    &lt;scope&gt;$SCOPE$&lt;/scope&gt;&#10;&lt;/dependency&gt;" description="Maven dependency with scope" toReformat="true" toShortenFQNames="true">
+    <variable name="GROUP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARTIFACT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VERSION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SCOPE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="mavendep" value="&lt;dependency&gt;&#10;    &lt;groupId&gt;$GROUP$&lt;/groupId&gt;&#10;    &lt;artifactId&gt;$ARTIFACT$&lt;/artifactId&gt;&#10;    &lt;version&gt;$VERSION$&lt;/version&gt;&#10;    &lt;scope&gt;$SCOPE$&lt;/scope&gt;&#10;&lt;/dependency&gt;" description="Maven dependency with scope" toReformat="false" toShortenFQNames="true">
+    <variable name="GROUP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARTIFACT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VERSION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SCOPE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="spbp" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME$&quot; value=$VALUE$/&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with a  Property" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbpval2te" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME$&quot; value=$VALUE$/&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; value=$VALUE1$/&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring BEAN with 2  PROPERTIES (VALUES)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbpref" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME$&quot; ref=&quot;$VALUE$&quot;/&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with PROPERTY (REFERENCE)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbp_localref" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME$&quot;&gt;&#10;        &lt;ref local=&quot;$LOCAL$&quot;/&gt;&#10;    &lt;/property&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with PROPERTY and a LOCAL REFERENCE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOCAL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spplocalref" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;ref local=&quot;$VAR2$&quot;/&gt;&#10;&lt;/property&gt; &#10;$END$" description="Spring PROPERTY with a LOCAL REFERENCE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spplist" value=" &lt;property name=&quot;$NAME$&quot;&gt;&#10;    &lt;list&gt;&#10;        &lt;value&gt;$VALUE$&lt;/value&gt;&#10;    &lt;/list&gt;&#10;&lt;/property&gt;&#10;$END$" description="Spring PROPERTY LIST" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spp_" value="&lt;property name=&quot;$VAR$&quot;&gt;&#10;    &lt;value&gt;$VAR2$&lt;/value&gt;&#10;&lt;/property&gt;$END$&#10;" description="Spring PROPERTY MULTI-LINE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="getspbean" value="$CLAS$ $NAME$ = ctx.getBean(&quot;$NAME$&quot;, $CLAS$.class);&#10;$END$" description="ctx.getBean" toReformat="true" toShortenFQNames="true">
+    <variable name="CLAS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="spbpval2" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; value=$VALUE1$/&gt;&#10;    &lt;property name=&quot;$NAME2$&quot; value=$VALUE2$/&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with 2  PROPERTIES (VALUES)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbpval3" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; value=$VALUE1$/&gt;&#10;    &lt;property name=&quot;$NAME2$&quot; value=$VALUE2$/&gt;&#10;    &lt;property name=&quot;$NAME3$&quot; value=$VALUE3$/&gt;  &#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with 3 PROPERTIES (VALUES)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbpval4" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; value=$VALUE1$/&gt;&#10;    &lt;property name=&quot;$NAME2$&quot; value=$VALUE2$/&gt;&#10;    &lt;property name=&quot;$NAME3$&quot; value=$VALUE3$/&gt;  &#10;    &lt;property name=&quot;$NAME4$&quot; value=$VALUE4$/&gt;  &#10;    &lt;/property&gt;      &#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with 4  PROPERTIES (VALUES)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sp$" value="${$VALUE$}$END$&#10;" description="Spring parameterized value" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="mpri" value="public $VAR$ $EXPR$();&#10;$END$&#10;&#10;&#10;" shortcut="TAB" description="Public method with RETURN declaration for INTERFACE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpai" value="public void $EXPR$($CLASS$ $PARAM$);$END$&#10;" shortcut="TAB" description="Public method declaration with ARGUMENT for INTERFACE" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mprai" value="public $VAR$ $EXPR$($CLASS$ $PARAM$);$END$&#10;&#10;&#10;" shortcut="TAB" description="Public method with RETURN declaration and ARGUMENT for INTERFACE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpi" value="public void $EXPR$($CLASS$ $NAME$);$END$&#10;" shortcut="TAB" description="Public method declaration for INTERFACE" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="spbcp" value="&lt;bean class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$PROP$&quot; value=&quot;$VALUE$&quot;/&gt;&#10;&lt;/bean&gt;    &#10;$END$" description="Spring CLASS PROPERTY" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sptxadvice" value="&lt;tx:advice id=&quot;$ID$&quot;&gt;&#10;        &lt;tx:attributes&gt;&#10;            &lt;tx:method name=&quot;$NAME1$*&quot; $ATTRIBUTE1$=&quot;$VALUE1$&quot;/&gt;&#10;            &lt;tx:method name=&quot;$NAME2$*&quot; $ATTRIBUTE2$=&quot;$VALUE2$&quot;/&gt;&#10;            &lt;tx:method name=&quot;*&quot;/&gt;&#10;        &lt;/tx:attributes&gt;&#10;&lt;/tx:advice&gt;  " description="Spring TRANSACTION ADVICE" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATTRIBUTE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ATTRIBUTE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spjdbcembedded" value="&lt;jdbc:embedded-database id=&quot;$DATASOURCE$&quot; type=&quot;$TYPE$&quot;&gt;&#10;        &lt;jdbc:script location=&quot;classpath:$CLASSPATH1$&quot;/&gt;&#10;        &lt;jdbc:script location=&quot;classpath:$CLASSPATH2$&quot;/&gt;     &#10;&lt;/jdbc:embedded-database&gt;" description="Spring EMBEDDED DB INFO" toReformat="true" toShortenFQNames="true">
+    <variable name="DATASOURCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASSPATH1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASSPATH2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbref2" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; ref=&quot;$REF1$&quot;/&gt;&#10;    &lt;property name=&quot;$NAME2$&quot; ref=&quot;$REF2$&quot;/&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with PROPERTY and 2 REFERENCES" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sp1childprop" value="&lt;prop key=&quot;$KEY1$&quot;&gt;$PROP1$&lt;/prop&gt;&#10;$END$" description="Spring 1 PROP (child property)" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sp2childprop" value="&lt;prop key=&quot;$KEY1$&quot;&gt;$PROP1$&lt;/prop&gt;&#10;&lt;prop key=&quot;$KEY2$&quot;&gt;$PROP2$&lt;/prop&gt;&#10;$END$" description="Spring 2 PROP (child properties)" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sp3childprop" value="&lt;prop key=&quot;$KEY1$&quot;&gt;$PROP1$&lt;/prop&gt;&#10;&lt;prop key=&quot;$KEY2$&quot;&gt;$PROP2$&lt;/prop&gt;&#10;&lt;prop key=&quot;$KEY3$&quot;&gt;$PROP3$&lt;/prop&gt;&#10;$END$&#10;" description="Spring 3 PROP (child properties)" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROP3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="col" value="@Column(name = &quot;$NAME$&quot;)$END$&#10;" shortcut="TAB" description="@Column" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="spbprefval2" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; ref=&quot;$REF$&quot;/&gt; &#10;    &lt;property name=&quot;$NAME2$&quot; value=&quot;$VALUE$&quot;/&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring BEAN with 2  PROPERTIES: REFERENCE and VALUE" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="logFact" value="private static final Logger LOGGER = LoggerFactory.getLogger($NAME$.class);&#10;$END$" description="Creates a LOGGER FACTORY instance" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logInfoS" value="LOGGER.info(&quot;$INFO$&quot;);&#10;$END$" description="log info with STRING ONLY" toReformat="true" toShortenFQNames="true">
+    <variable name="INFO" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logInfoSv2" value="LOGGER.info(&quot;$INFO$ = {}, $INFO2$ = {}&quot;, $VAR1$, $VAR2$); &#10;$END$" description="log info with STRING and VARIABL" toReformat="true" toShortenFQNames="true">
+    <variable name="INFO" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INFO2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="requestmapping" value="@RequestMapping(value = &quot;/$VALUE$&quot;, method = RequestMethod.$OPERATION$)$END$" description="@RequestMapping ANNOTATION" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPERATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="spbpval2s" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; value=&quot;$VALUE1$&quot;/&gt;&#10;    &lt;property name=&quot;$NAME2$&quot; value=&quot;$VALUE2$&quot;/&gt; &#10;&lt;/bean&gt;       &#10;$END$ " description="Spring Bean with 2  PROPERTIES (&quot;STRING&quot; VALUES)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="logerror" value="LOGGER.error(&quot;$INFO$&quot;, $EXCEPTION$);&#10;$END$" description="log error" toReformat="true" toShortenFQNames="true">
+    <variable name="INFO" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXCEPTION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="spbconst" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;constructor-arg ref=&quot;$REF$&quot;/&gt;&#10;&lt;/bean&gt;&#10;$END$" description="Spring bean with CONSTRUCTOR" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spbpvalref2" value="&lt;bean id=&quot;$VAR$&quot; class=&quot;$CLASS$&quot;&gt;&#10;    &lt;property name=&quot;$NAME1$&quot; value=&quot;$VALUE$&quot;/&gt; &#10;    &lt;property name=&quot;$NAME2$&quot; ref=&quot;$REF$&quot;/&gt;&#10;&lt;/bean&gt;       &#10;$END$ " description="Spring BEAN with 2  PROPERTIES (VALUE and REFERENCE)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REF" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="prfi" value="private final int $CONSTANT$ = $VALUE$; $END$" description="private final int" toReformat="true" toShortenFQNames="true">
+    <variable name="CONSTANT" expression="capitalizeAndUnderscore(String)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="capitalizeAndUnderscore(String)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tNPE" value="throw new NullPointerException(&quot;$EXCEPTION$&quot;);&#10;$END$" description="throw NullPointerException" toReformat="true" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prl" value="private long $FIELD$;" description="private long" toReformat="true" toShortenFQNames="true">
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prf" value="private float $FIELD$;" description="private float" toReformat="true" toShortenFQNames="true">
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifeif3e" value="if ($VARS$) {&#10;   $END$ &#10;} else if ($PROPERTY1$) {&#10;    &#10;} else if ($PROPERTY2$) {&#10;&#10;} else if ($PROPERTY3$) {&#10;&#10;} else {&#10;&#10;}" shortcut="SPACE" description="if (else if) (else if)  (else if)  else" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="ifeif4e" value="if ($VARS$) {&#10;   $END$ &#10;} else if ($PROPERTY1$) {&#10;    &#10;} else if ($PROPERTY2$) {&#10;&#10;} else if ($PROPERTY3$) {&#10;&#10;} else if ($PROPERTY4$) {&#10;} else {&#10;&#10;}" shortcut="SPACE" description="if (else if) (else if)  (else if)  (else if)  else" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="prsfiValue" value="private static final int $CONSTANT$ = $VALUE$;" description="private static final  int with VALUE" toReformat="true" toShortenFQNames="true">
+    <variable name="CONSTANT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="switch4" value="switch ($PARAM$) {&#10;    case $PARAM1$:&#10;      $PARAM2$;&#10;      break;&#10;    case $PARAM3$:&#10;      $PARAM4$;&#10;        break;&#10;  case $PARAM5$:&#10;    $PARAM6$;&#10;  break;&#10;  case $PARAM7$:&#10;    $PARAM8$;&#10;  break;&#10;&#10;}&#10;" shortcut="SPACE" description="switch statement with 4 Case statements" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM7" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM8" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="switch3" value="switch ($PARAM$) {&#10;    case $PARAM1$:&#10;      $PARAM2$;&#10;      break;&#10;    case $PARAM3$:&#10;      $PARAM4$;&#10;        break;&#10;  case $PARAM5$:&#10;    $PARAM6$;&#10;  break;&#10;&#10;}&#10;" shortcut="SPACE" description="switch statement with 3 Case statements" toReformat="true" toShortenFQNames="true">
+    <variable name="PARAM" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM6" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="mpros" value="protected static void $EXPR$($TYPE$ $VAR$){&#10;     $END$&#10;}" shortcut="TAB" description="Protected method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mprosr" value="protected static $VARS$ $EXPR$($CLAZ$ $PARAM$) {&#10;&#9;$END$&#10;    return ;&#10;}&#10;" shortcut="TAB" description="Protected static method with return" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLAZ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifntNPE" value="if($VAR$ == null){&#10;  throw new NullPointerException(&quot;$VAR$ cannot be null.&quot;);&#10;}&#10;$END$" shortcut="TAB" description="if Null Throw NullPointerException" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="tISE" value="throw new IllegalStateException(&quot;$EXCEPTION$&quot;);&#10;$END$" description="throw IllegalStateException" toReformat="true" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="delimiterText" value="// *********************************************************************************************************************&#10;//                      $TEXT$&#10;// *********************************************************************************************************************&#10;$END$" shortcut="TAB" description="Delimiter for simple text" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="delimiter" value="// ***************************************************************** &#10;" shortcut="TAB" description="Delimiter" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mpro2" value="protected void $EXPR$($TYPE$ $VAR$, $TYPE2$ $VAR2$){&#10;     $END$&#10;}" shortcut="TAB" description="Protected method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpror" value="protected $VARS$ $EXPR$($TYPE$ $VAR$) {&#10;    return $END$&#10;}" shortcut="TAB" description="Protected method with return" toReformat="true" toShortenFQNames="true">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="delimiterDash" value="// ----------------------------------------------------------------------------------&#10;" shortcut="TAB" description="Delimiter" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mproa" value="protected abstract void $EXPR$();&#10;$END$&#10;&#10;&#10;" shortcut="TAB" description="Abstract protected method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mock" value="$TYPE$ $NAME$ = mock($TYPE$.class); &#10;" shortcut="TAB" description="Create a new mock" toReformat="false" toShortenFQNames="false">
+    <variable name="TYPE" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mockName" value="$TYPE$ $NAME$ = mock($TYPE$.class, &quot;$MOCK_NAME$&quot;); &#10;" shortcut="TAB" description="Create a new mock with a name" toReformat="false" toShortenFQNames="false">
+    <variable name="TYPE" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="MOCK_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="mts" value="@Test&#10;public void should$EXPR$(){&#10;     $END$&#10;}" shortcut="TAB" description="test method that starts with should" toReformat="false" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="@mock" value="@Mock private $TYPE$ $NAME$;&#10;" shortcut="TAB" description="Create a new mock" toReformat="false" toShortenFQNames="false">
+    <variable name="TYPE" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="msetup" value="@Before&#10;public void setup(){&#10;     $END$&#10;}" shortcut="TAB" description="setup (Before) test method" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="runWithMockito" value="@RunWith(MockitoJUnitRunner.class)$END$" shortcut="TAB" description="Run With Mockito" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="forEachPrint" value=".forEach(System.out::print)" shortcut="TAB" description="simple print for ForEach" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="forEachPrintLN" value=".forEach(System.out::println)" shortcut="TAB" description="simple printLN for ForEach" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="toList" value="Collectors.toList()" description="Collectors.toList()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psc" value="private static class $NAME$ {&#10;    $END$    &#10;}&#10;" shortcut="TAB" description="Private static class" toReformat="false" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="swu" value="@SuppressWarnings(&quot;unused&quot;)" shortcut="TAB" description="Suppress Warnings Unused" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="swd" value="@SuppressWarnings(&quot;Duplicates&quot;)" shortcut="TAB" description="Suppress Warnings Duplicates" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="ReadMeChapter" value="##### Chapter $VALUE$ - $NAME$" shortcut="TAB" description="Chapter declaration for a readme file" toReformat="false" toShortenFQNames="false">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="tIAE" value="throw new IllegalArgumentException(&quot;$EXCEPTION$&quot;);&#10;$END$" description="throw IllegalArgumentException (Java)" toReformat="true" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tIAEk" value="throw IllegalArgumentException(&quot;$EXCEPTION$&quot;)&#10;$END$" description="throw IllegalArgumentException (Kotlin)" toReformat="true" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="mtsetup" value="@Before&#10;public void setup(){&#10;     $END$&#10;}" shortcut="TAB" description="setup test method" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mtNoName" value="@Test(expected = $EXCEPTION$.class)&#10;public void $EXPR$(){&#10;     $END$&#10;}" shortcut="TAB" description="test method without a name" toReformat="false" toShortenFQNames="false">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mtNoNameExpectedExcetpion" value="@Test(expected = $EXCEPTION$.class)&#10;public void $EXPR$(){&#10;     $END$&#10;}" shortcut="TAB" description="test method without a name with expected Exception" toReformat="false" toShortenFQNames="false">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mtverify" value="@Test&#10;public void verify$EXPR$(){&#10;     $END$&#10;}" shortcut="TAB" description="test method that starts with verify" toReformat="false" toShortenFQNames="false">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logInfoSv" value="LOGGER.info(&quot;$INFO$ = {}, $VAR1$); &#10;$END$" description="log info with STRING and VARIABL" toReformat="true" toShortenFQNames="true">
+    <variable name="INFO" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="todoAziz" value="// TODO: Aziz $COMMENT$" description="todo" toReformat="false" toShortenFQNames="true">
+    <variable name="COMMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logInfoSv3" value="LOGGER.info(&quot;$INFO$ = {}, $INFO2$ = {}, $INFO3$ = {}&quot;, $VAR1$, $VAR2$, $VAR3$); &#10;$END$" description="log info with STRINGs and VARIABLEs" toReformat="true" toShortenFQNames="true">
+    <variable name="INFO" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INFO2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INFO3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="anyString" value="any(String.class)" shortcut="TAB" description="any(String.class)" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="anyObject" value="any($OBJECT$.class)" shortcut="TAB" description="any(Object.class)" toReformat="false" toShortenFQNames="false">
+    <variable name="OBJECT" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="mpir" value="public $TYPE$ $EXPR$($CLASS$ $NAME$);$END$&#10;" shortcut="TAB" description="Public method declaration for INTERFACE with return type" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,77 @@
+<templateSet group="Spring">
+  <template name=",vpNotEmpty" value="@NotEmpty&#10;" description="@NotEmpty Spring Parameter Validation  (applied to Text -&gt; not null or whitespace)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpNotBlank" value="@NotBlank&#10;" description="@NotBlank Spring Parameter Validation (applied to String, Collection, Map or Array values)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpPositive" value="@Positive&#10;" description="@Positive Spring Parameter Validation (applied to Numeric values)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpPositiveOrZero" value="@PositiveOrZero&#10;" description="@PositiveOrZero Spring Parameter Validation (applied to Numeric values)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpNegative" value="@Negative&#10;" description="@Negative Spring Parameter Validation (applied to Numeric values)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpNegativeOrZero" value="@NegativeOrZero&#10;" description="@NegativeOrZero Spring Parameter Validation (applied to Numeric values)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpPast" value="@Past&#10;" description="@Past Spring Parameter Validation (applied to Java 8 or older dates)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpPastOrPresent" value="@PastOrPresent&#10;" description="@PastOrPresent Spring Parameter Validation (applied to Java 8 or older dates)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpFuture" value="@Future&#10;" description="@Future Spring Parameter Validation (applied to Java 8 or older dates)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vpFutureOrPresent" value="@FutureOrPresent&#10;" description="@FutureOrPresent Spring Parameter Validation (applied to Java 8 or older dates)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vfNotNull" value="@NotNull&#10;" description="@NotNull Spring Field Validation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vfAssertTrue" value="@AssertTrue&#10;" description="@AssertTrue Spring Field Validation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vfSize" value="@Size &#10;" description="@Size Spring Field Validation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vfMax" value="@Max &#10;" description="@Max Spring Field Validation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name=",vfEmail" value="@Email &#10;" description="@Email Spring Field Validation" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

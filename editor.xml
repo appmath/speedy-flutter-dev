@@ -1,0 +1,66 @@
+<application>
+  <component name="CodeInsightSettings">
+    <option name="selectAutopopupSuggestionsByChars" value="true" />
+    <option name="SHOW_PARAMETER_NAME_HINTS_ON_COMPLETION" value="true" />
+    <option name="AUTO_POPUP_JAVADOC_INFO" value="true" />
+    <option name="SELECT_AUTOPOPUP_SUGGESTIONS_BY_CHARS" value="true" />
+    <option name="SHOW_FULL_SIGNATURES_IN_PARAMETER_INFO" value="true" />
+    <option name="REFORMAT_ON_PASTE" value="4" />
+    <option name="HIGHLIGHT_SCOPE" value="true" />
+    <option name="HIGHLIGHT_IDENTIFIER_UNDER_CARET" value="false" />
+    <option name="ADD_UNAMBIGIOUS_IMPORTS_ON_THE_FLY" value="true" />
+    <EXCLUDED_PACKAGE NAME="antlr.Version" />
+    <EXCLUDED_PACKAGE NAME="com.sun.glass" />
+    <EXCLUDED_PACKAGE NAME="com.sun.java.util.jar" />
+    <EXCLUDED_PACKAGE NAME="com.sun.media.jfxmedia.track.Track" />
+    <EXCLUDED_PACKAGE NAME="com.sun.org.apache.xpath.internal.operations.String" />
+    <EXCLUDED_PACKAGE NAME="com.sun.prism.Image" />
+    <EXCLUDED_PACKAGE NAME="com.sun.prism.paint.Color" />
+    <EXCLUDED_PACKAGE NAME="com.sun.tools.javac.util.List" />
+    <EXCLUDED_PACKAGE NAME="com.sun.xml.internal.stream.Entity" />
+    <EXCLUDED_PACKAGE NAME="com.sun.xml.internal.ws.org.objectweb.asm.Label" />
+    <EXCLUDED_PACKAGE NAME="edu.emory" />
+    <EXCLUDED_PACKAGE NAME="java.awt" />
+    <EXCLUDED_PACKAGE NAME="java.awt.Button" />
+    <EXCLUDED_PACKAGE NAME="java.awt.Color" />
+    <EXCLUDED_PACKAGE NAME="java.awt.TextField" />
+    <EXCLUDED_PACKAGE NAME="java.sql.Date" />
+    <EXCLUDED_PACKAGE NAME="java.util.logging.Handler" />
+    <EXCLUDED_PACKAGE NAME="javafx.beans" />
+    <EXCLUDED_PACKAGE NAME="javafx.scene" />
+    <EXCLUDED_PACKAGE NAME="javafx.scene.media.Track" />
+    <EXCLUDED_PACKAGE NAME="javax.sound.midi.Track" />
+    <EXCLUDED_PACKAGE NAME="javax.swing.JPopupMenu.Separator" />
+    <EXCLUDED_PACKAGE NAME="javax.swing.JToolBar.Separator" />
+    <EXCLUDED_PACKAGE NAME="javax.swing.text.html.ImageView" />
+    <EXCLUDED_PACKAGE NAME="jdk.nashorn" />
+    <EXCLUDED_PACKAGE NAME="jdk.nashorn.internal.objects.annotations.Function" />
+    <EXCLUDED_PACKAGE NAME="junit.framework" />
+    <EXCLUDED_PACKAGE NAME="net.sf.cglib.proxy.CallbackGenerator.Context" />
+    <EXCLUDED_PACKAGE NAME="org.omg.CORBA" />
+    <EXCLUDED_PACKAGE NAME="org.omg.CORBA_2_3" />
+    <EXCLUDED_PACKAGE NAME="org.springframework.boot.autoconfigure.ldap.embedded" />
+    <EXCLUDED_PACKAGE NAME="roboguice.inject" />
+    <EXCLUDED_PACKAGE NAME="sun.font.Decoration.Label" />
+    <EXCLUDED_PACKAGE NAME="sun.org.mozilla.javascript.internal.ast.Label" />
+    <EXCLUDED_PACKAGE NAME="sun.plugin.javascript.navig.Image" />
+    <EXCLUDED_PACKAGE NAME="sun.util" />
+    <EXCLUDED_PACKAGE NAME="sun.util.calendar.BaseCalendar.Date" />
+    <EXCLUDED_PACKAGE NAME="sun.util.calendar.LocalGregorianCalendar.Date" />
+  </component>
+  <component name="DaemonCodeAnalyzerSettings" profile="Checkstyle">
+    <option name="ERROR_STRIPE_MARK_MIN_HEIGHT" value="3" />
+    <option name="SHOW_METHOD_SEPARATORS" value="true" />
+  </component>
+  <component name="DefaultFont">
+    <option name="FONT_SIZE" value="18" />
+  </component>
+  <component name="EditorSettings">
+    <option name="USE_SOFT_WRAPS" value="CONSOLE" />
+    <option name="IS_CARET_INSIDE_TABS" value="true" />
+    <option name="ARE_LINE_NUMBERS_SHOWN" value="false" />
+    <option name="SHOW_BREADCRUMBS" value="false" />
+    <option name="IS_CAMEL_WORDS" value="true" />
+    <option name="ADDITIONAL_PAGE_AT_BOTTOM" value="true" />
+  </component>
+</application>

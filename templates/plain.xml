@@ -1,0 +1,82 @@
+<templateSet group="plain">
+  <template name="psf" value="public static final " description="public static final" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="St" value="String " description="String" toReformat="true" toShortenFQNames="true" />
+  <template name="psfi" value="public static final int $VAR$ = $VAR1$;&#10;$END$" description="public static final int" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="psfs" value="public static final String $VAR$ = &quot;$VAR1$&quot;;&#10;$END$" description="public static final String" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="thr" value="throw new " description="throw new" toReformat="true" toShortenFQNames="true" />
+  <template name="prsfs" value="private static final String $VAR$ = &quot;$VAR1$&quot;;&#10;$END$" description="private static final String" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="prsft" value="private static final $TYPE$ $VAR$ = $VAR1$;&#10;$END$" description="private static final Type" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="prsfi" value="private static final int $VAR$ = $VAR1$;&#10;$END$" description="private static final" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pfi" value="public final int " description="public final int" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="prft" value="private final $TYPE$ $VAR$ = $VAR1$;&#10;$END$" description="private  final Type" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="p" value="public static final String $VAR$ = &quot;$VAR1$&quot;;&#10;$END$" description="public static final String" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="psfl" value="public static float $VAR$ = $VAR1$;&#10;$END$" description="public static float" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="psffl" value="public static final float $VAR$ = $VAR1$;&#10;$END$" description="public static final float" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY_DECLARATION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>

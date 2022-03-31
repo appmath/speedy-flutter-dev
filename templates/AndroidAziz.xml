@@ -1,0 +1,974 @@
+<templateSet group="AndroidAziz">
+  <template name="findACTV" value="final AutoCompleteTextView $VAR$ = (AutoCompleteTextView)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById AutoCompleteTextView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findB" value="final Button $VAR$Btn = (Button)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById Button  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findCB" value="final CheckBox $VAR$ = (CheckBox)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById CheckBox (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findChro" value="final Chronometer $VAR$ = (Chronometer)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById Chronometer  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findDP" value="final DatePicker $VAR$ = (DatePicker)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById DatePicker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findET" value="final EditText $VAR$ = (EditText)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById EditText (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findIS" value="final ImageSwitcher $VAR$ = (ImageSwitcher)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById ImageSwitcher  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findMACTV" value="final MultiAutoCompleteTextView $VAR$ = (MultiAutoCompleteTextView)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById MultiAutoCompleteTextView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findPB" value="final ProgressBar $VAR$ = (ProgressBar)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById ProgressBar  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findRB" value="final RadioButton $VAR$ = (RadioButton)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById RadioButton  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findRBar" value="final RatingBar $VAR$ = (RatingBar)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById RatingBar  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findRG" value="final RadioGroup $VAR$ = (RadioGroup)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById RadioGroup  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findSpinner" value="final Spinner $VAR$ = (Spinner)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById Spinner (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findSwitch" value="final Switch $VAR_NAME$ = (Switch)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById Switch (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findTB" value="final ToggleButton $VAR$ = (ToggleButton)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById ToggleButton  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findTP" value="final TimePicker $VAR$ = (TimePicker)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById TimePicker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findTV" value="final TextView $VAR$ = (TextView)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById TextView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findIB" value="final ImageButton $VAR$ = (ImageButton)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById ImageButton  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="LOG_TAG" value="private static final String LOG_TAG = $CLASS_NAME$.class.getSimpleName();&#10;$END$" description="LOG_TAG (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="R" value="R.id.$NAME$" shortcut="TAB" description="R.id.something  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="menuAddII" value="menu.add(&quot;$NAME$&quot;)&#10;         .setIcon(android.R.drawable.$ICON$)&#10;         .setIntent(new Intent(this, $CLAZZ$.class));&#10;$END$" shortcut="TAB" description="menu.add icon and intent  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ICON" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLAZZ" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="toastClassLong" value="Toast.makeText($CLASSNAME$.this, &quot;$TEXT$&quot;, Toast.LENGTH_LONG).show();&#10;$END$" shortcut="TAB" description="Toast.makeText  LONG REFERS to a CLASS(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="Ld" value="Log.d(LOG_TAG, &quot;$MESG$&quot;); $END$" description="log debug (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Le" value="Log.e(LOG_TAG, &quot;$MESG$&quot;, e);$END$" description="log error (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Li" value="Log.i(LOG_TAG, &quot;$MESG$&quot;);$END$" description="log information (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getColor" value="final int $VAR$ = getResources().getColor(R.color.$NAME$);" shortcut="TAB" description="Resources  getColor()  (Android)" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getColorDrawable" value="final ColorDrawable $VAR$ = (ColorDrawable)getResources().getDrawable(R.drawable.$NAME$);" shortcut="TAB" description="Resources  getColorDrawable()" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getDimen" value="final float $VAR$ = getResources().getDimension(R.dimen.$NAME$);" shortcut="TAB" description="Resources  getDimension() (Android)" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getStr" value="final String $VAR$ = getResources().getString(R.string.$NAME$);" shortcut="TAB" description="Resources  getString()  (Android)" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="getText" value="final CharSequence $VAR$ = getResources().getText(R.string.$NAME$);" shortcut="TAB" description="Resources  getText()  (Android)" toReformat="false" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sOCheckedClickListener" value="$BUTTON$.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {&#10;    public void onCheckedChanged(RadioGroup group, int checkedId) {&#10;&#9;    $END$  &#10;    }&#10;});&#10;" shortcut="TAB" description="setOnCheckedChangeListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="BUTTON" expression="suggestFirstVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sOClickListener" value="$BUTTON$.setOnClickListener(new View.OnClickListener() {&#10;    public void onClick(View v) {&#10;        $END$&#10;    }&#10;});&#10;" shortcut="TAB" description="setOnClickListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="BUTTON" expression="suggestFirstVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Lv" value="Log.v(LOG_TAG, &quot;$MESG$&quot;);$END$" description="log Verbose (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sCVmain" value="setContentView(R.layout.main);&#10;$END$&#10;" shortcut="TAB" description="setContentView Main (R.layout.main)  (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findTL" value="final TableLayout $VAR$ = (TableLayout)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById TableLayout  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findLV" value="final ListView $VAR$ = (ListView)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById ListView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sOItemClickListener" value="$COMP$.setOnItemClickListener(new OnItemClickListener() {&#10;&#9;&#9;public void onItemClick(AdapterView&lt;?&gt; parent, View view, int position, long id) {&#10;&#9;    $END$  &#10;    }&#10;});&#10;" shortcut="TAB" description="setOnItemClickListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="COMP" expression="suggestFirstVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findGal" value="final Gallery $VAR$ = (Gallery)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById Gallery  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findIV" value="final ImageView $VAR$ = (ImageView)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById ImageView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findFL" value="final FrameLayout $VAR$ = (FrameLayout)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById FrameLayout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findTS" value="final TextSwitcher $VAR$ = (TextSwitcher)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById TextSwitcher (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findTSwithFactory" value="final TextSwitcher $VAR$ = (TextSwitcher)findViewById(R.id.$NAME$);&#10;$VAR$TextSwitcher.setFactory(new ViewFactory() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public View makeView() {&#10;&#9;&#9;&#9;    TextView textView = new TextView($ENCLOSING_CLASS$.this);&#10;&#9;&#9;&#9;&#9;textView.$END$&#10;&#9;&#9;&#9;&#9;return textView;&#10;&#9;&#9;}&#10;});&#10;&#10;" shortcut="TAB" description="findViewById TextSwitcher and Adds a View Factory(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENCLOSING_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findISwithFactory" value="final ImageSwitcher $VAR$ = (ImageSwitcher)findViewById(R.id.$NAME$);&#10;$VAR$ImageSwitcher.setFactory(new ViewFactory() {&#10;    @Override&#10;    public View makeView() {&#10;        ImageView  imageView = new ImageView($ENCLOSING_CLASS$.this);&#10;&#9;&#9;imageView.$END$&#10;        return imageView;&#10;    }&#10;});&#10;" shortcut="TAB" description="findViewById ImageSwitcher and Adds a View Factory (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENCLOSING_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findBwithOCL" value="final Button $VAR$Btn = (Button)findViewById(R.id.$NAME$);&#10;$VAR$Btn.setOnClickListener(new View.OnClickListener() {&#10;    public void onClick(View v) {&#10;        $END$&#10;    }&#10;});&#10;" shortcut="TAB" description="findViewById Button and Adds OnClickListener  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="setLayoutParams" value="$VAR$.setLayoutParams(new $CLAZZ$.LayoutParams(LayoutParams.$WIDTH$,&#10;                                       ViewGroup.LayoutParams.$HEIGHT$));&#10;$END$" shortcut="TAB" description="findViewById RadioButton  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLAZZ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="loadAnimation" value="Animation animationIn = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);&#10;Animation animationOut = AnimationUtils.loadAnimation(this, android.R.anim.slide_out_right);&#10;$VAR$.setInAnimation(animationIn);&#10;$VAR$.setOutAnimation(animationOut);&#10;$END$" shortcut="TAB" description="findViewById RadioButton  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findTSwithFactoryLayoutParams" value="final TextSwitcher $VAR$ = (TextSwitcher)findViewById(R.id.$NAME$);&#10;$VAR$TextSwitcher.setFactory(new ViewFactory() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public View makeView() {&#10;&#9;&#9;&#9;    TextView textView = new TextView($ENCLOSING_CLASS$.this);&#10;&#9;&#9;&#9;&#9;textView.setLayoutParams(new TextSwitcher.LayoutParams(ViewGroup.LayoutParams.$WIDTH$,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;                   ViewGroup.LayoutParams.$HEIGHT$));&#10;&#9;&#9;&#9;&#9;textView.$END$&#10;&#9;&#9;&#9;&#9;return textView;&#10;&#9;&#9;}&#10;});&#10;&#10;" shortcut="TAB" description="findViewById TextSwitcher and Adds a View Factory(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENCLOSING_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findWV" value="final WebView $VAR$ = (WebView)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="findViewById WebView  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findMV" value="final MapView $VAR$ = (MapView)findViewById(R.id.$NAME$);&#10;$END$" shortcut="TAB" description="find MapView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findVV" value="final VideoView $VAR$ = (VideoView)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById VideoView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="findLL" value="final LinearLayout $VAR$ = (LinearLayout)findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById LinearLayout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="toastLong" value="Toast.makeText(this, &quot;$TEXT$&quot;, Toast.LENGTH_LONG).show();&#10;$END$" shortcut="TAB" description="Toast.makeText  LONG REFERS to this(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="Lw" value="Log.w(LOG_TAG, &quot;$MESG$&quot;);$END$" description="log warning (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="addMI" value="addMenuItem(&quot;$LABEL$&quot;, $CLASS_NAME$.class);&#10;$END$" shortcut="TAB" description="Add Menu Item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sOItemSelectedListener" value="$CONTROL$.setOnItemSelectedListener(new OnItemSelectedListener() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onItemSelected(AdapterView&lt;?&gt; parent, View view, int position, long id) {&#10;&#9;&#9;&#9;&#9;$END$$END$&#10;&#9;&#9;}&#10;&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onNothingSelected(AdapterView&lt;?&gt; parent) {&#10;&#10;&#9;&#9;}&#10;});&#10;" shortcut="TAB" description="setOnItemSelectedListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="toastShort" value="Toast.makeText(this, &quot;$TEXT$&quot;, Toast.LENGTH_SHORT).show();&#10;$END$" shortcut="TAB" description="Toast.makeText  SHORT REFERS to this(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="toastClassShort" value="Toast.makeText($CLASSNAME$.this, &quot;$TEXT$&quot;, Toast.LENGTH_SHORT).show();&#10;$END$" shortcut="TAB" description="Toast.makeText  SHORT REFERS to a CLASS(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sOTimeChangeListener" value="$COMP$.setOnTimeChangedListener(new OnTimeChangedListener() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;});" shortcut="TAB" description="setOnTimeChangeListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="COMP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="datePickerInit" value="$NAME$.init($YEAR$, $MONTH$, $DAY$, new OnDateChangedListener() {&#10;&#9;&#9;public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;});&#10;" shortcut="TAB" description="Initializes a date picker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="YEAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MONTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="setOSeekBarChangeListener" value="$CONTROL$.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onStartTrackingTouch(SeekBar seekBar) {&#10;&#10;&#9;&#9;}&#10;&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onStopTrackingTouch(SeekBar seekBar) {&#10;&#10;&#9;&#9;}&#10;});&#10;" shortcut="TAB" description="setOnSeekBarChangeListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="setORatingBarChangeListener" value="$CONTROL$.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;});&#10;" shortcut="TAB" description="setOnRatingBarChangeListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sCV" value="setContentView(R.layout.$LAYOUT$);&#10;$END$&#10;" shortcut="TAB" description="setContentView  (R.layout.main)  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="onCreate" value="@Override&#10;protected void onCreate (Bundle savedInstanceState){&#10;&#9;&#9;super.onCreate(savedInstanceState);&#10;&#9;&#9;setContentView(R.layout.$LAYOUT$);&#10;&#9;&#9;$END$&#10;}&#10;" shortcut="TAB" description="onCreate Activity Method (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="menuFindItemSetIntent" value="menu.findItem(R.id.$ID$).setIntent(new Intent(this, $CLASS_NAME$.class));&#10;$END$&#10;" shortcut="TAB" description="Menu findItem and setIntent (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findGV" value="final GridView $VAR$ = (GridView) findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById GridView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iButton" value="@InjectView(R.id.$ID$)&#10;Button m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject Button (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iTButton" value="@InjectView(R.id.$ID$)&#10;ToggleButton m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject ToggleButton (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iTV" value="@InjectView(R.id.$ID$)&#10;TextView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject TextView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="bET" value="@Bind(R.id.$ID$)&#10;EditText m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Bind EditText (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iSW" value="@InjectView(R.id.$ID$)&#10;Switch m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject Switch (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iMACTV" value="@InjectView(R.id.$ID$)&#10;MultiAutoCompleteTextView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject MultiAutoCompleteTextView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iACTV" value="@InjectView(R.id.$ID$)&#10;AutoCompleteTextView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject AutoCompleteTextView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iOnClick" value="@OnClick(R.id.$ID$) $END$" shortcut="TAB" description="Inject onClick (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iOnClickMethod" value="@OnClick(R.id.$ID$)&#10;public void $EXPR$($TYPE$ $VAR$){&#10;$END$&#10;}" shortcut="TAB" description="Inject OnClick Public method declaration" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="bkInject" value="ButterKnife.inject(this);&#10;$END$" shortcut="TAB" description="ButterKnife Inject this" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bCB" value="@Bind(R.id.$ID$)&#10;CheckBox m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Bind CheckBox(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iRB" value="@InjectView(R.id.$ID$)&#10;RadioButton m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject RadioButton (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iRB2" value="@InjectView(R.id.$ID$)&#10;RadioButton $NAME$;&#10;&#10;@InjectView(R.id.$ID2$)&#10;RadioButton $NAME2$;&#10;&#10;$END$" shortcut="TAB" description="Inject 2 RadioButtons (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iRB3" value="@InjectView(R.id.$ID$)&#10;RadioButton m$NAME$;&#10;&#10;@InjectView(R.id.$ID2$)&#10;RadioButton m$NAME2$;&#10;&#10;&#10;@InjectView(R.id.$ID3$)&#10;RadioButton m$NAME3$;&#10;&#10;$END$" shortcut="TAB" description="Inject 3 RadioButtons (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iRB4" value="@InjectView(R.id.$ID$)&#10;RadioButton m$NAME$;&#10;&#10;@InjectView(R.id.$ID2$)&#10;RadioButton m$NAME2$;&#10;&#10;&#10;@InjectView(R.id.$ID3$)&#10;RadioButton m$NAME3$;&#10;&#10;@InjectView(R.id.$ID4$)&#10;RadioButton m$NAME4$;&#10;&#10;$END$" shortcut="TAB" description="Inject 4 RadioButtons (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iRG" value="@InjectView(R.id.$ID$)&#10;RadioGroup m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject RadioGroup (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iDP" value="@InjectView(R.id.$ID$)&#10;DatePicker m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject DatePicker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iTP" value="@InjectView(R.id.$ID$)&#10;TimePicker m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject TimePicker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="dPinit" value="datePicker.init($YEAR$, $MONTH$, $DAY$, new OnDateChangedListener() {&#10;&#9;&#9;public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {&#10;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;});&#10;&#10;" shortcut="TAB" description="DatePicker init (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="YEAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MONTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iNP" value="@InjectView(R.id.$ID$)&#10;NumberPicker m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject NumberPicker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="sOValueChangeListener" value="$COMP$.setOnValueChangedListener(new OnValueChangeListener() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public void onValueChange(NumberPicker picker, int oldVal, int newVal) {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;});" shortcut="TAB" description="setOnValueChangeListener for ** NumberPicekr ** (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="COMP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="bPB" value="@Bind(R.id.$ID$)&#10;ProgressBar m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Bind ProgressBar (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="handlerPost" value="$VAR$.post(new Runnable() {&#10;&#9;&#9;@Override&#10;&#9;&#9;public void run() {&#10;&#9;&#9;&#9;&#9;$END$&#10;&#9;&#9;}&#10;});&#10;&#10;&#9;" shortcut="TAB" description="invoke handler post (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iSB" value="@InjectView(R.id.$ID$)&#10;SeekBar m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject SeekBar (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iRBar" value="@InjectView(R.id.$ID$)&#10;RatingBar m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject RatingBar (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iCH" value="@InjectView(R.id.$ID$)&#10;Chronometer m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject Chronometer (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iAC" value="@InjectView(R.id.$ID$)&#10;AnalogClock m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject AnalogClock (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iDC" value="@InjectView(R.id.$ID$)&#10;DigitalClock m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject DigitalClock (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iGV" value="@InjectView(R.id.$ID$)&#10;GridView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject GridView(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iLV" value="@InjectView(R.id.$ID$)&#10;ListView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject ListView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="toastShortActivity" value="Toast.makeText(getActivity(), &quot;$TEXT$&quot;, Toast.LENGTH_SHORT).show();&#10;$END$" shortcut="TAB" description="Toast.makeText  SHORT REFERS to getActivity() (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="toastLongActivity" value="Toast.makeText(getActivity(), &quot;$TEXT$&quot;, Toast.LENGTH_LONG).show();&#10;$END$" shortcut="TAB" description="Toast.makeText  LONG REFERS to getActivity() (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="extractString" value="$NAME$.getText().toString();&#10;$END$" shortcut="TAB" description="Extract String (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="buildTypes" value="buildTypes {&#10;&#9;release {&#10;&#9;minifyEnabled false&#10;&#9;proguardFiles getDefaultProguardFile ('proguard-android.txt'), 'proguard-rules.pro'&#10;    }&#10;}&#10;$END$" shortcut="TAB" description="Gradle builtTypes(Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="true" />
+    </context>
+  </template>
+  <template name="checkOrientation" value="getResources().getConfiguration().orientation == Configuration.ORIENTATION_$LAND_OR_PORT$&#10;$END$" shortcut="TAB" description="check device orientation (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="LAND_OR_PORT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="inflateView" value="LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);&#10;final View view =&#10;        inflater.inflate(R.layout.$LAYOUT$, (ViewGroup) getActivity().findViewById(R.id.$LAYOUT$_root));&#10;$END$" shortcut="TAB" description="Use inflater to create view (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="EVpost" value="EventBus.getDefault().post(new $CLAZZ$($PAR$));&#10;$END$" shortcut="TAB" description="EventBus Post  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CLAZZ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="EVregisterUnregister" value="@Override&#10;protected void onStart() {&#10;    EventBus.getDefault().register(this);&#10;    super.onStart();&#10;}&#10;&#10;@Override&#10;protected void onStop () {&#10;    EventBus.getDefault().unregister(this);&#10;    super.onStop();&#10;}&#10;$END$" shortcut="TAB" description="EventBus Register Unregister (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="EVonEvent" value="/**&#10; * Called when the EventBus's EventBus.getDefault().post($EVENT$) is invoked.&#10; * @param $PARAM$&#10; */&#10;public void onEvent ($EVENT$ $PARAM$){&#10;    &#10;}&#10;$END$" shortcut="TAB" description="EventBus onEvent (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="EVENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sOnKeyListener" value="$CONTROL$.setOnKeyListener(new OnKeyListener() {&#10;    public boolean onKey(View v, int keyCode, KeyEvent event) {&#10;        if ((event.getAction() == KeyEvent.ACTION_DOWN) &amp;&amp; (keyCode == KeyEvent.KEYCODE_ENTER)) {&#10;            $END$&#10;            return true;&#10;        }&#10;        return false;&#10;    }&#10;});&#10;" shortcut="TAB" description="setOnKeyListener (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CONTROL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findWv" value="final WebView $VAR$ = (WebView) findViewById(R.id.$NAME$);&#10;$END$&#10;" shortcut="TAB" description="findViewById WebView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iWV" value="@InjectView(R.id.$ID$)&#10;WebView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject WebView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iRV" value="@InjectView(R.id.$ID$)&#10;RecyclerView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject RecyclerView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iV" value="@InjectView(R.id.$ID$)&#10;View m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject View (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="bkOnClick" value="@OnClick(R.id.$ID$)&#10;public void $NAME$ (){&#10;    $END$&#10;}&#10;" shortcut="TAB" description="Inject ButterKnife onClick (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="findFBT" value="final $FRAGMENT$ $VAR$ = ($FRAGMENT$)$FRAGMENT_MANAGER$.findFragmentByTag(&quot;$NAME$&quot;);&#10;$END$" shortcut="TAB" description="findFragmentByTag  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="FRAGMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="FRAGMENT_MANAGER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Tt" value="Timber.tag($CLASS_NAME$.class.getName());&#10;$END$" description="Timber.tag  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Td" value="Timber.d(&quot;$MESG$&quot;); $END$" description="Timber Debug (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Te" value="Timber.e(&quot;$MESG$&quot;); $END$" description="Timber Error (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Ti" value="Timber.e(&quot;$MESG$&quot;); $END$" description="Timber Information (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Tv" value="Timber.v(&quot;$MESG$&quot;); $END$" description="Timber Verbose (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="Tw" value="Timber.w(&quot;$MESG$&quot;); $END$" description="Timber Warning (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MESG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="iBR" value="@InjectView(R.id.$ID$)&#10;ButtonRectangle m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject ButtonRectangle (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="iIV" value="@InjectView(R.id.$ID$)&#10;ImageView m$NAME$;&#10;&#10;$END$" shortcut="TAB" description="Inject ImageView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+    </context>
+  </template>
+  <template name="classHeader" value="/**&#10; * Description&#10; *&#10; * Google field naming convention:&#10; * Non-public, non-static field names start with m.&#10; * Static field names start with s.&#10; * Other fields start with a lower case letter.&#10; * Public static final fields (constants) are ALL_CAPS_WITH_UNDERSCORES.&#10; *&#10; * @author Aziz Kadhi&#10; */&#10;$END$" shortcut="TAB" description="JavaDocs Header Comments" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="bkBind" value="ButterKnife.bind(this, $VIEW$);&#10;$END$" shortcut="TAB" description="ButterKnife Bind this" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="COMPLETION" value="true" />
+      <option name="GROOVY" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

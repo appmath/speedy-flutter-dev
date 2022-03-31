@@ -1,0 +1,821 @@
+<templateSet group="DartAziz">
+  <template name="if" value="if($VALUE$) {&#10;    $END$&#10;}" description="simple if" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ifElse" value="if($VALUE$) {&#10;    $END$&#10;} else {&#10;&#10;}" description="simple if/else" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutv" value="    print('$NAME2$: $$$NAME1$');&#10;" description="prints 1 variable" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="NAME1" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="d_nullAwareOperator" value="$VALUE1$ ?? $VALUE2$" description="Null Aware Operator: ??" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="d_forIn" value="for ($TYPE$ $VALUE$ in $COLLECTION$) {&#10;    $END$;&#10;}" description="For loop with x in y" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLLECTION" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutsv" value="print('$LABEL$: $$$VALUE$');" description="print to standard out" toReformat="true" toShortenFQNames="true">
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funP" value="void $NAME$($PARAM$) {&#10;    $END$&#10;}" description="function with a parameter" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funPR" value="$TYPE$ $NAME$($PARAM$) {&#10;    return $END$&#10;}" description="function with a parameter and a return statement" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="fun" value="void $NAME$() {&#10;    $END$&#10;}" description="function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funMain" value="void main() {&#10;    $END$&#10;}" description="main function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="ifElseIfElse" value="if($CONDITION$) {&#10;    $END$&#10;} else if($CONDITION2$) {&#10;&#10;} else {&#10;&#10;}" description="if/else if/else" toReformat="true" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITION2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_iterMapEntries" value=" for (var entry in $MAP$.entries) {&#10;    print('${entry.key}: ${entry.value}');&#10;  }" description="Iterate over a map using entries" toReformat="true" toShortenFQNames="true">
+    <variable name="MAP" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_iterMapKeys" value=" for (var $KEY$ in $MAP$.keys) {&#10;    print('${$KEY$}: ${$MAP$[$KEY$]}');&#10;  }" description="Iterate over a map using keys" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAP" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_iterMapValues" value=" for (var $VALUE$ in $MAP$.values) {&#10;        print(value);&#10;  }" description="Iterate over a map using keys" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAP" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_iterCollectionFor" value="for (var $ITEM$ in $COL$) $ITEM$," description="Uses the awesome collection for" toReformat="true" toShortenFQNames="true">
+    <variable name="COL" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_collectionFor" value="void collectionFor() {&#10;  const addBlue = false;&#10;  const addRed = true;&#10;  const extraColors = ['yellow', 'green'];&#10;  final colors = [&#10;    'grey',&#10;    'brown',&#10;    if (addBlue) 'blue',&#10;    if (addRed) 'red',&#10;    for (var color in extraColors) color,&#10;  ];&#10;  print('Colors: $colors');&#10;}&#10;" description="Collection for example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_collectionIf" value="&#10;void collectionIf() {&#10;  const addBlue = false;&#10;  const addRed = true;&#10;  final colors = [&#10;    'grey',&#10;    'brown',&#10;    if (addBlue) 'blue',&#10;    if (addRed) 'red',&#10;  ];&#10;  print('Colors: $colors');&#10;}&#10;" description="Collection if example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_collectionIf&amp;For" value="void collectionFor() {&#10;  const addBlue = false;&#10;  const addRed = true;&#10;  const extraColors = ['yellow', 'green'];&#10;  final colors = [&#10;    'grey',&#10;    'brown',&#10;    if (addBlue) 'blue',&#10;    if (addRed) 'red',&#10;    for (var color in extraColors) color,&#10;  ];&#10;  print('Colors: $colors');&#10;}&#10;&#10;void collectionIf() {&#10;  const addBlue = false;&#10;  const addRed = true;&#10;  final colors = [&#10;    'grey',&#10;    'brown',&#10;    if (addBlue) 'blue',&#10;    if (addRed) 'red',&#10;  ];&#10;  print('Colors: $colors');&#10;}&#10;" description="Collection if and for example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_list_spread" value="void spread() {&#10;  // Cool stuff&#10;  const addExtraColors = true;&#10;  const addBlue = false;&#10;  const addRed = true;&#10;  const extraColors = ['yellow', 'green'];&#10;  final colors = [&#10;    'grey',&#10;    'brown',&#10;    if (addBlue) 'blue',&#10;    if (addRed) 'red',&#10;    if (addExtraColors) ...extraColors,&#10;    // Or&#10;    // if (addExtraColors) ...['yellow', 'green'],&#10;  ];&#10;  print('Colors: $colors');&#10;}" description="Collection spread" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_map_entries_keys_values" value="// Cool trick: person['age'] = ((person['age'] ?? 0) as int) + 1&#10;&#10;var person = {&#10;    'name': 'Aziz',&#10;    'age': 58,&#10;    'height': 1.75,&#10;  };&#10;  &#10;  print('\nusing entries');&#10;  for (var entry in person.entries) {&#10;    print('${entry.key}: ${entry.value}');&#10;  }&#10;&#10;  print('\nusing values');&#10;  for (var value in person.values) {&#10;    print(value);&#10;  }&#10;&#10;  print('\nusing keys');&#10;  for (var key in person.keys) {&#10;    print('${key}: ${person[key]}');&#10;  }&#10;" description="The three ways to navigate a map" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funR" value="$TYPE$ $NAME$() {&#10;    return $END$&#10;}" description="function with a return statement" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_read_file" value="Future&lt;void&gt; readFile() async {&#10;  var fileName = &quot;fileName.csv&quot;;&#10;  &#10;  // IMPORTANT: Assumes that the file is in the same directory as the source code file!!!&#10;  var path = '${dirname(Platform.script.path)}/$fileName';&#10;  print('Path: $path');&#10;&#10;  final file = File(path);&#10;  print('{file.path}: ${file.path}');&#10;&#10;  bool exists = await file.exists();&#10;  print('{file.exists()}: $exists');&#10;&#10;}" description="How to read a file in dart" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="soutv2" value="print('$NAME_STR_1$: $$$NAME1$ ,  $NAME_STR_2$: $$$NAME2$');&#10;&#10;" description="prints 2 variables" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME_STR_1" expression="" defaultValue="NAME1" alwaysStopAt="true" />
+    <variable name="NAME2" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME_STR_2" expression="" defaultValue="NAME2" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="d_getter" value="$TYPE$ get $NAME$ {&#10;    return $END$;&#10;}" description="Getter" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_itar" value="for (var $INDEX$ = 0; $INDEX$ &lt; $ARRAY$.length; $INDEX$++) {&#10;  var $VAR$ = $ARRAY$[$INDEX$];&#10;  $END$&#10;}" description="Iterate elements of array" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="jsSuggestIndexName()" defaultValue="&quot;i&quot;" alwaysStopAt="true" />
+    <variable name="ARRAY" expression="jsArrayVariable()" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <variable name="VAR" expression="jsSuggestVariableName()" defaultValue="&quot;o&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_getterFatArrow" value="$TYPE$ get $NAME$ =&gt; $END$;" description="Fat arrow getter" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_flow_analysis" value="  int? a;&#10;  print('a: $a');&#10;  int b = 5;&#10;  if (a != null) {&#10;    int c = a + b;&#10;    print('c: $c');&#10;  } else {&#10;    print('null');&#10;  }" description="Flow Analysis detects null assignment" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_assertion_operator" value="  // Assertion operator: maybeValue!&#10;  int x = 42;&#10;  int? maybeValue;&#10;  if(x &gt; 0) {&#10;    maybeValue = x;&#10;  }&#10;  int value = maybeValue!;&#10;  print('value: $value');" description="Assertion operator" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_if_null_operator" value="// if null operator: int value = maybeValue ?? 0;&#10;$IF_NULL_VALUE$ ?? $NON_NULL_VALUE$" description="if null operator (if_null_value ?? non_null_value)" toReformat="true" toShortenFQNames="true">
+    <variable name="IF_NULL_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NON_NULL_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_conditional_access_operator" value="  // Conditional access operator: city?.toUpperCase()&#10;  &#10;  const cities = &lt;String?&gt;['London', 'Paris', null];&#10;&#10;  for (var city in cities) {&#10;    print(city?.toUpperCase());&#10;  }" description="Conditional access operator" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_null_safety_features" value="// Assertion operator: maybeValue!&#10;// Conditional access operator: city?.toUpperCase()&#10;// if null operator: int value = maybeValue ?? 0;" description="Dart null safety operator" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_collection_fold" value="  List&lt;Friend&gt; friends = [&#10;    Friend(name: 'Aziz', age: 58),&#10;    Friend(name: 'Saad', age: 18),&#10;    Friend(name: 'Bill', age: 45),&#10;  ];&#10;&#10;// int totalAge = friends.fold(0, (prev, friend) =&gt; prev + friend.age);&#10;// print('totalAge: $totalAge');&#10;&#10;&#10;class Friend {&#10;  final String name;&#10;  final int age;&#10;&#10;  Friend({required this.name, required this.age});&#10;}&#10;" description="How to use fold" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_function_optional_arg" value="&#10;//  foo(1); prints: a: 1, b: 4&#10;void foo(int a, [int b = 4]) {&#10;  print('a: $a, b: $b');&#10;}&#10;&#10;&#10;// int totalAge = friends.fold(0, (prev, friend) =&gt; prev + friend.age);&#10;// print('totalAge: $totalAge');&#10;&#10;&#10;class Friend {&#10;  final String name;&#10;  final int age;&#10;&#10;  Friend({required this.name, required this.age});&#10;}&#10;" description="Optional arguments" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_function_pure_definititon" value="// Function that produces the same result&#10;&#10;var counter = 1;&#10;&#10;void bar() {&#10;  print('*' * counter);&#10;  counter++;&#10;}&#10;&#10;//  foo(1);&#10;void foo(int a, [int b = 4]) {&#10;  print('a: $a, b: $b');&#10;}&#10;*&#10;**&#10;***" description="Pure function definition" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_type_alias_type_def" value="// Basic&#10;typedef Greet = String Function(String);&#10;// Not recommended, harder to read&#10;// typedef String Greet(String name);&#10;&#10;void main() {&#10;  var sayHi = (String name) =&gt; 'Welcome Mr. $name';&#10;  welcome(sayHi, 'Aziz');&#10;}&#10;&#10;void welcome(Greet greet, String name) {&#10;  print(greet(name));&#10;}&#10;&#10;// Advanced my own sauce:&#10;typedef IsOdd&lt;T&gt; = bool Function(T);&#10;&#10;void main() {&#10;  List list = [1, 2, 3, 4, 5];&#10;  var predicate = (num) =&gt; num % 2 == 1;&#10;  var oddNums = where(list, predicate);&#10;  print('oddNums: $oddNums');&#10;}&#10;&#10;List&lt;T&gt; where&lt;T&gt;(List&lt;T&gt; list, IsOdd isOdd) {&#10;  var result = &lt;T&gt;[];&#10;  for (var num in list) {&#10;    if (isOdd(num)) {&#10;      result.add(num);&#10;    }&#10;  }&#10;  return result;&#10;}&#10;&#10;// Even more advanced, my own sauce:&#10;typedef IsOdd&lt;T&gt; = T Function(T, T);&#10;&#10;void main() {&#10;  List list = [1, 2, 3, 4, 5];&#10;  var predicate = (matchNum, match) =&gt; matchNum == match;&#10;  var firstMatch = firstWhere(list, 3, predicate, orElse: () =&gt; -1);&#10;  print('firstMatch: $firstMatch');&#10;}&#10;&#10;&#10;T firstWhere&lt;T&gt;(List&lt;T&gt; list, T matchNum, IsOdd isOdd,&#10;    {required T Function() orElse}) {&#10;  for (var num in list) {&#10;    if (isOdd(num, matchNum)) {&#10;      return num;&#10;    }&#10;  }&#10;  return orElse();&#10;}" description="Type aliases, mine is more generic" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_functions_advanced" value="void main() {&#10;  const list = [1, 2, 3];&#10;  const list2 = [1.0, 2.0, 3.0];&#10;&#10;  // TODO Revisit&#10;  list.forEach(print);&#10;&#10;  final List&lt;int&gt; doubles = list.map((value) =&gt; value * 2).toList();&#10;  print('doubles: $doubles');&#10;&#10;  final doublesFor = doubleItems(list);&#10;  print('doublesFor: $doublesFor');&#10;&#10;  final triples = transform(list, (item) =&gt; item * 3);&#10;  print('triples: $triples');&#10;&#10;  final squares = transform(list, (item) =&gt; item * item);&#10;  print('squares: $squares');&#10;&#10;  final squaresG = transformG&lt;double&gt;(list2, (item) =&gt; item * item);&#10;  print('squaresG: $squaresG');&#10;&#10;  final squaresExtraG =&#10;      transformExtraG&lt;double, double&gt;(list2, (item) =&gt; item * item);&#10;  print('squaresExtraG: $squaresExtraG');&#10;&#10;  final squaresExtraGMixed =&#10;      transformExtraG&lt;double, int&gt;(list2, (item) =&gt; (item * item).round());&#10;  print('squaresExtraGMixed: $squaresExtraGMixed');&#10;}&#10;&#10;List&lt;int&gt; doubleItems(List&lt;int&gt; items) {&#10;  var result = &lt;int&gt;[];&#10;  for (var x in items) {&#10;    result.add(x * 2);&#10;  }&#10;  return result;&#10;}&#10;&#10;List&lt;int&gt; transform(List&lt;int&gt; items, int Function(int) f) {&#10;  var result = &lt;int&gt;[];&#10;  for (var x in items) {&#10;    result.add(f(x));&#10;  }&#10;  return result;&#10;}&#10;&#10;List&lt;T&gt; transformG&lt;T&gt;(List&lt;T&gt; items, T Function(T) f) {&#10;  List&lt;T&gt; result = [];&#10;  for (var item in items) {&#10;    result.add(f(item));&#10;  }&#10;  return result;&#10;}&#10;&#10;List&lt;R&gt; transformExtraG&lt;T, R&gt;(List&lt;T&gt; items, R Function(T) f) {&#10;  List&lt;R&gt; result = [];&#10;  for (var item in items) {&#10;    result.add(f(item));&#10;  }&#10;  return result;&#10;}&#10;" description="Advanced functions" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_generics_type_def_functions" value="typedef IsOdd&lt;T&gt; = bool Function(T);&#10;&#10;void main() {&#10;  List list = [1, 2, 3, 4, 5];&#10;  var predicate = (num) =&gt; num % 2 == 1;&#10;  var oddNums = where(list, predicate);&#10;  print('oddNums: $oddNums');&#10;}&#10;&#10;List&lt;T&gt; where&lt;T&gt;(List&lt;T&gt; list, IsOdd isOdd) {&#10;  var result = &lt;T&gt;[];&#10;  for (var num in list) {&#10;    if (isOdd(num)) {&#10;      result.add(num);&#10;    }&#10;  }&#10;  return result;&#10;}&#10;&#10;// Another example:&#10;typedef IsOdd&lt;T&gt; = T Function(T, T);&#10;&#10;void main() {&#10;  List list = [1, 2, 3, 4, 5];&#10;  var predicate = (matchNum, match) =&gt; matchNum == match;&#10;  var firstMatch = firstWhere(list, 3, predicate, orElse: () =&gt; -1);&#10;  print('firstMatch: $firstMatch');&#10;}&#10;&#10;&#10;T firstWhere&lt;T&gt;(List&lt;T&gt; list, T matchNum, IsOdd isOdd,&#10;    {required T Function() orElse}) {&#10;  for (var num in list) {&#10;    if (isOdd(num, matchNum)) {&#10;      return num;&#10;    }&#10;  }&#10;  return orElse();&#10;}" description="Generics + typedef + functions" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ifnn" value="if($VALUE$ != null) {&#10;    $END$&#10;}" description="if not null" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funPrivate" value="void _$NAME$() {&#10;    $END$&#10;}" description="Private function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funParPrivate" value="void _$NAME$($PARAM$) {&#10;    $END$&#10;}" description="private function with a parameter" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_inside_if_nullable_condition_cannot_be_used_as_a_condition" value="if ((_filters['gluten-free'] ?? false)) {&#10;&#10;}" description="How to fix nullable expression can't be used as a condition" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="soutv_braces" value="print('$NAME2$: ${$NAME1$}');&#10;" description="prints 1 variable with curly braces" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="NAME1" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="soutsv_braces" value="print('$LABEL$: ${$VALUE$}');" description="print to standard out with curly braces" toReformat="true" toShortenFQNames="true">
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutv2_braces" value="print('$NAME_STR_1$: ${$NAME1$} ,  $NAME_STR_2$: ${$NAME2$}');&#10;" description="prints 2 variables" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME_STR_1" expression="" defaultValue="NAME1" alwaysStopAt="true" />
+    <variable name="NAME2" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME_STR_2" expression="" defaultValue="NAME2" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="soutsv2_braces" value="print('$NAME_STR_1$: ${$NAME1$} ,  $NAME_STR_2$: ${$NAME2$}');&#10;" description="prints a descirption and a variable, twice" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME_STR_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME_STR_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_getterForMap" value="  Map&lt;String, String&gt; _items;&#10;&#10;  Map&lt;String, String&gt; get items =&gt; {..._items};" description="Always clone a map before returning it." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_constructor2" value="final $TYPE_1$ $VAL_1$;&#10;final $TYPE_2$ $VAL_2$;&#10;&#10;$CONSTRUCTOR$({required this.$VAL_1$, required this.$VAL_2$});&#10;&#10;&#10;" description="Dart constructor with 2 parameters" toReformat="true" toShortenFQNames="true">
+    <variable name="CONSTRUCTOR" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_2" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="todo" value="// TODO $END$" description="todo" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="d_constructor3" value="final $TYPE_1$ $VAL_1$;&#10;final $TYPE_2$ $VAL_2$;&#10;final $TYPE_3$ $VAL_3$;&#10;&#10;$CONSTRUCTOR$({required this.$VAL_1$, required this.$VAL_2$, required this.$VAL_3$});&#10;&#10;" description="Dart constructor with 3 parameters" toReformat="true" toShortenFQNames="true">
+    <variable name="CONSTRUCTOR" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_2" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_3" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funPrivateReturn" value="$TYPE$ _$NAME$() {&#10;    return $END$&#10;}" description="Private function with a return statement" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_cascade_.." value="// Use cascades to create a single statement that sets the anInt, aString, and aList properties of a BigObject to 1, 'String!', and [3.0] (respectively) and then calls allDone().&#10;class BigObject {&#10;  int anInt = 0;&#10;  String aString = '';&#10;  List&lt;double&gt; aList = [];&#10;  bool _done = false;&#10;  &#10;  void allDone() {&#10;    _done = true;&#10;  }&#10;}&#10;&#10;// Solution (I got it right!)&#10;BigObject fillBigObject(BigObject obj) {&#10;  // Create a single statement that will update and return obj:&#10;  return obj..anInt = 1&#10;    ..aString = 'String!'&#10;    ..aList = [3.0]&#10;    ..allDone();&#10;}&#10;&#10;" description="To perform a sequence of operations on the same object (ignores the operation's return value)." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_getter_copy_list" value="List&lt;$TYPE$&gt; get $NAME$ {&#10;      return [..._$NAME$];&#10;}" description="Getter that returns a copy of a list" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_global_const" value="const $TYPE$ k$NAME$ = '$NAME$';" description="Global constants" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_constructor1" value="final $TYPE_1$ $VAL_1$;&#10;&#10;$CONSTRUCTOR$({required this.$VAL_1$});&#10;&#10;" description="Dart constructor with 1 parameter" toReformat="true" toShortenFQNames="true">
+    <variable name="VAL_1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONSTRUCTOR" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_constructor4" value="final $TYPE_1$ $VAL_1$;&#10;final $TYPE_2$ $VAL_2$;&#10;final $TYPE_3$ $VAL_3$;&#10;final $TYPE_4$ $VAL_4$;&#10;&#10;$CONSTRUCTOR$({required this.$VAL_1$, &#10;    required this.$VAL_2$, &#10;    required this.$VAL_3$, &#10;    required this.$VAL_4$});&#10;&#10;" description="Dart constructor with 4 parameters" toReformat="false" toShortenFQNames="true">
+    <variable name="CONSTRUCTOR" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_1" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_2" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_3" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAL_4" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE_4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="switch2_break" value=" switch ($VALUE$) {&#10;     case '$CASE1$':&#10;        break;&#10;     case '$CASE2$':&#10;        break;&#10;     default:&#10;}" description="switch with two cases" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CASE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CASE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_error_vs_exception" value="///////////////////////////// Exception /////////////////////////////&#10;// An Exception in Dart should be thrown for regular, expected program flow and&#10;// is intended to be caught:&#10;// An Exception is intended to convey information to the user about a failure,&#10;// so that the error can be addressed programmatically. It is intended to be&#10;// caught, and it should contain useful data fields.&#10;// Example: TimeoutException, convey to the user that the time for download is&#10;// taking too long.&#10;&#10;//////////////////////////////// Error ////////////////////////////////&#10;// An Error in Dart should be thrown for unexpected program flow and should not&#10;// be caught but addressed by the programmer&#10;// An Error object represents a program failure that the programmer should have&#10;// avoided.&#10;// Example: AssertionError&#10;// An AssertionError is thrown &quot;when an assert statement fails&quot;, i.e. it should&#10;// never happen because we assert that it should not.&#10;// If we see such an error, it means that we should change our code and we&#10;// should definitely not catch the error.&#10;// ----&#10;// In practice you can catch Errors, but you should not. There is a linter rule&#10;// to help enforce that.&#10;// The fact that Dart allows it can still be useful, e.g. when testing&#10;// assertions or other errors." description="Difference between error and exception" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_fix_setState_called_after_dispose" value="// https://api.flutter.dev/flutter/widgets/State/mounted.html&#10;// Fix 1:&#10;loadData() async {&#10;    setState(() {&#10;        loading = true;&#10;    }&#10;    &#10;    data = await fakeApiCall();&#10;    &#10;    if(mounted) { // without mounted, it will through an error since since fakeApiCall() returns &#10;                  // the data after the widget is disposed.&#10;        setState(() {&#10;        loading = false;&#10;        }&#10;    }&#10;    &#10;}&#10;&#10;// Fix 2: &#10;@override &#10;void setState(VoicCallback fn) {&#10;    if(mounted) {&#10;        super.setState(fn);&#10;    }    &#10;}&#10;&#10;" description="How to fix this error: setState() called after dispose()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_constructor_required_vs_optional" value="optional: ([iAmOptional])&#10;required: ({iAmRequired})&#10;&#10;" description="optional: [], required: {}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_casting_type_promotion" value="// Bear is Animal  -- the opposite -- Car is! Animal&#10;// (Bear as Animal).eat();&#10;&#10;bool isEmptyList(Object object) {&#10;  if (object is! List) return false;&#10;  return object.isEmpty; &#10;}&#10;&#10;" description="Type promotion a.k.a. casting: &quot;is&quot; and &quot;as&quot;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_exception_handling" value="// I can't get the cause in the catch-all catch statement, it behaves like an error&#10;&#10;// class InputException implements Exception {&#10;//   InputException({required this.cause});&#10;//&#10;//   final String cause;&#10;// }&#10;//&#10;// class ValidationException implements Exception {&#10;//   ValidationException({required this.cause});&#10;//&#10;//   final String cause;&#10;// }&#10;//&#10;// throwValidationException() =&gt;&#10;//     throw ValidationException(cause: 'Name cannot be null');&#10;// throwInputException() =&gt; throw InputException(cause: 'Input cannot be null');&#10;//&#10;// void main() {&#10;//   try {&#10;//     // throwValidationException();&#10;//     throwInputException();&#10;//   } on ValidationException catch (v) {&#10;//     print('ValidationException: $v');&#10;//   } catch (v, e) {&#10;//     print('catch-all: v: $v, e: $e');&#10;//   }&#10;// }&#10;" description="It's kind of complicated" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_on_catch_exception" value="  try {&#10;    $END$&#10;  } on $EXCEPTION$ catch (e) {&#10;    print(e);&#10;  }" description="Exception handling with on SomeException catch" toReformat="true" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_operator_cascade_.." value="// import 'dart:math';&#10;//&#10;// class ClosedPath {&#10;//   List&lt;Point&gt; _points = [];&#10;//&#10;//   void moveTo(Point point) {&#10;//     _points = [point];&#10;//   }&#10;//&#10;//   void lineTo(Point point) {&#10;//     _points.add(point);&#10;//   }&#10;// }&#10;//&#10;// void main() {&#10;//   final path = ClosedPath()&#10;//     ..moveTo(Point(0, 0))&#10;//     ..lineTo(Point(2, 0))&#10;//     ..lineTo(Point(2, 2))&#10;//     ..lineTo(Point(0, 2))&#10;//     ..lineTo(Point(0, 0));&#10;// }&#10;" description="Cascade operator" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_mixin" value="// Mixins cannot be instantiated and can't have constructors&#10;// Mixins can have name clashes (Foo class, only 2 gets printed)&#10;mixin Mixin1 {&#10;  int foo = 1;&#10;}&#10;mixin Mixin2 {&#10;  int foo = 2;&#10;}&#10;&#10;class Foo with Mixin1, Mixin2 {&#10;  void printFoo() {&#10;    print(foo);&#10;  }&#10;}&#10;&#10;void main() {&#10;  final foo = Foo();&#10;  foo.printFoo();&#10;}&#10;&#10;&#10;class Animal with Breathing {}&#10;&#10;mixin Swiming {&#10;  void swim() =&gt; print('swim');&#10;}&#10;mixin Breathing {&#10;  void breath() =&gt; print('breath');&#10;}&#10;&#10;class Fish extends Animal with Swiming {}&#10;&#10;class Human extends Animal with Swiming {}&#10;&#10;void main() {&#10;  final fish = Fish();&#10;  fish.swim();&#10;  fish.breath();&#10;}" description="Use keyword &quot;with&quot; to use it" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_mixin_with_restriction" value="// class Musician {&#10;//   // ...&#10;// }&#10;// mixin MusicalPerformer on Musician {&#10;//   // ...&#10;// }&#10;// class SingerDancer extends Musician with MusicalPerformer {&#10;//   // ...&#10;// }" description="Use keyword &quot;on&quot; to restrict the types that can use a mixin" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_mixin_drawbacks" value="// Name collisions&#10;// No constructors&#10;&#10;// mixin Mixin1 {&#10;//   int foo = 1;&#10;// }&#10;// mixin Mixin2 {&#10;//   int foo = 2;&#10;// }&#10;//&#10;// class Foo with Mixin1, Mixin2 {&#10;//   void printFoo() {&#10;//     print(foo);&#10;//   }&#10;// }&#10;//&#10;// void main() {&#10;//   final foo = Foo();&#10;//   foo.printFoo(); // prints 2&#10;// }&#10;&#10;" description="Issues with mixins" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_extension" value="extension on String {&#10;  int? toIntOrNull() =&gt; int.tryParse(this);&#10;}&#10;&#10;void main() {&#10;  final intOrNull = '123'.toIntOrNull();&#10;  print('intOrNull: $intOrNull');&#10;}&#10;" description="Extension (like JS)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_extension" value="extension on $TYPE$ {&#10;  $END$&#10;}&#10;&#10;" description="Extension cand define methods, accessors, operators" toReformat="true" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_extension_with_generics" value="extension IterableX on Iterable&lt;int&gt; {&#10;  int sum() =&gt; reduce((value, element) =&gt; value + element);&#10;}&#10;&#10;void main() {&#10;  final sum = [1, 2, 3].sum();&#10;  print('sum: $sum');&#10;}&#10;&#10;extension IterableY&lt;T extends num&gt; on Iterable&lt;T&gt; {&#10;  T sum() =&gt; reduce((value, element) =&gt; (value + element) as T);&#10;}&#10;&#10;void main() {&#10;  final sum = [1, 2, 3].sum();&#10;  final sumD = [1.4, 2.4, 3.8].sum();&#10;  print('sum: $sum');&#10;  print('sumD: $sumD');&#10;}&#10;" description="Extension (like JS) with generics" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_import_dartx" value="import 'package:dartx/dartx.dart';" description="import dartx" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_assert" value="class PositiveInt {&#10;  PositiveInt({required this.value})&#10;      : assert(value &gt;= 0, 'Value cannot be negative');&#10;&#10;  final int value;&#10;}" description="assert in constructor" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_casting_type_promotion" value="// $VALUE$ is $TYPE$ the opposite of &quot;is&quot;: is!  &#10;$VALUE$ as $TYPE$&#10;" description="Type promotion a.k.a. casting: &quot;is&quot; and &quot;as&quot;" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_asseert" value="assert($END$, $OPTIONAL_MSG$);" description="Dart assertion with optional message" toReformat="true" toShortenFQNames="true">
+    <variable name="OPTIONAL_MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_async_future" value="// Warning: can get messy! &#10;&#10;Future&lt;String&gt; fetchUserOrder() =&gt; Future.delayed(&#10;      Duration(seconds: 2),&#10;//      () =&gt; 'Cappuccino',&#10;      () =&gt; throw Exception('Out of milk'),&#10;    );&#10;Future&lt;String&gt; fetchUserOrder2() =&gt; Future.value('Espresso');&#10;Future&lt;String&gt; fetchUserOrder3() =&gt; Future.error(Exception('Out of milk'));   &#10;&#10;// Do this:&#10;Future&lt;void&gt; main() async {&#10;  print('Program started');&#10;  try {&#10;    var order = await fetchUserOrder();&#10;    print('order: $order');&#10;&#10;    var order2 = await fetchUserOrder2();&#10;    print('order2: $order2');&#10;&#10;    var order3 = await fetchUserOrder3();&#10;    print('order3: $order3');&#10;  } catch (e) {&#10;    print(e);&#10;  } finally {&#10;    print('Finally done!');&#10;  }&#10;}&#10;&#10;    &#10;// Avoid this:&#10;void main() {&#10;  print('Program started');&#10;  fetchUserOrder()&#10;      .then((order) =&gt; print('Order is ready'))&#10;      .catchError((error) =&gt; print('error: $error'))&#10;      .whenComplete(() =&gt; print('Done!'));&#10;}&#10;&#10;" description="Future with then/catchError/whenComplete" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funRArrow" value="$TYPE$ $NAME$() =&gt; $END$;" description="Fat arrow function with a return statement" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funParArrow" value="void $NAME$($PARAM$) =&gt; $END$;" description="Fat arrow function with a parameter" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funPrivateReturnArrow" value="$TYPE$ _$NAME$() =&gt; $END$;" description="Private arrow function with a return statement" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="for" value="for(var i = 0; i &lt; $NUM$; i++) {&#10;    $END$;&#10;}" description="for loop" toReformat="false" toShortenFQNames="true">
+    <variable name="NUM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_future_await" value="// Use await to &quot;wait&quot; for a Future to complete.&#10;Future&lt;void&gt; countdown(int n) async {&#10;  for (var i = n; i &gt;= 0; i--) {&#10;    await Future.delayed(Duration(seconds: 1), () =&gt; print(i));&#10;  }&#10;}&#10;&#10;Future&lt;void&gt; main() async {&#10;  await countdown(5);&#10;  print('Done');&#10;}&#10;" description="Future and await" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_future_wait" value="await Future.wait([&#10;  $FUTURE_1$,&#10;  $FUTURE_2$,&#10;]);" description="Wait for several futures" toReformat="false" toShortenFQNames="true">
+    <variable name="FUTURE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUTURE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_future_delay" value="// Future.delayed( Duration(seconds: 5), () =&gt; 'Cappuccino', );&#10;Future.delayed( Duration(seconds: $TIME$), () =&gt; $VALUE$, )" description="Delay a future" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TIME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_future_value" value="// Example: Future&lt;String&gt; fetchUserOrder2() =&gt; Future.value('Espresso');&#10;Future.value($VALUE$)" description="Return a value from a future" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_future_error" value="// Example: Future.error(Exception('Out of milk'))&#10;Future.error($EXCEPTION$)" description="Future error" toReformat="false" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_await_with_for_loop" value="Future&lt;int&gt; sumStream(Stream&lt;int&gt; stream) async {&#10;  var sum = 0;&#10;  await for (var value in stream) {&#10;    sum += value;&#10;  }&#10;  return sum;&#10;}&#10;&#10;Future&lt;void&gt; main() async {&#10;  final stream = Stream&lt;int&gt;.fromIterable([1, 2, 3, 4]);&#10;  final sum = await sumStream(stream);&#10;  print('sum: $sum');&#10;}&#10;" description="await + for loop" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="funParReturnArrow" value="$TYPE$ $NAME$($PARAM$) =&gt; $END$;" description="Fat arrow function with a parameter and a return statement" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_stream_vs_iterable" value="// Streams are asynchronous &#10;// Iterable are synchronous&#10;&#10;Future&lt;int&gt; sumStream(Stream&lt;int&gt; stream) async {&#10;  var sum = 0;&#10;  await for (var value in stream) {&#10;    sum += value;&#10;  }&#10;  return sum;&#10;}&#10;&#10;Future&lt;int&gt; sumStream2(Stream&lt;int&gt; stream) =&gt;&#10;    stream.reduce((previous, element) =&gt; previous + element);&#10;&#10;Stream&lt;int&gt; countStream(int n) async* {&#10;  for (var i = 1; i &lt;= n; i++) {&#10;    await Future.delayed(Duration(seconds: 1));&#10;    print(i);&#10;    yield i;&#10;  }&#10;}&#10;&#10;Iterable&lt;int&gt; count(int n) sync* {&#10;  for (var i = 1; i &lt;= n; i++) {&#10;    yield i;&#10;  }&#10;}&#10;&#10;Future&lt;void&gt; main() async {&#10;  // final stream = Stream&lt;int&gt;.fromIterable([1, 2, 3, 4]);&#10;  // final sum = await sumStream(stream);&#10;  // print('sum: $sum');&#10;&#10;  final sumR = await sumStream2(countStream(4));&#10;  print('sumR: $sumR');&#10;}&#10;" description="Difference between stream and iterable" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="funParReturn" value="$TYPE$ $NAME$($PARAM$) { &#10;    return $END$ &#10;};" description="Function with a parameter and a return statement" toReformat="false" toShortenFQNames="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_stream_generator" value="Stream&lt;String&gt; fizzBuzzStreamer(int n) async* {&#10;  for (var i = 1; i &lt;= n; i++) {&#10;    await Future.delayed(Duration(milliseconds: 500));&#10;    if (i % 3 == 0 &amp;&amp; i % 5 == 0) {&#10;      yield 'fizz buzz';&#10;    } else if (i % 3 == 0) {&#10;      yield 'fizz';&#10;    } else if (i % 5 == 0) {&#10;      yield 'buzz';&#10;    } else {&#10;      yield '$i';&#10;    }&#10;  }&#10;}" description="Stream generator example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_iterable_sync" value="Iterable&lt;int&gt; count(int n) sync* {&#10;  for (var i = 1; i &lt;= n; i++) {&#10;    yield i;&#10;  }&#10;}" description="Iterable example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_stream_constructors" value="  Stream.fromIterable([1, 2, 3]);&#10;  Stream.value(10);&#10;  Stream.error(Exception('something went wrong'));&#10;  Stream.empty();&#10;  Stream.fromFuture(Future.delayed(Duration(seconds: 1), () =&gt; 42));&#10;  Stream.periodic(Duration(seconds: 1), (index) =&gt; index).forEach((element) {&#10;    print(element);&#10;  });" description="Main Stream constructors" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_stream_process_methods" value="  // --- Methods that process a stream ---https://dart.dev/tutorials/language/streams#process-stream-methods&#10;  // Future&lt;T&gt; get first;&#10;  // Future&lt;bool&gt; get isEmpty;&#10;  // Future&lt;T&gt; get last;&#10;  // Future&lt;int&gt; get length;&#10;  // Future&lt;T&gt; get single;&#10;  // Future&lt;bool&gt; any(bool Function(T element)test);&#10;  // Future&lt;bool&gt; contains(Object? needle);&#10;  // Future&lt;E&gt; drain&lt;E&gt;([E? futureValue]);&#10;  // Future&lt;T&gt; elementAt(int index);&#10;  // Future&lt;bool&gt; every(bool Function(T element) test);&#10;  // Future&lt;T&gt; firstWhere(bool Function(T element) test, {T Function()? orElse});&#10;  // Future&lt;S&gt; fold&lt;S&gt;(S initialValue, S Function(S previous, T element) combine);&#10;  // Future forEach(void Function(T element) action);&#10;  // Future&lt;String&gt; join([String separator = '']);&#10;  // Future&lt;T&gt; lastWhere(bool Function(T element) test, {T Function()? orElse});&#10;  // Future pipe(StreamConsumer&lt;T&gt; streamConsumer);&#10;  // Future&lt;T&gt; reduce(T Function(T previous, T element) combine);&#10;  // Future&lt;T&gt; singleWhere(bool Function(T element) test, {T Function()? orElse});&#10;  // Future&lt;List&lt;T&gt;&gt; toList();&#10;  // Future&lt;Set&lt;T&gt;&gt; toSet();&#10;" description="Methods that process a stream" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_stream_modify_methods" value="  // --- Methods that modify a stream --- https://dart.dev/tutorials/language/streams#modify-stream-methods&#10;  // Stream&lt;R&gt; cast&lt;R&gt;();&#10;  // Stream&lt;S&gt; expand&lt;S&gt;(Iterable&lt;S&gt; Function(T element) convert);&#10;  // Stream&lt;S&gt; map&lt;S&gt;(S Function(T event) convert);&#10;  // Stream&lt;T&gt; skip(int count);&#10;  // Stream&lt;T&gt; skipWhile(bool Function(T element) test);&#10;  // Stream&lt;T&gt; take(int count);&#10;  // Stream&lt;T&gt; takeWhile(bool Function(T element) test);&#10;  // Stream&lt;T&gt; where(bool Function(T event) test);" description="Methods that modify a stream" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_reduce_vs_fold" value="  // reduce returns the same type&#10;  // fold returns the accumulated value and the next raw value&#10;  final list = ['a', 'bb', 'ccc'];&#10;  print('----- reduce -----');&#10;  final reduce = list.reduce((value, element) {&#10;    print('value: $value ,  element: $element');&#10;&#10;    return value + element;&#10;  });&#10;  print('----- reduce result: $reduce\n');&#10;&#10;  print('----- fold -----');&#10;  final fold = list.fold(0, (int value, String element) {&#10;    print('accumulated value: $value , raw element: $element');&#10;    return value + element.length;&#10;  });&#10;  print('-----fold result: $fold');" description="Difference between reduce and fold: reduce returns the same type, fold returns the accumulated value and the next value" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_map_spread" value="// Cool trick: person['age'] = ((person['age'] ?? 0) as int) + 1&#10; var ratings = [5.0, 3.5, 4.5];&#10;   final restaurant = {&#10;     'name': 'Pizza Mario',&#10;     'cuisine': 'Italian',&#10;     if(ratings.isNotEmpty)...{&#10;       'ratings': ratings,&#10;       'isPopular': true,&#10;     }&#10;   };" description="Map spread" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_runtime_type" value="print('The type of a is ${a.runtimeType}');" description="Find the runtime type of an object" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_generics_dart_vs_java" value=" // Unlike the erasure that's used in Java, Dart generic types are reified, which means that they carry their type information around at runtime.&#10;  var names = &lt;String&gt;[];&#10;  names.addAll(['john', 'alex']);&#10;  print(names is List&lt;String&gt;); // Java can only test for List without the generic type." description="Big difference between Java and Dart" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_generators" value="Iterable&lt;int&gt; naturalsTo(int n) sync* {&#10;  int k = 0;&#10;  while(k &lt; n) {&#10;    yield k++;&#10;  }&#10;}&#10;&#10;Stream&lt;int&gt; asyncNaturalsTo(int n) async* {&#10;  int k = 0;&#10;  while (k &lt; n) {&#10;    yield k++;&#10;  }&#10;}&#10;void main() {&#10;  // naturalsTo(10).forEach(print);&#10;  asyncNaturalsTo(10).forEach(print);&#10;&#10;}" description="Generators: sync* -&gt; Iterable, async* -&gt; Stream" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_const_final_static" value="// static: class instance (member is available on the class itself)&#10;  // final (read-only, modifies variables): requires an initializer. Once assigned a value, a final variable's value cannot be changed.&#10;  // const (compile-time constant, modifies values), interesting properties and restrictions:&#10;  //       1) Uses data that's available at compile time. 1 + 2 but not DateTim.now()&#10;  //       2) Deeply and transitively immutable. const collection will not change&#10;  //       3) They are canonicalized (single const value). For any given const value, a single const object will be created and reused, no matter how many times the const expressions is evaluated.&#10;  // EXAMPLES&#10;  final cities = &lt;String&gt;['London', 'Paris', 'Casa'];&#10;&#10;  // ----- final ------&#10;  // Compile time error for reassignment&#10;  final finalCities = &lt;String&gt;['London', 'Paris', 'Casa'];&#10;  // finalCities = &lt;String&gt;['Paris'];&#10;  // ==&gt; Modification is allowed, can reassign an element:&#10;  finalCities[0] = 'Casablanca';&#10;  print('finalCities: $finalCities');&#10;&#10;  // ----- const ------&#10;  // Reassignment: compile time error:&#10;  const constCities = &lt;String&gt;['London', 'Paris', 'Casa'];&#10;  // constCities = &lt;String&gt;['London'];&#10;&#10;  // Modification: runtime error: Unsupported operation: Cannot modify an unmodifiable list&#10;  // constCities[1] = 'Casa';&#10;&#10;  // With null-safety, flow analysis allows a final value to be declared without the need to&#10;  // initialize it right away:&#10;  // Using null safety:&#10;  int tracingFibonacci(int n) {&#10;    final int result;&#10;    if (n &lt; 2) {&#10;      result = n;&#10;    } else {&#10;      result = tracingFibonacci(n - 2) + tracingFibonacci(n - 1);&#10;    }&#10;&#10;    print(result);&#10;    return result;&#10;  }" description="static vs final vs const" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_dynamic" value="// Use it for jason data: just trust me, I know what I am doing&#10;dynamic json = {&#10;    &quot;employee&quot;: {&#10;        &quot;name&quot;: &quot;Adam Smith&quot;,&#10;        &quot;salary&quot;: &quot;56000&quot;,&#10;        &quot;married&quot;: &quot;true&quot;,&#10;    }&#10;}" description="When to use dynamic: Just trust me, I know what I am doing" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_standard_input" value="stdin.readLineSync()" description="Command line input" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_dynamic_vs_object" value="dynamic a; // Just trust me, I know what I am doing&#10;Object? b;&#10;&#10;main() {&#10;  a = &quot;&quot;;&#10;  b = &quot;&quot;;&#10;  printLengths();&#10;}&#10;&#10;printLengths() {&#10;  // no warning&#10;  print(a.length);&#10;&#10;  // warning:&#10;  // The getter 'length' is not defined for the class 'Object'&#10;  print(b?.length);&#10;}" description="Difference between dyani" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_collection_if_for" value="// if without curly brances!!!!!&#10;&#10;const addBlue = true;&#10;  const addRed = true;&#10;  final colors = ['black', 'white', if (addBlue) 'blue', if (addRed) 'red'];&#10;  print('colors: $colors');&#10;&#10;  final moreColors = [&#10;    'brown',&#10;    for (var color in colors) color,&#10;  ];&#10;&#10;  print('moreColors: $moreColors');" description="Hints on Collection if and Collection for (no curly braces)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_spread_operator" value="  final colors = ['black', 'white', 'brown'];&#10;  final allColors = [...colors, 'yellow', 'purple'];&#10;&#10;  print('allColors: $allColors');" description="Spread operator (add it at the beginning OR the end)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_uri_parse" value="Uri.parse($URL$)" description="Parse uri" toReformat="true" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
+  <template name="d_dart_file_directory_location" value="import 'package:path/path.dart' show dirname;&#10;dirname(Platform.script.path)" description="Location of the directory of the dart file" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_never_type" value="// https://dart.dev/null-safety/understanding-null-safety (Never for unreachable code)&#10;// You can also program this reachability analysis. The new bottom type Never has no values. &#10;// (What kind of value is simultaneously a String, bool, and int?) So what does it mean &#10;// for an expression to have type Never? It means that expression can never successfully finish evaluating. It must throw an exception, abort, or otherwise ensure that the surrounding code expecting the result of the expression never runs.&#10;Never wrongType(String type, Object value) {&#10;  throw ArgumentError('Expected $type, but was ${value.runtimeType}.');&#10;}&#10;&#10;// Using null safety:&#10;class Point {&#10;  final double x, y;&#10;&#10;  bool operator ==(Object other) {&#10;    if (other is! Point) wrongType('Point', other);&#10;    return x == other.x &amp;&amp; y == other.y;&#10;  }&#10;&#10;  // Constructor and hashCode...&#10;}&#10;&#10;// =========================================================&#10;// =========================================================&#10;&#10;// https://medium.com/flutter-community/dart-type-you-have-never-used-b5c63847b4e0&#10;//// User data class&#10;class User {&#10;  final String email;&#10;  final String password;&#10;&#10;  const User({&#10;    required this.email,&#10;    required this.password,&#10;  });&#10;&#10;  @override&#10;  String toString() =&gt; 'User {email: $email, password: $password}';&#10;}&#10;&#10;// Helper function for required field validation&#10;Never isRequired(String property) {&#10;  throw ArgumentError('$property is required.');&#10;}&#10;&#10;void main() {&#10;  String? email;&#10;  String? password;&#10;  // ...&#10;  // Some code to get email and password&#10;  // ...&#10;  if (email == null || email.isEmpty) isRequired('email');&#10;  if (password == null || password.isEmpty) isRequired('password');&#10;  final user = User(email: email, password: password);&#10;  // ...&#10;  // Do something with the user data&#10;  // ...&#10;}&#10;" description="Never type for unreachable code" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_collection_fold_vs_reduce" value="  // reduce can only be used on non-empty collections with functions that returns&#10;  // the the same type as the types contained in the collection.&#10;  const nums = [1, 2, 3, 4];&#10;  var sum = nums.reduce((value, element) =&gt; value + element);&#10;  print('sum: $sum');&#10;&#10;  // fold can be used in all cases&#10;  const words = ['Hello', 'How are you?', 'Wow'];&#10;  int wordsLength =&#10;      words.fold(0, (previousValue, element) =&gt; previousValue + element.length);&#10;  print('wordsLength: $wordsLength');" description="Difference between fold and reduce" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_collection_methods" value="const intList = [1, 2, 3, 4];&#10;  const mixedTypeList = ['Hello', 1, 'Not', 3.0, true, 10];&#10;&#10;  // TODO Revisit&#10;  intList.forEach(print);&#10;&#10;&#10;  var doubled = intList.map((e) =&gt; e * 2);&#10;  print('doubled: $doubled');&#10;&#10;  List&lt;int&gt; even = intList.where((element) =&gt; element.isEven).toList();&#10;  print('even: $even');&#10;&#10;  int firstEven = intList.firstWhere((element) =&gt; element.isEven);&#10;  print('firstEven: $firstEven');&#10;&#10;  final List&lt;int&gt; shuffled = [...intList];&#10;  shuffled.shuffle();&#10;  print('shuffled: $shuffled');&#10;&#10;  print('intList.asMap(): ${intList.asMap()}');&#10;  print('mixedTypeList.whereType&lt;int&gt;(): ${mixedTypeList.whereType&lt;int&gt;()}');&#10;&#10;  var rangeList = [...intList];&#10;  rangeList.replaceRange(0, intList.length, [10, 20, 30, 40]);&#10;  print('intList.replaceRange with 10, 20, 30, 40: $rangeList');&#10;&#10;  var singleWhereElementEquals4 =&#10;      intList.singleWhere((element) =&gt; element == 4);&#10;  print('singleWhereElementEquals4: $singleWhereElementEquals4');&#10;&#10;  print(&#10;      'fold (sum): ${intList.fold(0, (int previousValue, newValue) =&gt; previousValue + newValue)}');&#10;  print(&#10;      'reduce (sum) : ${intList.reduce((value, element) =&gt; value + element)}');&#10;&#10;  // reduce can only be used on non-empty collections with functions that returns&#10;  // the the same type as the types contained in the collection.&#10;  const nums = [1, 2, 3, 4];&#10;  var sum = nums.reduce((value, element) =&gt; value + element);&#10;  print('sum: $sum');&#10;&#10;  // fold can be used in all cases&#10;  const words = ['Hello', 'How are you?', 'Wow'];&#10;  int wordsLength =&#10;      words.fold(0, (previousValue, element) =&gt; previousValue + element.length);&#10;  print('wordsLength: $wordsLength');&#10;&#10;  var followedBy10and20 = intList.followedBy([10, 20]);&#10;  print('followedBy10and200: $followedBy10and20');&#10;&#10;  var sportsList = ['cricket', 'tennis', 'football'];&#10;  // first, last, any, every are self-explanatory&#10;&#10;  print('sportsList.take(2): ${sportsList.take(2)}');&#10;  // The opposite of take is skip&#10;  print('sportsList.ski: ${sportsList.skip(2)}');" description="Collection methods" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_const_constructor" value="// If all of the class fields/variables are final then&#10;&#10; class Complex {&#10;  const Complex({required this.re, required this.im});&#10;  final double re;&#10;  final double im;&#10;}&#10;void main() {&#10;  const complex = Complex(re: 1, im: 2);&#10;  const list = [&#10;    complex,&#10;    Complex(re: 2, im: 4),&#10;  ];&#10;  &#10;}" description="Const constructor (safe for const collections)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_named_constructor" value="class Complex {&#10;  const Complex({required this.re, required this.im});&#10;  const Complex.zero()&#10;      : re = 0,&#10;        im = 0;&#10;  const Complex.identity()&#10;      : re = 1,&#10;        im = 0;&#10;  const Complex.real({required this.re}) : im = 0;&#10;  const Complex.imaginary({required this.im}) : re = 0;&#10;&#10;  final double re;&#10;  final double im;&#10;}&#10;&#10;void main() {&#10;  const zero =  Complex.zero();&#10;  const identity =  Complex.identity();&#10;  const real =  Complex.real(re: 1);&#10;  const imaginary =  Complex.imaginary(im: 4);&#10;}" description="Named constructor" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_equality_covariant" value="// Use covariant to avoid casting&#10;&#10;class Point {&#10;  Point({required this.x, required this.y});&#10;&#10;  final int x;&#10;  final int y;&#10;&#10;  Point operator +(Point other) =&gt; Point(x: x + other.x, y: y + other.y);&#10;&#10;&#10;  @override&#10;  bool operator ==(covariant Point other) =&gt;&#10;      identical(this, other) ||&#10;          runtimeType == other.runtimeType &amp;&amp;&#10;          x == other.x &amp;&amp;&#10;          y == other.y;&#10;&#10;  @override&#10;  int get hashCode =&gt; x.hashCode ^ y.hashCode;&#10;&#10;  @override&#10;  String toString() {&#10;    return 'Point{x: $x, y: $y}';&#10;  }&#10;}" description="How to use covariant" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_equality" value="// Use covariant to avoid casting&#10;&#10;class Point {&#10;  Point({required this.x, required this.y});&#10;&#10;  final int x;&#10;  final int y;&#10;&#10;  Point operator +(Point other) =&gt; Point(x: x + other.x, y: y + other.y);&#10;&#10;&#10;  @override&#10;  bool operator ==(covariant Point other) =&gt;&#10;      identical(this, other) ||&#10;          runtimeType == other.runtimeType &amp;&amp;&#10;          x == other.x &amp;&amp;&#10;          y == other.y;&#10;&#10;  @override&#10;  int get hashCode =&gt; x.hashCode ^ y.hashCode;&#10;&#10;  @override&#10;  String toString() {&#10;    return 'Point{x: $x, y: $y}';&#10;  }&#10;}" description="Equality" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_ex_add_opearator_+" value="// Use covariant to avoid casting&#10;&#10;class Point {&#10;  Point({required this.x, required this.y});&#10;&#10;  final int x;&#10;  final int y;&#10;&#10;  Point operator +(Point other) =&gt; Point(x: x + other.x, y: y + other.y);&#10;&#10;&#10;  @override&#10;  bool operator ==(covariant Point other) =&gt;&#10;      identical(this, other) ||&#10;          runtimeType == other.runtimeType &amp;&amp;&#10;          x == other.x &amp;&amp;&#10;          y == other.y;&#10;&#10;  @override&#10;  int get hashCode =&gt; x.hashCode ^ y.hashCode;&#10;&#10;  @override&#10;  String toString() {&#10;    return 'Point{x: $x, y: $y}';&#10;  }&#10;}" description="How to add a + operator" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_package_equatable" value="// Description: A Dart package that helps to implement value based equality without needing to explicitly override == and hashCode.&#10;// NOTE: to be used only with immutable classes (all fields are final)&#10;// URL: https://pub.dev/packages/equatable&#10;// Install: flutter pub add equatable OR dart pub add equatable&#10;// App: none&#10;// Full example:&#10;import 'package:equatable/equatable.dart';&#10;&#10;class Point extends Equatable {&#10;  const Point(this.x, this.y);&#10;&#10;  final int x;&#10;  final int y;&#10;&#10;  @override&#10;  bool get stringify =&gt; true;&#10;&#10;  @override&#10;  List&lt;Object?&gt; get props =&gt; [x, y];&#10;}&#10;&#10;// How to use Equitable when a class extends another classs&#10;class SubPoint extends Point implements EquatableMixin {&#10;  const SubPoint(x, y) : super(x, y);&#10;&#10;  @override&#10;  List&lt;Object?&gt; get props =&gt; [x, y];&#10;}&#10;&#10;void main() {&#10;  print(Point(1, 1) == Point(1, 1));&#10;  print(Point(5, 4));&#10;&#10;  print(SubPoint(5, 5));&#10;}&#10;&#10;" description="Simplifies equality comparisons" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_null_safety_?_vs_!" value="// ?: value can be null&#10;String? notAsString = null;&#10;print(notAsString?.length); // prints null&#10;&#10;// !: I am certain that the value is not null&#10;String? notAsString = null;&#10;print(notAsString!.length); // Unhandled exception:&#10;                            // Null check operator used on a null value" description="Difference between ? (null-aware) and ! (bang) operators" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_cascade_null_aware_operator" value="Path? path;&#10;// will not do anything if path is null&#10;path&#10;  ?..moveTo(0, 0)&#10;  ..lineTo(0, 2)&#10;  ..lineTo(2, 2)&#10;  ..lineTo(2, 0)&#10;  ..lineTo(0, 0);&#10;" description="?.. Use cascade with a null-aware operator" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_abstract_fields" value="abstract class Cup {&#10;  abstract Beverage contents;&#10;}&#10;&#10;class Beverage {&#10;}&#10;&#10;class Glass extends Cup {&#10;  @override&#10;  Beverage contents = Beverage();&#10;}" description="Abstract field example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_null_safety_nullable_fields_workaround" value="// Using null safety, incorrectly:&#10;class Coffee {&#10;  String? _temperature;&#10;&#10;  void heat() {&#10;    _temperature = 'hot';&#10;  }&#10;&#10;  void chill() {&#10;    _temperature = 'iced';&#10;  }&#10;&#10;  void checkTemp() {&#10;    if (_temperature != null) {&#10;      print('Ready to serve ' + _temperature! + '!');&#10;    }&#10;  }&#10;&#10;  void checkTemp2() {&#10;    var temp = _temperature;&#10;    if (temp != null) {&#10;      print('Ready to serve ' + temp + '!');&#10;    }&#10;  }&#10;&#10;  String serve() =&gt; _temperature! + ' coffee';&#10;}&#10;" description="How to deal with nullable fields compile issues" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_null_safety_nullabllity_generics" value="class Box&lt;T&gt; {&#10;  final T object;&#10;&#10;  Box(this.object);&#10;}&#10;&#10;class Box2&lt;T&gt; {&#10;  T? object;&#10;&#10;  Box2.empty();&#10;  Box2.full(this.object);&#10;&#10;  T unbox() =&gt; object as T;&#10;}&#10;&#10;main() {&#10;  Box&lt;String&gt;('a string');&#10;  Box&lt;int?&gt;(null);&#10;&#10;  var box = Box2&lt;int?&gt;.full(null);&#10;  print('box.unbox(): ${box.unbox()}');&#10;}&#10;" description="Nullability and generics" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_create_dart_only_project" value="// How to create a dart-only project in Android Studio&#10;// Using the CLI tool: dart create -t console-full &quot;my-project-name&quot;&#10;// https://dart.dev/tools/dart-tool&#10;&#10;// Doing it manually:&#10;// 2) Create a dummy dart file&#10;// 1) Create the project folder (outside the IDE)&#10;// 3) Settings -&gt; Languages and Frameworks -&gt; Dart -&gt; Enable Dart support for the project (project name which is the name of the project folder)&#10;// 4) Enable Dart support for the following modules&#10;" description="How to create a Dart-only project" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_package_dartx" value="// Description: Superpowers for Dart. Collection of useful static extension methods.&#10;// URL: https://pub.dev/packages/dartx&#10;// Install: flutter pub add dartx OR dart pub add dartx&#10;// Read the README&#10;" description="DartX for Collections and Strings" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_tip_main_stream_constructors" value="  Stream.fromIterable([1, 2, 3]);&#10;  Stream.value(10);&#10;  Stream.error(Exception('something went wrong'));&#10;  const Stream.empty();&#10;  Stream.fromFuture(&#10;      Future.delayed(const Duration(seconds: 2), () =&gt; print('42')));&#10;  Stream.periodic(Duration(seconds: 1), (index) =&gt; index).forEach(print);" description="Main stream constructors" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_tip_async_vs_async*" value="// async returns a Future&#10;// async* returns a Stream&#10;Future&lt;int&gt; doSomeLongTask() async {&#10;  await Future.delayed(const Duration(seconds: 1));&#10;  return 42;&#10;}&#10;&#10;Stream&lt;int&gt; countForOneMinute() async* {&#10;  for (int i = 1; i &lt;= 60; i++) {&#10;    await Future.delayed(const Duration(seconds: 1));&#10;    yield i;&#10;  }&#10;}&#10;&#10;main() async {&#10;  int result = await doSomeLongTask();&#10;  print(result); // prints '42' after waiting 1 second&#10;  &#10;  await for (int i in countForOneMinute()) {&#10;    print(i); // prints 1 to 60, one integer per second&#10;  }&#10;}&#10;" description="Difference between async and async*" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="d_read_file" value="  // import 'dart:io';&#10;  // import 'package:path/path.dart' show dirname;&#10;  &#10;  var inputFile = &quot;$FILE_NAME$&quot;;&#10;  var path = '${dirname(Platform.script.path)}/$inputFile';&#10;&#10;  final List&lt;String&gt; lines = File(path).readAsLinesSync();" description="How to read a file in dart" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_async_scheduledMicroTask" value="  print('Begin');&#10;&#10;  scheduleMicrotask(() =&gt; print('MT A'));&#10;&#10;  Future.delayed(Duration(seconds: 5), () =&gt; print('Future 1'));&#10;  Future(() =&gt; print('Future 2'));&#10;&#10;  scheduleMicrotask(() =&gt; print('MT B'));&#10;  print('End');" description="scheduledMicrotask function example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_async_streamTransformer" value="  final tripler = StreamTransformer&lt;int, int&gt;.fromHandlers(&#10;      handleData: (int data, EventSink sink) {&#10;    sink.add(data * 3);&#10;  });&#10;&#10;  final controller = StreamController&lt;int&gt;();&#10;  controller.stream.transform(tripler).listen((data) {&#10;    print(data);&#10;  });&#10;&#10;  controller.sink.add(20);" description="StreamTransformer and StreamController example" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_package_rxdart" value="// IMPORTANT: The API docs is on the right hand side (https://pub.dev/documentation/rxdart/latest/)&#10;// Use https://rxmarbles.com/&#10;&#10;// Description: RxDart extends the capabilities of Dart Streams and StreamControllers.&#10;// URL: https://pub.dev/packages/rxdart&#10;// Install:&#10;//        dart pub add rxdart&#10;//        flutter pub add rxdart&#10;// App: login_bloc_grider &#10;//      src/mobile/flutter/learning/udemy/dart-and-flutter-the-complete-devs-guide-grider/login_bloc_grider&#10;" description="RxDart (API Reference is on the right hand side)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="d_dart_file_directory_location1" value="import 'package:path/path.dart' show dirname;&#10;dirname(Platform.script.path)" description="Location of the directory of the dart file" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_casting_using_cast()" value="// final List&lt;int&gt; ids = json.decode(response.body).cast&lt;int&gt;();&#10;$VALUE$.cast&lt;$TYPE$&gt;();" description="Casting using cast()" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+    </context>
+  </template>
+  <template name="d_ex_streamController_streamTransformer" value="final StreamTransformer&lt;int, int&gt; tripler =&#10;      StreamTransformer&lt;int, int&gt;.fromHandlers(handleData: (data, sink) {&#10;    sink.add(data * 3);&#10;  });&#10;&#10;  final controller = StreamController&lt;int&gt;();&#10;  controller.stream.transform(tripler).listen((event) {&#10;    print('tripled: $event');&#10;  });" description="How to use a StreamController and a StreamTransformer" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,141 @@
+<templateSet group="JavaScriptAziz">
+  <template name="dwsv" value="document.writeln(&quot;$STRING$: &quot; + $EXPR$);&#10;$END$ " description="document.writeln with STRING and a VARIABLE" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="dw" value="document.writeln($EXPR$);&#10;$END$" description="document.writeln" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="dwv" value="document.writeln(&quot;$EXPR$: &quot; + $EXPR$);&#10;$END$ " description="document.writeln with a VARIABLE" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="title" value="// --------- $STRING$ ---------------&#10; $END$" description="title comments to delimit important sections" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="action" value="// ACTION: $STRING$&#10; $END$" description="action comment that specifies what I need to do" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="docebyid" value="document.getElementById(&quot;$EXP$&quot;);&#10;$END$" description="document.getElementById" toReformat="true" toShortenFQNames="false">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="vardoce" value="var $NAME$ = document.getElementById(&quot;$NAME$&quot;);&#10;$END$" description="var x = document.getElementById(" toReformat="true" toShortenFQNames="false">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="protoarg" value="$OBJECT$.prototype.$NAME$ = function($ARG$) {&#10;    this.$EXP$;&#10;};&#10;$END$&#10;" description="prototype with argument" toReformat="true" toShortenFQNames="false">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="proto" value="$OBJECT$.prototype.$NAME$ = function() {&#10;    this.$EXP$;&#10;};&#10;$END$&#10;" description="prototype" toReformat="true" toShortenFQNames="false">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="obj" value=" var $OBJ$ = function($ARG$) {&#10;  this.$FIELD$ = $VALUE$;&#10;};  &#10;$END$&#10;&#10;" description="declare a var object" toReformat="true" toShortenFQNames="true">
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="objarg" value=" var $OBJ$ = function($ARG$) {&#10;  this.$FIELD$ = $VALUE$;&#10;};  &#10;$END$&#10;&#10;" description="declare a var object with an argument" toReformat="true" toShortenFQNames="true">
+    <variable name="OBJ" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="fun" value="function $NAME$() {&#10;  $END$&#10;}&#10;&#10;&#10;" description="function without argument" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funA" value="function $NAME$($ARG$) {&#10;  $END$&#10;}&#10;&#10;&#10;" description="function with argument(s)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funATThis" value="this.$VAR$ = function($ARG$) {&#10;  $END$&#10;} &#10;&#10;&#10;" description="Assign Function to THIS" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funAA" value="function($ARG$) {&#10;  $END$&#10;}&#10;&#10;&#10;" description="function PASSED as argument" toReformat="true" toShortenFQNames="true">
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funATV" value="var $VAR$ = function($ARG$) {&#10;  $END$&#10;};  &#10;&#10;&#10;" description="Assign Function to VAR" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bestPJS" value="// *************************************************************************&#10;//                            Best Practice: $END$&#10;// *************************************************************************" description="Best Practice for JS" toReformat="true" toShortenFQNames="true" />
+  <template name="ifelse" value="if ($VARS$) {&#10;   $INPUT$ &#10;}else {&#10;    $END$    &#10;}&#10;" shortcut="TAB" description="if else" toReformat="true" toShortenFQNames="false">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INPUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_CLASS" value="false" />
+    </context>
+  </template>
+  <template name="constructor" value="constructor() {&#10;    super();&#10;}&#10;" shortcut="TAB" description="default constructor implementation" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JS_CLASS" value="false" />
+    </context>
+  </template>
+  <template name="sout" value="console.log(`$VALUE$`);&#10;" description="print default" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="soutV" value="console.log(`$VALUE$: ${$VALUE$}`);&#10;" description="print a value" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sout2V" value="console.log(`$VALUE$: ${$VALUE$}, $VALUE2$: ${$VALUE2$}`);&#10;" description="print 2 values" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="hasOwnProperty" value="$OBJECT$.hasOwnProperty(&quot;$NAME$&quot;);&#10;" description="has a specific property" toReformat="false" toShortenFQNames="true">
+    <variable name="OBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="soutSV" value="console.log(`$VALUE1$: ${$VALUE2$}`);&#10;" description="print a string and a value" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sout3v" value="console.log(`$VALUE$: ${$VALUE$}, $VALUE2$: ${$VALUE2$}, $VALUE3$: ${$VALUE3$}`);&#10;" description="print 3 values" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,1567 @@
+<templateSet group="Android XML Aziz">
+  <template name="rB" value="&lt;RadioButton &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot;  &#10;    android:layout_width=&quot;wrap_content&quot;  &#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#10;$END$" description="RadioButton (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLviNamespace" value="&lt;LinearLayout &#10;    android:id=&quot;@+id/$ID$&quot;&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:orientation=&quot;vertical&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Vertical LinearLayout with ID and a defined namespace(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLiNamespace" value="&lt;LinearLayout &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="LinearLayout with  ID and a  namespace (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="TLi" value="&lt;TableLayout&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:gravity=&quot;$GRAVITY$&quot;&#10;    android:layout_gravity=&quot;$LAYOUT_GRAVITY$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/TableLayout&gt;" description="TableLayout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLh" value="&lt;LinearLayout &#10;    android:orientation=&quot;horizontal&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Horizontal LinearLayout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="aC" value="&lt;AnalogClock &#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;         &#10;$END$                  &#10;" description="AnalogClock (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLvi" value="&lt;LinearLayout &#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:orientation=&quot;vertical&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Vertical LinearLayout with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="IFac" value="&lt;intent-filter&gt;&#10;    &lt;action android:name = &quot;android.intent.action.$NAME$&quot;/&gt;&#10;&lt;/intent-filter&gt;" description="Intent Filter with Action (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="FLiNamespace" value="&lt;FrameLayout&#10;&#9;android:id=&quot;@+id/$ID$&quot;&#10;&#9;xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;&#9;android:layout_gravity=&quot;$GRAVITY$&quot;    &#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$         &#9;&#10;&lt;/FrameLayout&gt;&#9;&#10;&#9;&#10;" description="FrameLayout with ID and a  namespace (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLhiNamespace" value="&lt;LinearLayout &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; &#10;    android:orientation=&quot;horizontal&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Horizontal LinearLayout with ID and a  namespace (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tV2" value="&lt;TextView &#10;    android:id=&quot;@+id/$NAME1$&quot; &#10;    android:text=&quot;@string/$TEXT1$&quot; &#10;    android:layout_width=&quot;wrap_content&quot;  &#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#10;&lt;TextView &#10;    android:id=&quot;@+id/$NAME2$&quot; &#10;    android:text=&quot;@string/$TEXT2$&quot; &#10;    android:layout_width=&quot;wrap_content&quot;  &#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9;  &#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="2 TextViews (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="rBar" value="&lt;RatingBar &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:numStars=&quot;$STARS$&quot; &#10;    android:stepSize=&quot;$STEP_SIZE$&quot;  &#10;    android:focusable=&quot;true&quot;  &#10;    android:focusableInTouchMode=&quot;true&quot;  &#10;    android:soundEffectsEnabled=&quot;true&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;                 &#10;$END$                  &#10;" description="RatingBar (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STEP_SIZE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="menu3" value="&lt;menu&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID1$&quot;&#10;        android:title=&quot;$TITLE1$&quot; /&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID2$&quot;&#10;        android:title=&quot;$TITLE2$&quot; /&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID3$&quot;&#10;        android:title=&quot;$TITLE3$&quot; /&gt;&#10;&lt;/menu&gt;&#10;$END$    &#10;" description="Menu with 3  items (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="chro" value="&lt;Chronometer &#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:format=&quot;$FORMAT$&quot; &#10;    android:focusable=&quot;$FOCUSABLE$&quot; &#10;    android:focusableInTouchMode=&quot;$FOC_IN_TOUCH$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;&#10;$END$                  &#10;" description="Chronometer (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORMAT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FOCUSABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FOC_IN_TOUCH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sVi" value="&lt;ScrollView&#10;&#9;xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;&#9;android:id=&quot;@+id/$NAME$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#9;&#10;$END$&#10;&lt;/ScrollView&gt;" description="ScrollView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tV" value="&lt;TextView &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sB" value="&lt;SeekBar &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:max=&quot;$MAX$&quot; &#10;    android:thumb=&quot;@drawable/$THUMB$&quot;    &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot; /&gt;&#10;$END$                  &#10;" description="SeekBar (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="THUMB" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="iVi" value="&lt;ImageView &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:src=&quot;@drawable/$DRAWABLE$&quot; &#10;    android:layout_gravity=&quot;center&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot; &#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#10;$END$" description="ImageView  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DRAWABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="iS" value="&lt;ImageSwitcher &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:outAnimation=&quot;@anim/$OUT$&quot; &#10;    android:inAnimation=&quot;@anim/$IN$&quot; &#10;    android:layout_centerInParent=&quot;true&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$  &#10;&lt;/ImageSwitcher&gt;    " description="ImageSwitcher with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="IN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLv" value="&lt;LinearLayout &#10;    android:orientation=&quot;vertical&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Vertical LinearLayout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRi" value="&lt;TableRow&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot; &gt;&#10;$END$                  &#10;&lt;/TableRow&gt;" description="TableRow with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="pB" value="&lt;ProgressBar &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot; &#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9;  &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="ProgressBar (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="FLi" value="&lt;FrameLayout&#10;&#9;android:id=&quot;@+id/$ID$&quot;&#10;&#9;android:layout_gravity=&quot;$GRAVITY$&quot;    &#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$         &#9;&#10;&lt;/FrameLayout&gt;&#9;&#10;&#9;&#10;" description="FrameLayout with ID  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="pBs" value="&lt;ProgressBar &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    style=&quot;?android:attr/progressBarStyleHorizontal&quot; &#10;    android:max=&quot;$MAX$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot; &#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9;  &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="ProgressBar with Style (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="hSVi" value="&lt;HorizontalScrollView&#10;&#9;android:id=&quot;@+id/$NAME$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#9;&#10;$END$&#10;&lt;/HorizontalScrollView&gt;&#10;" description="HorizontalScrollView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="gVi" value="&lt;GridView&#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:numColumns=&quot;$NUM_COLS$&quot;&#10;    android:padding=&quot;$PADDING$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#10;$END$" description="GridView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NUM_COLS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PADDING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="bu" value="&lt;Button &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:text=&quot;@string/$TEXT$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Button (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="lVi" value="&lt;ListView  &#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;&#10;$END$   " description="ListView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="rG4" value="&lt;RadioGroup android:id=&quot;@+id/$NAME$&quot;&#10;&#9;&#9;&#9;android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9;android:layout_height=&quot;wrap_content&quot;&gt;&#10;    &lt;RadioButton android:id=&quot;@+id/$NAME1$&quot;&#10;             android:text=&quot;@string/$TEXT1$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#10;    &lt;RadioButton android:id=&quot;@+id/$NAME2$&quot;&#10;             android:text=&quot;@string/$TEXT2$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#10;    &lt;RadioButton android:id=&quot;@+id/$NAME3$&quot;&#10;             android:text=&quot;@string/$TEXT3$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#10;    &lt;RadioButton android:id=&quot;@+id/$NAME4$&quot;&#10;             android:text=&quot;@string/$TEXT4$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9;    &#10;&lt;/RadioGroup&gt;&#9;&#9;&#9; &#9;&#9;&#9; &#10;&#9;&#9;&#9; &#10;$END$" description="RadioGroup with  4 RadioButtons (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="eTi" value=" &lt;EditText &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:enabled=&quot;$ENABLED$&quot;&#10;    android:hint=&quot;@string/$HINT$&quot;&#10;    android:layout_width=&quot;$LAYOUT_WIDTH$&quot;&#10;    android:layout_height=&quot;$LAYOUT_HEIGHT$&quot;/&gt;&#9;&#10;$END$&#10;" description="EditText with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENABLED" expression="" defaultValue="true" alwaysStopAt="false" />
+    <variable name="HINT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLhi" value="&lt;LinearLayout &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:orientation=&quot;horizontal&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Horizontal LinearLayout with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="TLiNamespace" value="&lt;TableLayout&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:gravity=&quot;$GRAVITY$&quot;&#10;    android:layout_gravity=&quot;$LAYOUT_GRAVITY$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/TableLayout&gt;" description="TableLayout with Namespace(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="RLiNamespace" value="&lt;RelativeLayout&#10;&#9;android:id=&quot;@+id/$ID$&quot;&#10;&#9;xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot; &gt;&#10;$END$                  &#10;&lt;/RelativeLayout&gt;&#9;" description="RelativeLayout with ID and Namespace(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="dC" value="&lt;DigitalClock &#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;         &#10;$END$                  &#10;" description="DigitalClock (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sV" value="&lt;ScrollView&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#9;&#10;$END$&#10;&lt;/ScrollView&gt;" description="ScrollView (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="menu10" value="&lt;menu&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID1$&quot;&#10;        android:title=&quot;$TITLE1$&quot;&#10;        android:orderInCategory=&quot;$ORDER1$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID2$&quot;&#10;        android:title=&quot;$TITLE2$&quot;&#10;        android:orderInCategory=&quot;$ORDER2$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID3$&quot;&#10;        android:title=&quot;$TITLE3$&quot;&#10;        android:orderInCategory=&quot;$ORDER3$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID4$&quot;&#10;        android:title=&quot;$TITLE4$&quot;&#10;        android:orderInCategory=&quot;$ORDER4$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID5$&quot;&#10;        android:title=&quot;$TITLE5$&quot;&#10;        android:orderInCategory=&quot;$ORDER5$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID6$&quot;&#10;        android:title=&quot;$TITLE6$&quot; &#10;        android:orderInCategory=&quot;$ORDER6$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID7$&quot;&#10;        android:title=&quot;$TITLE7$&quot;&#10;        android:orderInCategory=&quot;$ORDER7$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID8$&quot;&#10;        android:title=&quot;$TITLE8$&quot;&#10;        android:orderInCategory=&quot;$ORDER8$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID9$&quot;&#10;        android:title=&quot;$TITLE9$&quot;&#10;        android:orderInCategory=&quot;$ORDER9$&quot;/&gt;   &#10;     &lt;item&#10;        android:id=&quot;@+id/$ID10$&quot;&#10;        android:title=&quot;$TITLE10$&quot;&#10;        android:orderInCategory=&quot;$ORDER10$&quot;/&gt;               &#10;&lt;/menu&gt;&#10;$END$    &#10;" description="Menu with 10  items (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER6" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID7" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE7" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER7" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID8" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE8" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER8" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER9" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID10" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE10" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER10" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="fragment" value="&lt;fragment        &#10;        android:id=&quot;@+id/$LIST$&quot;&#10;        android:name=&quot;$CLASS_NAME$&quot;&#10;        tools:layout=&quot;@layout/$LAYOUT$&quot;&#10;        android:layout_weight=&quot;$WEIGHT_LAYOUT$&quot;&#10;        android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;        android:layout_height=&quot;$HEIGHT_LAYOUT$&quot; /&gt;   &#10;$END$                  &#10;" description="Fragment (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="LIST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="eTextPref" value=" &lt;EditTextPreference&#10;        android:key=&quot;@string/pref_$KEY$&quot;&#10;        android:title=&quot;@string/pref_$TITLE$&quot;&#10;        android:summary=&quot;$SUMMARY$&quot;&#10;        android:defaultValue=&quot;@string/pref_$DEFAULT$&quot;&#10;        android:dialogTitle=&quot;$DIALOG$&quot; /&gt;  &#10;        &#10;$END$          " description="EditTextPreference  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUMMARY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DIALOG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="pC" value="&lt;PreferenceCategory&#10;    android:title=&quot;$TITLE$&quot;&gt;&#10;$END$         &#10;&lt;/PreferenceCategory&gt;   " description="PreferenceCategory  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="cBoxPref" value="&lt;CheckBoxPreference&#10;    android:key=&quot;$KEY$&quot;&#10;    android:title=&quot;$TITLE$&quot;&#10;    android:summary=&quot;$SUMMARY$&quot;&#10;    android:defaultValue=&quot;$DEFAULT$&quot; /&gt;&#10; $END$                    " description="CheckBoxPreference  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUMMARY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="listPref" value="&lt;ListPreference&#10;    android:key=&quot;@string/pref_$KEY$&quot;&#10;    android:title=&quot;@string/pref_$TITLE$&quot;&#10;    android:summary=&quot;$SUMMARY$&quot;&#10;&#9;android:entries=&quot;@array/$ENTRIES$&quot;&#10;&#9;android:entryValues=&quot;@array/$ENTRY_VALUES$&quot;&#10;&#9;android:dialogTitle=&quot;$DIALOG_TITTLE$&quot;/&gt;     &#10;$END$  &#9;             " description="ListPreference (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUMMARY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTRIES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENTRY_VALUES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DIALOG_TITTLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLvNamespace" value="&lt;LinearLayout &#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; &#10;    android:orientation=&quot;vertical&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Vertical LinearLayout with a namespace(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tR" value="&lt;TableRow&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot; &gt;&#10;$END$                  &#10;&lt;/TableRow&gt;" description="TableRow (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVi" value="&lt;TextView &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="autoCTV" value="&lt;AutoCompleteTextView&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#10;$END$" description="AutoCompleteTextView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVs" value="&lt;TextView &#10;    style=&quot;@style/$STYLE$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView with Style (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="STYLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="eT" value=" &lt;EditText &#10;    android:enabled=&quot;$ENABLED$&quot;&#10;    android:hint=&quot;@string/$HINT$&quot;&#10;    android:layout_width=&quot;$LAYOUT_WIDTH$&quot;&#10;    android:layout_height=&quot;$LAYOUT_HEIGHT$&quot;/&gt;&#10;$END$&#10;" description="EditText (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ENABLED" expression="" defaultValue="true" alwaysStopAt="true" />
+    <variable name="HINT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="eTIinputType" value=" &lt;EditText &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:inputType=&quot;$INPUT_TYPE$&quot;&#10;    android:hint=&quot;@string/$HINT$&quot;&#10;    android:layout_width=&quot;$LAYOUT_WIDTH$&quot;&#10;    android:layout_height=&quot;$LAYOUT_HEIGHT$&quot;/&gt;&#9;&#10;$END$&#10;" description="EditText with ID and InputType (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INPUT_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HINT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tS" value=" &lt;TextSwitcher &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:layout_width=&quot;$LAYOUT_WIDTH$&quot;&#10;    android:layout_height=&quot;$LAYOUT_HEIGHT$&quot;/&gt;&#9;&#10;$END$&#10;" description="TextSwitcher with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="wViNamespace" value="&lt;WebView&#10;&#9;android:id=&quot;@+id/$ID$&quot;&#10;&#9;xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;&#10;$END$         &#9;&#10;&#9;&#10;" description="WebView with ID and namespace (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="mVi" value="&lt;com.google.android.maps.MapView&#10;&#9;android:id=&quot;@+id/$NAME$&quot;&#9;&#9;&#10;&#9;android:clickable=&quot;$CLICKABLE$&quot;&#10;&#9;android:apiKey=&quot;$APIKEY$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;&#9;&#10;$END$&#10;" description="MapView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLICKABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="APIKEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="vVi" value="&lt;VideoView &#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="VideoView with ID (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="usesP" value="&lt;uses-permission android:name=&quot;android.permission.$TEXT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Uses permission (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="ufH" value="&lt;uses-feature android:name=&quot;android.hardware.$TEXT$&quot; /&gt;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Uses feature HARDWARE (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="ac" value="&lt;activity android:name=&quot;.$TEXT$&quot;/&gt;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Activity (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="RLNamespace" value="&lt;RelativeLayout&#10;&#9;xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot; &gt;&#10;$END$                  &#10;&lt;/RelativeLayout&gt;&#9;" description="RelativeLayout with  Namespace(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="FLg" value="&lt;FrameLayout&#10;&#9;android:layout_gravity=&quot;$GRAVITY$&quot;    &#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;$END$         &#9;&#10;&lt;/FrameLayout&gt;&#9;&#10;&#9;&#10;" description="FrameLayout  with gravity (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="FL" value="&lt;FrameLayout&#10;    $END$&#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;         &#9;&#10;&lt;/FrameLayout&gt;&#9;&#10;&#9;&#10;" description="FrameLayout  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVi+" value="&lt;TextView &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    $END$&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; " description="TextView with ID and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="rB4" value="&lt;RadioButton android:id=&quot;@+id/$NAME1$&quot;&#10;             android:text=&quot;@string/$TEXT1$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#10;    &lt;RadioButton android:id=&quot;@+id/$NAME2$&quot;&#10;             android:text=&quot;@string/$TEXT2$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#10;    &lt;RadioButton android:id=&quot;@+id/$NAME3$&quot;&#10;             android:text=&quot;@string/$TEXT3$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#10;    &lt;RadioButton android:id=&quot;@+id/$NAME4$&quot;&#10;             android:text=&quot;@string/$TEXT4$&quot; &#10;&#9;&#9;&#9; android:layout_width=&quot;wrap_content&quot; &#10;&#9;&#9;&#9; android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9;&#10;$END$" description="RadioButton 4 INSTANCES (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="bu+" value="&lt;Button &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:text=&quot;@string/$TEXT$&quot;&#10;    $END$&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;" description="Button with OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="iVi+" value="&lt;ImageView &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:src=&quot;@drawable/$DRAWABLE$&quot;&#10;    $END$&#10;    android:layout_width=&quot;$WIDTH$&quot; &#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#10;" description="ImageView with ID and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DRAWABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="ufHr" value="&lt;uses-feature android:name=&quot;android.hardware.$TEXT$&quot;&#10;              android:required=&quot;true&quot; /&gt;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Uses feature HARDWARE required (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="menu5" value="&lt;menu&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID1$&quot;&#10;        android:title=&quot;$TITLE1$&quot;&#10;        android:orderInCategory=&quot;$ORDER1$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID2$&quot;&#10;        android:title=&quot;$TITLE2$&quot;&#10;        android:orderInCategory=&quot;$ORDER2$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID3$&quot;&#10;        android:title=&quot;$TITLE3$&quot;&#10;        android:orderInCategory=&quot;$ORDER3$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID4$&quot;&#10;        android:title=&quot;$TITLE4$&quot;&#10;        android:orderInCategory=&quot;$ORDER4$&quot;/&gt;&#10;    &lt;item&#10;        android:id=&quot;@+id/$ID5$&quot;&#10;        android:title=&quot;$TITLE5$&quot;&#10;        android:orderInCategory=&quot;$ORDER5$&quot;/&gt;&#10;&lt;/menu&gt;&#10;$END$    &#10;" description="Menu with 5  items (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ORDER5" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="shape" value="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:shape=&quot;$SHAPE$&quot; &gt;&#10;    &lt;solid android:color=&quot;#$COLOR$&quot; /&gt;&#10;&lt;/shape&gt;    &#10;$END$" description="Shape (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="SHAPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="scale" value="&lt;scale&#10;&#9;&#9;android:duration=&quot;$DURATION$&quot;&#10;&#9;&#9;android:pivotX=&quot;$PIVOT_X$%&quot;&#10;&#9;&#9;android:pivotY=&quot;$PIVOT_Y$%&quot;&#10;&#9;&#9;android:fromXScale=&quot;$FROM_X_SCALE$&quot;&#10;&#9;&#9;android:fromYScale=&quot;$FROM_Y_SCALE$&quot;&#10;&#9;&#9;android:toXScale=&quot;$TO_X_SCALE$&quot;&#10;&#9;&#9;android:toYScale=&quot;$TO_Y_SCALE$&quot; /&gt;&#10;    $END$ &#9;&#9;" description="scale (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="DURATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PIVOT_X" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PIVOT_Y" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FROM_X_SCALE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FROM_Y_SCALE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TO_X_SCALE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TO_Y_SCALE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="alpha" value="&lt;alpha&#10;&#9;&#9;android:duration=&quot;$DURATION$&quot;&#10;&#9;&#9;android:fromAlpha=&quot;$FROM_ALPHA$&quot;&#10;&#9;&#9;android:toAlpha=&quot;$TO_ALPHA$&quot;&#10;&#9;&#9;android:startOffset=&quot;$START_OFFSET$&quot;/&gt;&#9;&#9;&#10; $END$ &#9;&#9;" description="alpha (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="DURATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FROM_ALPHA" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TO_ALPHA" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="START_OFFSET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="rotate" value="&lt;rotate&#10;&#9;&#9;android:duration=&quot;$DURATION$&quot;&#10;&#9;&#9;android:fromDegrees=&quot;$FROM_DEGREES$&quot;&#10;&#9;&#9;android:toDegrees=&quot;$TO_DEGREES$%&quot;&#10;&#9;&#9;android:pivotX=&quot;$PIVOT_X$%&quot;&#10;&#9;&#9;android:pivotY=&quot;$PIVOT_Y$&quot;/&gt;&#9;&#10;    $END$ &#9;&#9;" description="rotate (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="DURATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FROM_DEGREES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TO_DEGREES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PIVOT_X" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PIVOT_Y" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="translate" value="&lt;rotate&#10;&#9;&#9;android:duration=&quot;$DURATION$&quot;&#10;&#9;&#9;android:toYDelta=&quot;$TO_Y_DELTA$&quot;&#10;&#9;&#9;android:fillAfter=&quot;$FILL_AFTER$%&quot;&#10;&#9;&#9;android:startOffset=&quot;$START_OFFSET$%&quot;/&gt;&#9;&#9;&#9;&#10;$END$ &#9;&#9;" description="translate (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="DURATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TO_Y_DELTA" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FILL_AFTER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="START_OFFSET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="set" value="&lt;set&#10;&#9;xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;&#9;android:shareInterpolator=&quot;$SHARE_INTERPOLATOR$&quot;&gt;&#10;&#9;&#10;    $END$&#10;&#9;&#10;&lt;/set&gt;&#9;" description="set (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="SHARE_INTERPOLATOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="oA" value="&lt;objectAnimator&#10;        android:duration=&quot;$DURATION$&quot;&#10;        android:propertyName=&quot;$PROPERTY_NAME$&quot;&#10;        android:repeatCount=&quot;$REPEAT_COUNT$&quot;&#10;        android:repeatMode=&quot;$REPEAT_MODE$&quot;&#10;        android:valueFrom=&quot;$VALUE_FROM$&quot;&#10;        android:valueTo=&quot;$VALUE_TO$&quot;&#10;        android:valueType=&quot;$VALUE_TYPE$&quot; /&gt;    &#9;&#10;$END$&#10;" description="objectAnimator (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="DURATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PROPERTY_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REPEAT_COUNT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REPEAT_MODE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE_FROM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE_TO" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="appwidget" value="&lt;appwidget-provider&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:initialLayout=&quot;@layout/$INITIAL_LAYOUT$&quot;&#10;    android:minHeight=&quot;$MINIMUM_HEIGHT$&quot;    &#10;     android:minWidth=&quot;$MINIMUM_WIDTH$&quot;&#10;    android:previewImage=&quot;$PREVIEW_IMAGE$&quot;&#10;    android:updatePeriodMillis=&quot;$UPDATE_PERIOD_MILLIS$&quot;&gt;&#10;&lt;/appwidget-provider&gt;&#10;$END$     &#10;&#10;" description="appwidget-provider with namespace(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="INITIAL_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MINIMUM_HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MINIMUM_WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PREVIEW_IMAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="UPDATE_PERIOD_MILLIS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="receiverIconDrawIFMetaData" value=" &lt;receiver&#10;            android:name=&quot;$NAME$&quot;&#10;            android:icon=&quot;@drawable/$ICON$&quot;&#10;            android:label=&quot;@string/$LABEL$&quot; &gt;&#10;            &lt;intent-filter&gt;&#10;                &lt;action android:name=&quot;android.appwidget.action.$ACTION$&quot; /&gt;&#10;            &lt;/intent-filter&gt;&#10;            &lt;meta-data&#10;                android:name=&quot;android.appwidget.$META_DATA_NAME$&quot;&#10;                android:resource=&quot;@xml/$XML_RESOURCE$&quot; /&gt;&#10;&lt;/receiver&gt;&#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Receiver with Drawable, Icon, Label, Intent Filter and Meta Data(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ICON" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="META_DATA_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="XML_RESOURCE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="service" value="&lt;service android:name=&quot;$NAME$&quot; /&gt;$END$" description="service (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="wallpaper" value="&lt;wallpaper xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;&#9;android:thumbnail=&quot;@drawable/$THUMBNAIL$&quot; &#10;&#9;android:description=&quot;@string/$DESC$&quot; /&gt;&#10;$END$&#10;" description="wallpaper (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="THUMBNAIL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="acIF" value="&lt;activity android:name=&quot;.$NAME$&quot; &gt;&#10;    &lt;intent-filter&gt;&#10;        &lt;action android:name=&quot;android.intent.action.$ACTION$&quot; /&gt;&#10;    &lt;/intent-filter&gt;&#10;&lt;/activity&gt;&#9; &#9;&#9;&#9; &#10;$END$" description="Activity with intent-filter (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="meta" value="&lt;meta-data&#10;      android:name=&quot;$NAME$&quot;&#10;      android:value=&quot;$VALUE$&quot; /&gt;&#9;&#9; &#10;$END$&#10;" description="meta-data (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="prov" value="&lt;provider&#10;            android:name=&quot;$NAME$&quot;&#10;            android:authorities=&quot;$AUTHORITIES$&quot;&#10;            android:multiprocess=&quot;$MULTI_PROCESS$&quot;&gt;&#10;&lt;/provider&gt;                  &#9; &#10;$END$&#10;" description="provider (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="AUTHORITIES" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MULTI_PROCESS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="defaultactivity" value="&lt;intent-filter&gt;&#10;    &lt;action android:name=&quot;android.intent.action.MAIN&quot;/&gt;&#10;    &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot;/&gt;&#10;&lt;/intent-filter&gt;&#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Intent Filter for default Activity (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tools" value="xmlns:tools=&quot;http://schemas.android.com/tools&quot;                &#10;" description="tools Namspace (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="usesSdk" value="&lt;uses-sdk&#10;        android:minSdkVersion=&quot;$MIN$&quot;&#10;        android:targetSdkVersion=&quot;$TARGET$&quot; /&gt;&#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="uses-sdk (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="MIN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TARGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="itemLayout" value="&lt;item type=&quot;layout&quot; name=&quot;$NAME$&quot;&gt;@layout/$RESOURCE_NAME$&lt;/item&gt;&#10;$END$    &#10;" description="item to specify layout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESOURCE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="vP" value="&lt;android.support.v4.view.ViewPager&#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    tools:context=&quot;.$ACTIVITY$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;&gt;              &#10;$END$                  &#10;" description="ViewPager (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTIVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="pTS" value="&lt;android.support.v4.view.PagerTitleStrip&#10;      android:id=&quot;@+id/$ID$&quot;&#10;      android:layout_gravity=&quot;$GRAVITY$&quot;&#10;      android:background=&quot;$BACKGROUND$&quot;&#10;      android:paddingBottom=&quot;$PADDING_BOTTOM$&quot;&#10;      android:paddingTop=&quot;$PADDING_TOP$&quot;&#10;      android:textColor=&quot;@string/$TEXT_COLOR$&quot;&#10;      android:layout_width=&quot;$WIDTH$&quot;&#10;      android:layout_height=&quot;$HEIGHT$&quot;/&gt;          &#10;$END$                  &#10;" description="PagerTitleStrip (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BACKGROUND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PADDING_BOTTOM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PADDING_TOP" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT_COLOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="acLD" value="&lt;activity &#9;&#10;    android:name=&quot;.$ACTIVITY$&quot;&#10;    android:label=&quot;@string/$LABEL$&quot;&#10;    android:description=&quot;@string/$DESC$&quot;/&gt; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Activity with Label and Description Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTIVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="intfilad" value="&lt;intent-filter&gt;&#10;    &lt;action android:name=&quot;android.intent.action.$ACTION$&quot; /&gt;&#10;    &lt;data android:$TYPE$=&quot;$DATA$&quot; /&gt;&#10;&lt;/intent-filter&gt;&#10;$END$" description="Intent-filter with action and data (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATA" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="serviceExported" value="&lt;service android:name=&quot;$NAME$&quot;&#10;&#9;&#9;&#9;&#9;android:exported=&quot;$EXPORTED$&quot;/&gt;$END$" description="service with exported option (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EXPORTED" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="acIFC" value="&lt;activity android:name=&quot;.$TEXT$&quot; &gt;&#10;    &lt;intent-filter&gt;&#10;        &lt;action android:name=&quot;android.intent.action.$ACTION$&quot; /&gt;&#10;        &lt;category android:name=&quot;android.intent.category.$CATEGORY$&quot; /&gt;&#10;    &lt;/intent-filter&gt;&#10;&lt;/activity&gt;&#9; &#9;&#9;&#9; &#10;$END$" description="Activity with intent-filter and category (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CATEGORY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="autoCTVHT" value="&lt;AutoCompleteTextView&#10;    android:id=&quot;@+id/$ID$&quot;   &#10;    android:completionHint=&quot;@string/$HINT$&quot;&#10;    android:completionThreshold=&quot;$TRESHOLD$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#10;$END$" description="AutoCompleteTextView with ID, Hint and Treshold (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HINT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TRESHOLD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="spinner" value="&lt;Spinner&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:entries=&quot;@array/$COLOR$&quot;&#10;    android:prompt=&quot;@string/$STRING$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;  &#10;$END$" description="Spinner (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="array" value="&lt;array name=&quot;$NAME$&quot;&gt;&#10;        &lt;item&gt;$ITEM1$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM2$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM3$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM4$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM5$&lt;/item&gt;&#10;&lt;/array&gt;&#10;$END$" description="Array inside strings file (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM5" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="iB" value="&lt;ImageButton&#10;&#9;android:id=&quot;@+id/$NAME$&quot;&#10;&#9;android:src=&quot;@drawable/$DRAWABLE$&quot;&#10;&#9;android:contentDescription=&quot;@string/$DESCRIPTION$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#10;$END$&#10;&#10;" description="Image Button (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DRAWABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tB" value="&lt;ToggleButton &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:textOff=&quot;@string/$TEXT_OFF$&quot; &#10;    android:textOn=&quot;@string/$TEXT_ON$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9; &#10;$END$" description="ToggleButton (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT_OFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT_ON" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="switch" value="&lt;Switch &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:textOff=&quot;@string/$TEXT_OFF$&quot; &#10;    android:textOn=&quot;@string/$TEXT_ON$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#10;$END$&#10;&#9;&#10;" description="Switch (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT_OFF" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT_ON" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="cBox" value="&lt;CheckBox &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$WIDTH$&quot;/&gt;    &#10;$END$   &#9;&#9;&#9;         " description="CheckBox (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="dP" value="&lt;DatePicker&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:calendarViewShown=&quot;$CALENDAR_SHOWN$&quot;&#10;    android:spinnersShown=&quot;$SPINNER_SHOWN$&quot; &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;         &#10;$END$     " description="Date Picker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CALENDAR_SHOWN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SPINNER_SHOWN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tP" value="&lt;TimePicker&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;&#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;/&gt;         &#10;$END$   " description="TimePicker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tPwc" value="&lt;TimePicker&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;         &#10;$END$   " description="TimePicker Wrap Content (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="dPwc" value="&lt;DatePicker&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:calendarViewShown=&quot;$CALENDAR_SHOWN$&quot;&#10;    android:spinnersShown=&quot;$SPINNER_SHOWN$&quot; &#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;         &#10;$END$     " description="Date Picker Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CALENDAR_SHOWN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SPINNER_SHOWN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVwc" value="&lt;TextView &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView Wrap Content (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tViwc" value="&lt;TextView &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView with ID and Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tViwc+" value="&lt;TextView &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    $END$&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; " description="TextView with ID, Wrap Content and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="pBwc" value="&lt;ProgressBar &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:layout_width=&quot;wrap_content&quot; &#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9;  &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="ProgressBar Wrap Content (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="pBswc" value="&lt;ProgressBar &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    style=&quot;?android:attr/progressBarStyleHorizontal&quot; &#10;    android:max=&quot;$MAX$&quot;&#10;    android:layout_width=&quot;wrap_content&quot; &#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9;  &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="ProgressBar with Style  and Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MAX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="@s" value="@string/$NAME$ $END$&#9; &#9;&#9;&#9; &#10;" description="@string resource (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleHoloAppThem" value="&lt;style name=&quot;AppTheme&quot;&#10;           parent=&quot;android:Theme.Holo&quot;&gt;&#10;&lt;/style&gt;           &#9;&#9; &#10;$END$" description="Holo App Them (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleLightHoloAppThem" value="&lt;style name=&quot;AppTheme&quot;&#10;       parent=&quot;android:Theme.Holo.Light&quot;&gt;&#10;&lt;/style&gt;       &#9;&#9; &#10;$END$" description="Light Holo App Them (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="item" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    android:title=&quot;@string/$TITLE1$&quot; /&gt;&#10;$END$    &#10;" description="Menu item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="itemOrder" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    android:title=&quot;@string/$TITLE1$&quot; &#9;&#9;&#10;    android:orderInCategory=&quot;$CAT$&quot;/&gt;&#10;$END$    &#10;" description="Menu item with Category (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="item3" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    android:title=&quot;@string/$TITLE1$&quot; /&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID2$&quot;&#10;    android:title=&quot;@string/$TITLE2$&quot; /&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID3$&quot;&#10;    android:title=&quot;@string/$TITLE3$&quot; /&gt;&#10;$END$    &#10;" description="3 menu items (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="item3Order" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    android:title=&quot;@string/$TITLE1$&quot; &#10;    android:orderInCategory=&quot;$CAT1$&quot;/&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID2$&quot;&#10;    android:title=&quot;@string/$TITLE2$&quot; &#10;    android:orderInCategory=&quot;$CAT2$&quot;/&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID3$&quot;&#10;    android:title=&quot;@string/$TITLE3$&quot; &#10;    android:orderInCategory=&quot;$CAT3$&quot;/&gt;&#10;$END$    &#10;" description="3 menu items with category (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="acMain" value="&lt;activity android:name=&quot;.$NAME$&quot; &gt;&#10;    &lt;intent-filter&gt;&#10;        &lt;action android:name=&quot;android.intent.action.MAIN&quot; /&gt;&#10;&#9;&#9;&lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;&#10;    &lt;/intent-filter&gt;&#10;&lt;/activity&gt;&#9; &#9;&#9;&#9; &#10;$END$&#10;" description="Main Activity with Main/Launcher  intent-filter (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="iViwc+" value="&lt;ImageView &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:src=&quot;@drawable/$DRAWABLE$&quot;&#10;    $END$&#10;    android:layout_width=&quot;wrap_content&quot; &#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#10;" description="ImageView with ID, Wrap Content and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DRAWABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="buwc" value="&lt;Button &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:text=&quot;@string/$TEXT$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Button with Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="buwc+" value="&lt;Button &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:text=&quot;@string/$TEXT$&quot;&#10;    $END$&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;" description="Button with Wrap Content and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="iViCDwc+" value="&lt;ImageView &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:contentDescription=&quot;@string/$DESC$&quot;&#10;    android:src=&quot;@drawable/$DRAWABLE$&quot;&#10;    $END$&#10;    android:layout_width=&quot;wrap_content&quot; &#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#10;" description="ImageView with ID, Content Description, Wrap Content and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DRAWABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRff" value="&lt;TableRow&#10;    android:layout_width=&quot;fill_parent&quot;    &#10;    android:layout_height=&quot;fill_parent&quot; &gt;&#10;$END$                  &#10;&lt;/TableRow&gt;" description="TableRow Fill Parent Twice (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRwcf" value="&lt;TableRow&#10;    android:layout_width=&quot;wrap_content&quot;    &#10;    android:layout_height=&quot;fill_parent&quot; &gt;&#10;$END$                  &#10;&lt;/TableRow&gt;" description="TableRow Wrap Content and Fill Parent  (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="buBasic" value="&lt;Button &#10;    android:id=&quot;@+id/$NAME$&quot;&#10;    android:text=&quot;@string/$TEXT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Basic Button  WITHOUT Layout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="buBasic3" value="&lt;Button &#10;    android:id=&quot;@+id/$NAME1$&quot;&#10;    android:text=&quot;@string/$TEXT1$&quot;/&gt;&#9;&#10;&lt;Button &#10;    android:id=&quot;@+id/$NAME2$&quot;&#10;    android:text=&quot;@string/$TEXT2$&quot;/&gt;&#9;&#10;&lt;Button &#10;    android:id=&quot;@+id/$NAME3$&quot;&#10;    android:text=&quot;@string/$TEXT3$&quot;/&gt;&#9;        &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="3 Basic Buttons  WITHOUT Layout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tViCustomLayout" value="&lt;TextView &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_row=&quot;$ROW$&quot;&#10;    android:layout_column=&quot;$COLUM$&quot;&#10;    android:layout_columnSpan=&quot;$COLUM_SPAN$&quot;&#10;        android:layout_rowSpan=&quot;$ROW_SPAN$&quot;&#10;        android:background=&quot;$BACKGROUND$&quot;&#10;        android:gravity=&quot;$GRAVITY$&quot;&#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;   &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView with ID and Custom Layout(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROW" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUM_SPAN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROW_SPAN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BACKGROUND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRbu3ff" value="&lt;TableRow&#10;&#9;android:id=&quot;@+id/table_row&quot;&#10;&#9;android:layout_width=&quot;fill_parent&quot;&#10;&#9;android:layout_height=&quot;fill_parent&quot;&gt;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME1$&quot;&#10;        android:text=&quot;@string/$TEXT1$&quot;/&gt;&#9;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME2$&quot;&#10;        android:text=&quot;@string/$TEXT2$&quot;/&gt;&#9;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME3$&quot;&#10;        android:text=&quot;@string/$TEXT3$&quot;/&gt;&#10;&lt;/TableRow&gt;        &#9;        &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$&#10;&#10;&#9;&#9;" description="TableRow Fill Parents with 3 Basic Buttons  WITHOUT Layout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRbu3wcF" value="&lt;TableRow&#10;&#9;android:id=&quot;@+id/table_row&quot;&#10;&#9;android:layout_width=&quot;wrap_content&quot;&#10;&#9;android:layout_height=&quot;fill_parent&quot;&gt;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME1$&quot;&#10;        android:text=&quot;@string/$TEXT1$&quot;/&gt;&#9;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME2$&quot;&#10;        android:text=&quot;@string/$TEXT2$&quot;/&gt;&#9;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME3$&quot;&#10;        android:text=&quot;@string/$TEXT3$&quot;/&gt;&#10;&lt;/TableRow&gt;        &#9;        &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$&#10;&#10;&#9;&#9;" description="TableRow Wrap Contents and Fill Parents with 3 Basic Buttons  WITHOUT Layout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLvwc" value="&lt;LinearLayout &#10;    android:orientation=&quot;horizontal&quot; &#10;    android:layout_width=&quot;wrap_content&quot; &#10;    android:layout_height=&quot;wrap_content&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Horizontal LinearLayout  with Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLhFwc" value="&lt;LinearLayout &#10;    android:orientation=&quot;horizontal&quot; &#10;    android:layout_width=&quot;fill_parent&quot; &#10;    android:layout_height=&quot;wrap_content&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Horizontal LinearLayout  with Fill Parent and Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="TLiwc" value="&lt;TableLayout&#10;    android:id=&quot;@+id/$ID$&quot;&#10;    android:gravity=&quot;$GRAVITY$&quot;&#10;    android:layout_gravity=&quot;$LAYOUT_GRAVITY$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;    &#10;    android:layout_height=&quot;wrap_content&quot;&gt;&#10;$END$                  &#10;&lt;/TableLayout&gt;" description="TableLayout Wrap Content with Other Options (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LAYOUT_GRAVITY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRbu3Fwc" value="&lt;TableRow&#10;&#9;android:id=&quot;@+id/table_row&quot;&#10;&#9;android:layout_width=&quot;wrap_content&quot;&#10;&#9;android:layout_height=&quot;fill_parent&quot;&gt;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME1$&quot;&#10;        android:text=&quot;@string/$TEXT1$&quot;/&gt;&#9;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME2$&quot;&#10;        android:text=&quot;@string/$TEXT2$&quot;/&gt;&#9;&#10;    &lt;Button &#10;        android:id=&quot;@+id/$NAME3$&quot;&#10;        android:text=&quot;@string/$TEXT3$&quot;/&gt;&#10;&lt;/TableRow&gt;        &#9;        &#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$&#10;&#10;&#9;&#9;" description="TableRow  Fill Parents and Wrap Contents with 3 Basic Buttons  WITHOUT Layout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRfwc" value="&lt;TableRow&#10;    android:layout_width=&quot;wrap_content&quot;    &#10;    android:layout_height=&quot;fill_parent&quot; &gt;&#10;$END$                  &#10;&lt;/TableRow&gt;" description="TableRow Wrap Content and Fill Parent (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tRfwc+" value="&lt;TableRow&#10;    $END$   &#10;    android:layout_width=&quot;wrap_content&quot;    &#10;    android:layout_height=&quot;fill_parent&quot; &gt;               &#10;&lt;/TableRow&gt;" description="TableRow Wrap Content and Fill Parent (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="iViCDff+" value="&lt;ImageView &#10;    android:id=&quot;@+id/$NAME$&quot; &#10;    android:contentDescription=&quot;@string/$DESC$&quot;&#10;    android:src=&quot;@drawable/$DRAWABLE$&quot;&#10;    $END$&#10;    android:layout_width=&quot;fill_parent&quot; &#10;    android:layout_height=&quot;fill_parent&quot;/&gt;&#10;" description="ImageView with ID, Content Description, Fill Parent and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DRAWABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="item4" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    android:title=&quot;@string/$TITLE1$&quot; /&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID2$&quot;&#10;    android:title=&quot;@string/$TITLE2$&quot; /&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID3$&quot;&#10;    android:title=&quot;@string/$TITLE3$&quot; /&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID4$&quot;&#10;    android:title=&quot;@string/$TITLE4$&quot; /&gt;    &#10;$END$    &#10;" description="4 menu items (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="item4Order" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    android:title=&quot;@string/$TITLE1$&quot; &#10;    android:orderInCategory=&quot;$CAT1$&quot;/&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID2$&quot;&#10;    android:title=&quot;@string/$TITLE2$&quot; &#10;    android:orderInCategory=&quot;$CAT2$&quot;/&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID3$&quot;&#10;    android:title=&quot;@string/$TITLE3$&quot; &#10;    android:orderInCategory=&quot;$CAT3$&quot;/&gt;&#10;&lt;item&#10;    android:id=&quot;@+id/$ID4$&quot;&#10;    android:title=&quot;@string/$TITLE4$&quot; &#10;    android:orderInCategory=&quot;$CAT4$&quot;/&gt;    &#10;$END$    &#10;" description="4 menu items with category (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ID4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLvFwc" value="&lt;LinearLayout &#10;    android:orientation=&quot;vertical&quot; &#10;    android:layout_width=&quot;fill_parent&quot; &#10;    android:layout_height=&quot;wrap_content&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Vertical LinearLayout  with Fill Parent and Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="LLvwcF" value="&lt;LinearLayout &#10;    android:orientation=&quot;vertical&quot; &#10;    android:layout_width=&quot;wrap_content&quot; &#10;    android:layout_height=&quot;fill_parent&quot;&gt;&#10;$END$                  &#10;&lt;/LinearLayout&gt;&#10;" description="Vertical LinearLayout  with Wrap and  Fill Parent Content(Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVifwc+" value="&lt;TextView &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    $END$&#10;    android:layout_width=&quot;fill_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; " description="TextView with ID, Fill Parent, Wrap Content and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVifwc" value="&lt;TextView &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_width=&quot;fill_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView with ID and Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVfwc" value="&lt;TextView &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    android:layout_width=&quot;fill_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="TextView with ID and Wrap Content(Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="tVfwc+" value="&lt;TextView &#10;    android:text=&quot;@string/$TEXT$&quot; &#10;    $END$&#10;    android:layout_width=&quot;fill_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; " description="TextView with   Fill Parent, Wrap Content and OTHER OPTIONS (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="style" value="style=&quot;@style/$STYLE$&quot;&#9; &#9;&#9;&#9; " description="@style (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="STYLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleItem4" value="&lt;item name=&quot;android:$NAME1$&quot;&gt;$VALUE1$&lt;/item&gt;&#10;&lt;item name=&quot;android:$NAME2$&quot;&gt;$VALUE2$&lt;/item&gt;&#10;&lt;item name=&quot;android:$NAME3$&quot;&gt;$VALUE3$&lt;/item&gt;&#10;&lt;item name=&quot;android:$NAME4$&quot;&gt;$VALUE4$&lt;/item&gt;&#9; &#9;&#9;&#9; &#10;" description="Style Item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE4" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleItem2" value="&lt;item name=&quot;android:$NAME1$&quot;&gt;$VALUE1$&lt;/item&gt;&#10;&lt;item name=&quot;android:$NAME2$&quot;&gt;$VALUE2$&lt;/item&gt;&#10;&#9; &#9;&#9;&#9; &#10;" description="Style Item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleItem" value="&lt;item name=&quot;android:$NAME1$&quot;&gt;$VALUE1$&lt;/item&gt;&#10;&#9; &#9;&#9;&#9; &#10;" description="Style Item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="item+" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    $END$  &#10;    android:title=&quot;@string/$TITLE1$&quot; /&gt;&#10;  &#10;" description="Menu item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="itemOrder+" value="&lt;item&#10;    android:id=&quot;@+id/$ID1$&quot;&#10;    android:title=&quot;@string/$TITLE1$&quot; &#9;&#10;    $END$  &#9;&#10;    android:orderInCategory=&quot;$CAT$&quot;/&gt;&#10;  &#10;" description="Menu item with Category (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="servicePermIntentFilter" value="&lt;service android:name=&quot;$NAME$&quot;&#10;     android:permission=&quot;android.permission.$PERM$&quot;&gt;&#10;     &lt;intent-filter&gt;&#10;        &lt;action android:name=&quot;$ACTION$&quot; /&gt;&#10;     &lt;/intent-filter&gt;&#10;&lt;/service&gt;" description="Service with Permission and Intent Filter (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PERM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="serviceIntentFilter" value="&lt;service android:name=&quot;$NAME$&quot;&#10;     &lt;intent-filter&gt;&#10;        &lt;action android:name=&quot;$ACTION$&quot; /&gt;&#10;     &lt;/intent-filter&gt;&#10;&lt;/service&gt;" description="Service with intent Filter (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="servicePerm" value="&lt;service android:name=&quot;$NAME$&quot; &#10;         android:permission=&quot;android.permission.$PERM$&quot; /&gt;$END$" description="Service  with Permission (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PERM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="receiverIF" value=" &lt;receiver&#10;            android:name=&quot;$NAME$&quot;&gt;&#10;            &lt;intent-filter&gt;&#10;                &lt;action android:name=&quot;android.appwidget.action.$ACTION$&quot; /&gt;&#10;            &lt;/intent-filter&gt;&#10;&lt;/receiver&gt;&#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Receiver with Intent Filter (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleNameParent" value="&lt;style name=&quot;$NAME$&quot; parent=&quot;$PARENT$&quot;&gt;&#9;&#10;&lt;/style&gt;&#10;$END$&#9;&#9; " description="Style with name  (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleName2items" value="&lt;style name=&quot;$NAME$&quot;&gt;&#10;    &lt;item name=&quot;android:$ITEM1$&quot;&gt;$VALUE1$&lt;/item&gt;&#10;    &lt;item name=&quot;android:$ITEM2$&quot;&gt;$VALUE2$&lt;/item&gt;&#10;&lt;/style&gt;&#10;$END$&#9;&#9; " description="Style with name  and 2 items (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleName1itemParent" value="&lt;style name=&quot;$NAME$&quot;  parent=&quot;$PARENT$&quot;&gt;&#10;    &lt;item name=&quot;android:$ITEM1$&quot;&gt;$VALUE1$&lt;/item&gt;&#10;&lt;/style&gt;&#10;$END$&#9;&#9; " description="Style with name , parent, and 1 item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleName1item" value="&lt;style name=&quot;$NAME$&quot;&gt;&#10;    &lt;item name=&quot;android:$ITEM1$&quot;&gt;$VALUE1$&lt;/item&gt;&#10;&lt;/style&gt;&#10;$END$&#9;&#9; " description="Style with name and 1 item (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="styleName2ItemsParent" value="&lt;style name=&quot;$NAME$&quot;  parent=&quot;$PARENT$&quot;&gt;&#10;    &lt;item name=&quot;android:$ITEM1$&quot;&gt;$VALUE1$&lt;/item&gt;&#10;    &lt;item name=&quot;android:$ITEM2$&quot;&gt;$VALUE2$&lt;/item&gt;&#10;&lt;/style&gt;&#10;$END$&#9;&#9; " description="Style with name, parent,  and 2 items (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="sVNamespace" value="&lt;ScrollView &#10;    xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#9;&#10;$END$&#10;&lt;/ScrollView&gt;" description="ScrollView  with Namespce (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="mAutoCTVHT" value="&lt;MultiAutoCompleteTextView&#10;    android:id=&quot;@+id/$ID$&quot;   &#10;    android:completionHint=&quot;@string/$HINT$&quot;&#10;    android:completionThreshold=&quot;$TRESHOLD$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#10;$END$" description="MultiAutoCompleteTextView with ID, Hint and Treshold (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HINT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TRESHOLD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="dim" value="&lt;dimen name=&quot;$NAME$&quot;&gt;$DIM$&lt;/dimen&gt;&#9;&#9;&#9; &#10;" description="dimension (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DIM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="nP" value="&lt;NumberPicker &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:layout_width=&quot;$WIDTH$&quot;&#10;    android:layout_height=&quot;$HEIGHT$&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Number Picker (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="nPwc" value="&lt;NumberPicker &#10;    android:id=&quot;@+id/$ID$&quot; &#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Number Picker Wrap Content (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="usesPBrowserHistory" value="&lt;uses-permission android:name=&quot;com.android.browser.permission.READ_HISTORY_BOOKMARKS&quot;/&gt;&#9;&#9; &#9;&#9;&#9; &#9;&#9;&#9; &#10;$END$" description="Uses permission to read browser history (Android)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="GL" value="&lt;GridLayout&#10;    android:alignmentMode=&quot;$ALIGNMENT$&quot;    &#10;    android:rowOrderPreserved=&quot;$ROW_ORDER$&quot;&#10;    android:columnOrderPreserved=&quot;$COL_ORDER$&quot;&#10;    android:rowCount=&quot;$ROW_COUNT$&quot;&#10;    android:columnCount=&quot;$COL_COUNT$&quot;   &#10;    android:layout_width=&quot;$WIDTH_LAYOUT$&quot; &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot;&gt;&#10;    $END$     &#10;&lt;/GridLayout&gt;" description="GridLayout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="ALIGNMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROW_ORDER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL_ORDER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROW_COUNT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL_COUNT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="RL" value="&lt;RelativeLayout&#10;&#9;android:layout_width=&quot;$WIDTH_LAYOUT$&quot;    &#10;    android:layout_height=&quot;$HEIGHT_LAYOUT$&quot; &gt;&#10;$END$                  &#10;&lt;/RelativeLayout&gt;&#9;" description="RelativeLayout (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="WIDTH_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT_LAYOUT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="strArray" value="&lt;string-array name=&quot;$NAME$&quot;&gt;&#10;        &lt;item&gt;$ITEM1$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM2$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM3$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM4$&lt;/item&gt;&#10;        &lt;item&gt;$ITEM5$&lt;/item&gt;&#10;&lt;/string-array&gt;&#10;$END$" description="String Array inside strings file (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ITEM5" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="addStr" value="&lt;string name=&quot;$NAME$&quot;&gt;$VALUE$&lt;/string&gt;&#10;$END$" description="Add Strring inside strings file (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="acParent" value="&lt;activity&#10;                android:name=&quot;.$NAME$&quot;&#10;                android:label=&quot;@string/$LABEL$&quot;&#10;                android:parentActivityName=&quot;.$PARENT$&quot;&gt;&#10;            &lt;meta-data&#10;                android:name=&quot;android.support.PARENT_ACTIVITY&quot;&#10;                android:value=&quot;$PARENT$&quot;/&gt;&#10;&#10;        &lt;/activity&gt;&#10;&#10;" description="Activity with Parent Activity (Android)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>

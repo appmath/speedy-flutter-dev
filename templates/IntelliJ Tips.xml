@@ -1,0 +1,12 @@
+<templateSet group="IntelliJ Tips">
+  <template name="idea_column_mode" value="// CMD + SHIFT + 8" description="Turn on column mode" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="column_idea_mode_select_first_word" value="// Select all the rows, just a vertical line &#10;// OPTION + SHIFT + RIGHT ARROW" description="How to select the first word in each row" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

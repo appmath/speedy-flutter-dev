@@ -1,0 +1,7 @@
+<templateSet group="CLI">
+  <template name="cli_f_runNoSoundNullSafety" value="flutter run --no-sound-null-safety&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>

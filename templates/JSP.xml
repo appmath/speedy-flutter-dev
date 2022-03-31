@@ -1,0 +1,26 @@
+<templateSet group="JSP">
+  <template name="jspa" value="&lt;%@attribute name=&quot;$NAME$&quot; type=&quot;$TYPE$&quot; required=&quot;$REQUIRED$&quot;%&gt;" description="JSP Tag attribute" toReformat="false" toShortenFQNames="false" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="classNameComplete()" defaultValue="java.lang.String" alwaysStopAt="true" />
+    <variable name="REQUIRED" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="jspxa" value="&lt;jsp:directive.attribute name=&quot;$NAME$&quot; type=&quot;$TYPE$&quot; required=&quot;$REQUIRED$&quot;/&gt;" description="JSPX Tag attribute" toReformat="false" toShortenFQNames="false" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="false" />
+    <variable name="TYPE" expression="classNameComplete()" defaultValue="java.lang.String" alwaysStopAt="true" />
+    <variable name="REQUIRED" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSPX" value="true" />
+    </context>
+  </template>
+  <template name="input" value="&lt;input type=&quot;$TYPE$&quot; name=&quot;$NAME$&quot; value=&quot;$VALUE$&quot;&gt;" description="input" toReformat="true" toShortenFQNames="false" deactivated="true">
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="formpost" value=" &lt;form method=&quot;post&quot;&gt;&#10;        &#10;&lt;/form&gt;" description="form with post method" toReformat="true" toShortenFQNames="false" deactivated="true" />
+  <template name="labelinput" value="        &lt;label&gt;$LABEL$&lt;/label&gt;&#10;        &lt;input type=&quot;$TYPE$&quot; name=&quot;$NAME$&quot;/&gt;&#10;        &lt;br/&gt;&#10;" description="label input" toReformat="true" toShortenFQNames="false" deactivated="true">
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+</templateSet>

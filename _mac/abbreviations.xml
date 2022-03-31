@@ -1,0 +1,9 @@
+<application>
+  <component name="AbbreviationManager">
+    <abbreviations>
+      <action id="XDebugger.Inspect">
+        <abbreviation name="debugger inspect" />
+      </action>
+    </abbreviations>
+  </component>
+</application>

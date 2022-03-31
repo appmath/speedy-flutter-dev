@@ -1,0 +1,590 @@
+<templateSet group="Markdown">
+  <template name=".textItalic" value="_$TEXT$_ $END$" description="Italic text (can also use * instead of _)" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".textBold" value="__$TEXT$__ $END$" description="Bold text (can also use ** instead of __)" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".h1" value="# $TEXT$ $END$" description="H1 Header" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".h2" value="## $TEXT$ $END$" description="H2 Header" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".h3" value="### $TEXT$ $END$" description="H3 Header" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".h4" value="#### $TEXT$ $END$" description="H4 Header" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".h5" value="##### $TEXT$ $END$" description="H5 Header" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".h6" value="###### $TEXT$ $END$" description="H6 Header" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".java" value="```java&#10;$TEXT$&#10;```&#10;$END$" description="Java language block" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".textItalicBold" value="**_$TEXT$_** $END$" description="Italic and bold text" toReformat="false" toShortenFQNames="false">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".tocE" value="[$NUM$.$TEXT$](#$NUM$-$TEXT$)&#10;### $NUM$.$TEXT$&#10;$END$" description="Table of content Entry" toReformat="false" toShortenFQNames="false">
+    <variable name="NUM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".navigationTag" value="&lt;a name=&quot;$JUMP_HERE$&quot;/&gt;$END$&#10;&#10;&#10;" description="Navigation Tag" toReformat="false" toShortenFQNames="false">
+    <variable name="JUMP_HERE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".tocENavChap" value="[Chapter $NUM$: $TEXT$](#chap-$NUM$)&#10;&#10;&lt;a name=&quot;chap-$NUM$&quot;/&gt;$END$&#10;&#10;### Chapter $NUM$: $TEXT$&#10;$END$" description="Chapter table of content Entry with Navigation Tag. USE dash with Nav tag." toReformat="false" toShortenFQNames="false">
+    <variable name="NUM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".tocENav" value="[$SECTION$](#$NAVIGATION$)&#10;&#10;&lt;a name=&quot;$NAVIGATION$&quot;/&gt;$END$&#10;&#10;### $SECTION$&#10;$END$" description="Table of content Entry with Navigation Tag. USE dash with Nav tag." toReformat="false" toShortenFQNames="false">
+    <variable name="SECTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAVIGATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".nl" value="&lt;br/&gt;" description="New line" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".section2" value="##### $TITLE$:&#10;* __$SEC1$__ :  $DES1$&#10;* __$SEC2$__ :&#10;$END$" description="Section with 2 entries" toReformat="false" toShortenFQNames="false">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DES1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".section3" value="##### $TITLE$:&#10;* __$SEC1$__ :  $DES1$&#10;* __$SEC2$__ :&#10;* __$SEC2$__ :&#10;$END$" description="Section with 3 entries" toReformat="false" toShortenFQNames="false">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DES1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".sectionItem" value="* __$SEC1$__ :  $DES1$&#10;$END$" description="Section Item" toReformat="false" toShortenFQNames="false">
+    <variable name="SEC1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DES1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".sectionMain" value="#### $TITLE$:&#10;$END$" description="Main section" toReformat="false" toShortenFQNames="false">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".table3by3" value="| $COL1$        | $COL2$        | $COL3$ |&#10;| ------------- |:-------------:| -----:|&#10;| col 3 is      | right-aligned | $1600 |&#10;| col 2 is      | centered      |   $12 |&#10;| zebra stripes | are neat      |    $1 |" description="3 by 3 table" toReformat="false" toShortenFQNames="false">
+    <variable name="COL1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COL3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".image" value="// ![Optional: image name or description](URL or Relative Path  &quot;tooltip text&quot;)&#10;![$LABEL$]($ADDRESS$) $END$" description="Image Link ![Optional: name of image](URL or Relative Path  &quot;tooltip text&quot;)" toReformat="false" toShortenFQNames="false">
+    <variable name="ADDRESS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="LABEL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".tocENavPart" value="[Part $NUM$: $TEXT$](#part-$NUM$)&#10;&#10;$END$&#10;&#10;&lt;a name=&quot;part-$NUM$&quot;/&gt;&#10;&#10;## Part $NUM$: $TEXT$&#10;" description="Part table of content Entry with Navigation Tag. USE dash with Nav tag." toReformat="false" toShortenFQNames="false">
+    <variable name="NUM" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".sectionSimple3" value="##### $TITLE$:&#10;* $SEC1$&#10;* $SEC2$&#10;* $SEC3$&#10;$END$" description="Section with 3 ONLY bullet points" toReformat="false" toShortenFQNames="false">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SEC3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".emojiThumbsUp" value=":+1: $END$" description="thumbs up emoji" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".emojiShipIt" value=":shipit: $END$" description="Ship it emoji" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".emojiCheatSheetSite" value="__[Emoji Site](https://www.webpagefx.com/tools/emoji-cheat-sheet/)__" description="Url for emojis" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".imageWithManualSize" value="// &lt;img src=&quot;image path and name&quot; ...&gt;&#10;&lt;img src=&quot;$IMAGEPATH_AND_NAME$&quot; width=&quot;$WIDTH$&quot; height=&quot;$HEIGHT$&quot;&gt;" description="Import image with specific width and height" toReformat="false" toShortenFQNames="false">
+    <variable name="IMAGEPATH_AND_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".imageWithHeightAutoSize" value="// &lt;img src=&quot;image path and name&quot; ...&gt;&#10;&lt;img src=&quot;$IMAGEPATH_AND_NAME$&quot; height=&quot;$HEIGHT$&quot;&gt;" description="Import image just specify the height and the width will be automatically sized" toReformat="false" toShortenFQNames="false">
+    <variable name="IMAGEPATH_AND_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".imageWithWidthAutoSize" value="// &lt;img src=&quot;image path and name&quot; ...&gt;&#10;&lt;img src=&quot;$IMAGEPATH_AND_NAME$&quot; width=&quot;$WIDTH$&quot;&gt;" description="Import image just specify the width and the height will be automatically sized" toReformat="false" toShortenFQNames="false">
+    <variable name="IMAGEPATH_AND_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+  <template name=".screenshotTable" value="|                                                          |                                                           |                                                          |&#10;| -------------------------------------------------------- |:---------------------------------------------------------:| --------------------------------------------------------:|&#10;|&lt;img src=&quot;./screenshots/$SCREENSHOT_1$.png&quot; height=&quot;500&quot;&gt; | &lt;img src=&quot;./screenshots/$SCREENSHOT_2$.png&quot; height=&quot;500&quot;&gt; | &lt;img src=&quot;./screenshots/$SCREENSHOT_3$.png&quot; height=&quot;500&quot;&gt;|&#10;" description="Table for displaying screenshots" toReformat="false" toShortenFQNames="false">
+    <variable name="SCREENSHOT_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SCREENSHOT_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SCREENSHOT_3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JSON" value="false" />
+      <option name="KOTLIN" value="false" />
+      <option name="MARKDOWN" value="true" />
+      <option name="OTHER" value="true" />
+      <option name="SHELL_SCRIPT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_ATTRIBUTE" value="false" />
+      <option name="c" value="false" />
+      <option name="cpp" value="false" />
+      <option name="objc" value="false" />
+    </context>
+  </template>
+</templateSet>

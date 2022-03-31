@@ -1,0 +1,8 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="Main.dart" file-name="main" reformat="true" live-template-enabled="false" />
+      <template name="Material Colors.dart" file-name="az_material_colors" reformat="true" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</application>

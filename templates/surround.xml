@@ -1,0 +1,174 @@
+<templateSet group="surround">
+  <template name="R" value="java.lang.Runnable runnable = new java.lang.Runnable() {&#10;  public void run() {&#10;    $SELECTION$ &#10;  }&#10;};&#10;$END$" description="Surround with java.lang.Runnable" toReformat="true" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="T" value="&lt;$TAGNAME$&gt;$SELECTION$&lt;/$TAGNAME$&gt;&#10;" description="Surround with &lt;tag&gt;&lt;/tag&gt;" toReformat="true" toShortenFQNames="false">
+    <variable name="TAGNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="forL" value="for (int $PROPER$ = 0; $PROPER$ &lt; $VALUE$; $PROPER$++) {&#10;    $SELECTION$&#10;}" description="for &lt;" toReformat="true" toShortenFQNames="false">
+    <variable name="PROPER" expression="suggestVariableName()" defaultValue="i" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="forLE" value="for (int i = 0; i &lt;= $VALUE$; i++) {&#10;    $SELECTION$&#10;}" description="for &lt;=" toReformat="true" toShortenFQNames="false">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifNullThrowIllegalAEe" value="if($SELECTION$ == null){&#10;  throw new IllegalArgumentException(&quot;$SELECTION$ cannot be null.&quot;);&#10;}&#10;$END$" description="Surround with If null throw IllegalArgumentException" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifn" value="if ($EXPR$ == null) {&#10;&#9;$END$&#10;}" description="Surround with if (var == null .." toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifnn" value="if ($EXPR$!= null) { &#10;     $END$ &#10;}" description="Surround with if (var != null.." toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="ifnr" value="if ($EXPR$ == null) { return; }$END$" description="Surround with if (var == null ... return" toReformat="true" toShortenFQNames="false">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="invokeLater" value="EventQueue.invokeLater(new Runnable() {&#10;    public void run() {&#10;        $SELECTION$&#10;    }&#10; });" description="EventQueue.invokeLater()" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="newFinalinstance" value="final $SELECTION$ $varname$ = new $SELECTION$($VARS$);$END$&#10;" description="final CL cl = new Cl ()|;" toReformat="true" toShortenFQNames="false">
+    <variable name="varname" expression="suggestVariableName()" defaultValue="suggestVariableName()" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="newinstance" value="$SELECTION$ $varname$ = new $SELECTION$($VARS$);&#10;$END$" description="CL cl = new Cl ()|;" toReformat="true" toShortenFQNames="true">
+    <variable name="varname" expression="suggestVariableName()" defaultValue="suggestVariableName()" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="print" value="System.out.println($SELECTION$);$END$ " description="Surround with print" toReformat="true" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="printAsStringAndValue" value="System.out.println(&quot;$SELECTION$: &quot; + $SELECTION$);$END$ " description="Print as string and value" toReformat="true" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="printAsString" value="System.out.println(&quot;$SELECTION$&quot;);$END$ " description="Turn selection into a String then surround with print" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="remac" value="if ($SELECTION$!= null) { &#10;  $SELECTION$.removeActionListener(this);&#10;  $SELECTION$ = null;&#10;}" description="remove actionListener" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="remlis" value="if ($SELECTION$!= null) { &#10;  $SELECTION$.remove$END$;&#10;  $SELECTION$ = null;&#10;}" description="remove listener" toReformat="true" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="strong" value="&lt;strong&gt;$SELECTION$&lt;/strong&gt;$END$" description="surround with &lt;strong&gt;&lt;/strong&gt;" toReformat="true" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="tt" value="&lt;tt&gt;$SELECTION$&lt;/tt&gt;$END$" description="surround with &lt;tt&gt;&lt;/tt&gt;" toReformat="true" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="while" value="while ($VARS$) {&#10; $SELECTION$&#10;}&#10;$END$ " description="Surround with while" toReformat="true" toShortenFQNames="false">
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pre" value="&lt;pre&gt;$SELECTION$&lt;/pre&gt;$END$" description="surround with &lt;pre&gt;&lt;/pre&gt; preserves the text's formatting" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="newFinalinstanceImpl" value="final $SELECTION$ $varname$ = new $SELECTION$Impl($VARS$);$END$&#10;" description="Create a new class implementation instance" toReformat="true" toShortenFQNames="false">
+    <variable name="varname" expression="suggestVariableName()" defaultValue="suggestVariableName()" alwaysStopAt="true" />
+    <variable name="VARS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="code" value="{@code $SELECTION$}$END$" description="surround with {@code }" toReformat="true" toShortenFQNames="false">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="GString" value="'$SELECTION$'" description="Surround with ' '" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="true" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="P" value="($SELECTION$)" description="Surround with ()" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="RL" value="$LOCK$.readLock().lock();&#10;try { &#10;  $SELECTION$&#10;} finally {&#10;  $LOCK$.readLock().unlock();&#10;}&#10;" description="Surround with ReadWriteLock.readLock" toReformat="true" toShortenFQNames="true">
+    <variable name="LOCK" expression="variableOfType(&quot;java.util.concurrent.locks.ReadWriteLock&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+  </template>
+  <template name="WL" value="$LOCK$.writeLock().lock();&#10;try { &#10;  $SELECTION$&#10;} finally {&#10;  $LOCK$.writeLock().unlock();&#10;}&#10;" description="Surround with ReadWriteLock.writeLock" toReformat="true" toShortenFQNames="true">
+    <variable name="LOCK" expression="variableOfType(&quot;java.util.concurrent.locks.ReadWriteLock&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+  </template>
+  <template name="tryCatch" value="try {&#10;    $EXPR$&#9;&#9;&#10;} catch ($EXCEPTION$ $NAME$) {&#10;&#9;&#9;$END$&#10;}" description="Surround with try catch" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXCEPTION" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tryCatchE" value="try {&#10;    $EXPR$&#9;&#9;&#10;} catch (Exception e) {&#10;   $END$&#10;}" description="Surround with try catch and a backed in Exception" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

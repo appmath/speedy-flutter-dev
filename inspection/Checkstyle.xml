@@ -1,0 +1,4 @@
+<profile version="1.0">
+  <option name="myName" value="Checkstyle" />
+  <inspection_tool class="OnDemandImport" enabled="true" level="ERROR" enabled_by_default="true" />
+</profile>

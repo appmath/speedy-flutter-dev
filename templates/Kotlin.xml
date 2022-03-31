@@ -1,0 +1,194 @@
+<templateSet group="Kotlin">
+  <template name="soutvncb" value="println(&quot;$EXPR_COPY$ = $DOLLAR$$EXPR$&quot;)" description="Prints a value to System.out no curly braces" toReformat="true" toShortenFQNames="true">
+    <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
+    <variable name="EXPR" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutv2" value="println(&quot;$EXPR_COPY$ = $DOLLAR${$EXPR$}, $EXPR2_COPY$ = $DOLLAR${$EXPR2$}&quot;)" description="Prints 2 values to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
+    <variable name="EXPR" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXPR2" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR2_COPY" expression="EXPR2" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutv2ncb" value="println(&quot;$EXPR_COPY$ = $DOLLAR$$EXPR$, $EXPR2_COPY$ = $DOLLAR$$EXPR2$&quot;)" description="Prints 2 values without curly braces to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
+    <variable name="EXPR" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXPR2" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR2_COPY" expression="EXPR2" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutSW" value="println($SELECTION$)" description="Surround with println" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funTest" value="@Test&#10;fun $NAME$() {&#10;$END$&#10;}" description="Test Function" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="sout" value="println($END$)" description="Prints a string to System.out" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="souts" value="println(&quot;$EXP$&quot;)" description="Prints a string to System.out" toReformat="true" toShortenFQNames="false">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutv3ncb" value="println(&quot;$EXPR_COPY$ = $DOLLAR$$EXPR$, $EXPR2_COPY$ = $DOLLAR$$EXPR2$, $EXPR3_COPY$ = $DOLLAR$$EXPR3$&quot;)" description="Prints 3 values without curly braces to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
+    <variable name="EXPR" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXPR2" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR2_COPY" expression="EXPR2" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXPR3" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR3_COPY" expression="EXPR3" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="funWithEquals" value="fun $NAME$() = &#10;$END$&#10;" description="Function with = symbol and no parameters" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="fun1WithEquals" value="fun $NAME$($PARAM1$ : $PARAM1TYPE$) =&#10;$END$&#10;" description="Function with one parameter and = symbols" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
+    <variable name="PARAM1TYPE" expression="" defaultValue="&quot;Any&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="fun2WithEquals" value="fun $NAME$($PARAM1$ : $PARAM1TYPE$, $PARAM2$ : $PARAM2TYPE$) =&#10;$END$&#10;" description="Function with two parameters and = symbol" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARAM1" expression="" defaultValue="&quot;x&quot;" alwaysStopAt="true" />
+    <variable name="PARAM1TYPE" expression="" defaultValue="&quot;Any&quot;" alwaysStopAt="true" />
+    <variable name="PARAM2" expression="" defaultValue="&quot;y&quot;" alwaysStopAt="true" />
+    <variable name="PARAM2TYPE" expression="" defaultValue="&quot;Any&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="when2AndElse" value=" when($VALUE$) {&#10;        $VALUE1$ -&gt; $RETURN$&#10;        $VALUE2$ -&gt; $RETURN2$&#10;        else -&gt; $RETURN3$&#10;}" description="when with 2 return values and else" toReformat="true" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="soutv" value="println(&quot;$EXPR_COPY$ = $DOLLAR${$EXPR$}&quot;)" description="Prints a value to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
+    <variable name="EXPR" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="funSetup" value="@Before&#10;fun setup() {&#10;$END$&#10;}" description="Test setup Function" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="soutsection" value="/** ----------------------------------------------------------------------------------------------------------------- **/&#10;/** ------------------  $EXP$ ------------------ **/&#10;println(&quot;\n--- $EXP$&quot;)&#10;$END$" description="Prints a string to System.out" toReformat="true" toShortenFQNames="false">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutsv" value="println(&quot;$SOME_STRING$: $DOLLAR${$EXPR$}&quot;)" description="Prints a value to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="SOME_STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
+    <variable name="EXPR" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="todo" value="// TODO: $date$ $todo$ " description="todo" toReformat="true" toShortenFQNames="false">
+    <variable name="date" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="todo" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutsTripleQuotes" value="println(&quot;&quot;&quot;$EXP$&quot;&quot;&quot;)" description="Prints a string to System.out using &quot;&quot;&quot; x &quot;&quot;&quot;" toReformat="true" toShortenFQNames="false">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutsn" value="println(&quot;\n$EXP$&quot;)" description="Prints a string to System.out with a new line" toReformat="true" toShortenFQNames="false">
+    <variable name="EXP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutv3" value="println(&quot;$EXPR_COPY$ = $DOLLAR${$EXPR$}, $EXPR2_COPY$ = $DOLLAR${$EXPR2$}, $EXPR3_COPY$ = $DOLLAR${$EXPR3$}&quot;)" description="Prints 3 values to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="DOLLAR" expression="" defaultValue="&quot;$&quot;" alwaysStopAt="false" />
+    <variable name="EXPR" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="EXPR" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXPR2" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR2_COPY" expression="EXPR2" defaultValue="" alwaysStopAt="false" />
+    <variable name="EXPR3" expression="kotlinVariable()" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR3_COPY" expression="EXPR3" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutcombined" value="print(&quot;$EXPR$: = &quot;); $EXPR$&#10;" description="Prints a value to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="review" value="// TODO: Review" description="todo review" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="KOTLIN_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="main" value="fun main(args: Array&lt;String&gt;) {&#10;  $END$&#10;}" description="main() function" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="psvm" value="fun main(args: Array&lt;String&gt;) {&#10;  $END$&#10;}" description="main() function" toReformat="true" toShortenFQNames="true">
+    <context />
+  </template>
+</templateSet>

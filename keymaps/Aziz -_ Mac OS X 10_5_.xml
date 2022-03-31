@@ -1,0 +1,173 @@
+<keymap version="1" name="Aziz -&gt; Mac OS X 10.5+ " parent="Mac OS X 10.5+">
+  <action id="$LRU">
+    <keyboard-shortcut first-keystroke="ctrl meta alt r" />
+  </action>
+  <action id="ActivateCommitToolWindow">
+    <keyboard-shortcut first-keystroke="meta 0" />
+  </action>
+  <action id="ActivateMessagesToolWindow" />
+  <action id="ActivateVersionControlToolWindow" />
+  <action id="Adtui.ZoomToActualAction">
+    <keyboard-shortcut first-keystroke="meta numpad0" />
+  </action>
+  <action id="ChangesView.AddUnversioned">
+    <keyboard-shortcut first-keystroke="ctrl meta alt a" />
+  </action>
+  <action id="ChangesView.Commit">
+    <keyboard-shortcut first-keystroke="ctrl meta alt c" />
+  </action>
+  <action id="ChangesView.Revert">
+    <keyboard-shortcut first-keystroke="meta alt z" />
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt r" />
+  </action>
+  <action id="CheckinFiles">
+    <keyboard-shortcut first-keystroke="ctrl meta alt c" />
+  </action>
+  <action id="CloseAllEditorsButActive">
+    <keyboard-shortcut first-keystroke="ctrl meta alt o" />
+  </action>
+  <action id="CloseContent">
+    <keyboard-shortcut first-keystroke="ctrl meta alt w" />
+  </action>
+  <action id="CompareClipboardWithSelection">
+    <keyboard-shortcut first-keystroke="ctrl meta alt back_slash" />
+  </action>
+  <action id="CopyAsPlainText">
+    <keyboard-shortcut first-keystroke="ctrl meta c" />
+  </action>
+  <action id="Dart.NewDartFile">
+    <keyboard-shortcut first-keystroke="ctrl meta alt d" />
+  </action>
+  <action id="Editor LRU">
+    <keyboard-shortcut first-keystroke="ctrl meta alt r" />
+  </action>
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="alt up" />
+    <keyboard-shortcut first-keystroke="meta w" />
+  </action>
+  <action id="EditorToggleShowLineNumbers">
+    <keyboard-shortcut first-keystroke="ctrl meta alt l" />
+  </action>
+  <action id="EditorUnSelectWord">
+    <keyboard-shortcut first-keystroke="alt down" />
+    <keyboard-shortcut first-keystroke="shift meta w" />
+  </action>
+  <action id="ExpandRegion">
+    <keyboard-shortcut first-keystroke="ctrl w" />
+    <keyboard-shortcut first-keystroke="alt w" />
+  </action>
+  <action id="Flutter.Toolbar.ReloadAction">
+    <keyboard-shortcut first-keystroke="alt r" />
+  </action>
+  <action id="Flutter.Toolbar.RestartAction">
+    <keyboard-shortcut first-keystroke="shift alt r" />
+  </action>
+  <action id="Git.Clone">
+    <keyboard-shortcut first-keystroke="ctrl meta alt g" />
+  </action>
+  <action id="Git.Commit.And.Push.Executor">
+    <keyboard-shortcut first-keystroke="meta alt k" />
+    <keyboard-shortcut first-keystroke="alt p" />
+  </action>
+  <action id="Git.CompareWithBranch">
+    <keyboard-shortcut first-keystroke="ctrl meta alt b" />
+  </action>
+  <action id="Git.Fetch">
+    <keyboard-shortcut first-keystroke="ctrl meta alt f" />
+  </action>
+  <action id="Git.Pull">
+    <keyboard-shortcut first-keystroke="ctrl meta alt p" />
+  </action>
+  <action id="LocalHistory">
+    <keyboard-shortcut first-keystroke="shift ctrl h" />
+  </action>
+  <action id="LocalHistory.ShowSelectionHistory">
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt l" />
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt l" second-keystroke="shift ctrl meta alt h" />
+  </action>
+  <action id="Maven.Reimport">
+    <keyboard-shortcut first-keystroke="ctrl meta alt i" />
+  </action>
+  <action id="MethodDown">
+    <keyboard-shortcut first-keystroke="ctrl meta alt down" />
+  </action>
+  <action id="MethodUp">
+    <keyboard-shortcut first-keystroke="ctrl up" />
+    <keyboard-shortcut first-keystroke="ctrl meta alt up" />
+  </action>
+  <action id="MoveEditorToOppositeTabGroup">
+    <keyboard-shortcut first-keystroke="meta alt back_space" />
+    <keyboard-shortcut first-keystroke="ctrl meta alt m" />
+  </action>
+  <action id="NewClass">
+    <keyboard-shortcut first-keystroke="ctrl meta alt j" />
+  </action>
+  <action id="NewDir">
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt d" />
+  </action>
+  <action id="NewElementInMenuGroup">
+    <keyboard-shortcut first-keystroke="ctrl meta alt n" />
+  </action>
+  <action id="NewProjectFromVCS">
+    <keyboard-shortcut first-keystroke="ctrl meta alt g" />
+  </action>
+  <action id="RenameFile">
+    <keyboard-shortcut first-keystroke="ctrl meta alt f6" />
+  </action>
+  <action id="RerunTests">
+    <keyboard-shortcut first-keystroke="ctrl meta r" />
+  </action>
+  <action id="RevealIn">
+    <keyboard-shortcut first-keystroke="ctrl f12" />
+  </action>
+  <action id="ShowColorPicker">
+    <keyboard-shortcut first-keystroke="ctrl meta p" />
+  </action>
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="ctrl meta alt h" />
+  </action>
+  <action id="SplitVertically">
+    <keyboard-shortcut first-keystroke="ctrl meta alt v" />
+  </action>
+  <action id="SwitchApply">
+    <keyboard-shortcut first-keystroke="ctrl alt enter" />
+  </action>
+  <action id="SwitchDown">
+    <keyboard-shortcut first-keystroke="ctrl alt down" />
+  </action>
+  <action id="SwitchLeft">
+    <keyboard-shortcut first-keystroke="ctrl alt left" />
+  </action>
+  <action id="SwitchRight">
+    <keyboard-shortcut first-keystroke="ctrl alt right" />
+  </action>
+  <action id="SwitchUp">
+    <keyboard-shortcut first-keystroke="ctrl alt up" />
+  </action>
+  <action id="Terminal.OpenInTerminal">
+    <keyboard-shortcut first-keystroke="meta t" />
+  </action>
+  <action id="Vcs.Log.FocusTextFilter" />
+  <action id="Vcs.ShowHistoryForBlock">
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt h" />
+  </action>
+  <action id="Vcs.ShowTabbedFileHistory">
+    <keyboard-shortcut first-keystroke="meta alt home" />
+  </action>
+  <action id="Vcs.UpdateProject" />
+  <action id="XDebugger.Inspect">
+    <keyboard-shortcut first-keystroke="meta alt i" />
+  </action>
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl meta e" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="shift ctrl meta e" />
+  </action>
+  <action id="editRunConfigurations">
+    <keyboard-shortcut first-keystroke="ctrl meta alt e" />
+  </action>
+  <action id="flutter.NewProject">
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt f" />
+  </action>
+</keymap>
