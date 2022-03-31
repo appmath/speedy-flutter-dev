@@ -1651,4 +1651,9 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="f_tip_spacer_ignores_mainAxisAlignment" value="  // Spacer has priority over mainAxisAlignment&#10;  Column spacerVsMainAlignment() {&#10;    return Column(&#10;      // this is ignored, better remove it.&#10;      mainAxisAlignment: MainAxisAlignment.spaceEvenly,&#10;      children: [&#10;        title(),&#10;        Container(height: 120, color: Colors.green),&#10;        Container(height: 120, color: Colors.blue),&#10;        Container(height: 120, color: Colors.red),&#10;        const Spacer(),&#10;      ],&#10;    );&#10;  }" description="Spacer ignores MainAxisAlignment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
