@@ -363,7 +363,7 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="f_layout_spacing_expanded" value="Expanded(&#10;    flex: 4, // any number that makes sense&#10;    child: // some widget&#10;) &#10;// == Flexible(&#10;//      fit: FlexFit.tight,  &#10;//      child: // some widget&#10;//    )" description="Equivalent to Flexible with fit: FlexFit.tight" toReformat="false" toShortenFQNames="true">
+  <template name="f_layout_spacing_expanded_basic" value="Expanded(&#10;    flex: 4, // any number that makes sense&#10;    child: &#10;) &#10;// == Flexible(&#10;//      fit: FlexFit.tight,  &#10;//      child: &#10;//    )" description="Equivalent to Flexible with fit: FlexFit.tight" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
@@ -1652,6 +1652,11 @@
     </context>
   </template>
   <template name="f_tip_spacer_ignores_mainAxisAlignment" value="  // Spacer has priority over mainAxisAlignment&#10;  Column spacerVsMainAlignment() {&#10;    return Column(&#10;      // this is ignored, better remove it.&#10;      mainAxisAlignment: MainAxisAlignment.spaceEvenly,&#10;      children: [&#10;        title(),&#10;        Container(height: 120, color: Colors.green),&#10;        Container(height: 120, color: Colors.blue),&#10;        Container(height: 120, color: Colors.red),&#10;        const Spacer(),&#10;      ],&#10;    );&#10;  }" description="Spacer ignores MainAxisAlignment" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="f_layout_spacing_expanded_example" value="Row(&#10;      children: [&#10;        // Tip: Expanded has to be a direct child of a Row or a Column&#10;        Expanded(&#10;          flex: 2,&#10;          child: Container(&#10;            color: Colors.green,&#10;            width: 300,&#10;            height: 200,&#10;            child: Center(child: Text('Expanded')),&#10;          ),&#10;        ),&#10;        Expanded(&#10;          flex: 4,&#10;          child: Container(&#10;            color: Colors.blue,&#10;            width: 300,&#10;            height: 200,&#10;            child: Center(child: Text('Expanded')),&#10;          ),&#10;        )" description="Example" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
