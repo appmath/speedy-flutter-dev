@@ -1661,4 +1661,9 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="f_tip_themData_primaryColor_vs_accentColor" value="// The primaryColor property affects the background color for significant parts&#10;// of the app, including toolbars, tab bars, and app bars.&#10;//&#10;// The accentColor property affects the foreground color for widgets, and also&#10;// refers to the secondary color. The font family, as well as the different &#10;// categories for the textTheme, have all been modified, as seen in the code block above." description="Difference between primary and accent color" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
