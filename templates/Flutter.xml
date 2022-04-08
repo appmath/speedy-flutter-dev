@@ -1666,4 +1666,15 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="f_theming_materialApp3_from_seed" value="MaterialApp buildMaterialApp3FromSeed() {&#10;    return MaterialApp(&#10;      title: 'Flutter Demo',&#10;      themeMode: ThemeMode.light,&#10;      theme: ThemeData(&#10;        colorScheme: ColorScheme.fromSeed(&#10;          // seedColor: Colors.green,&#10;          seedColor: greenMaterialColor,&#10;          brightness: Brightness.light,&#10;          // primary: orangeMaterialColor,&#10;          // secondary: greyMaterialColor,&#10;        ),&#10;        useMaterial3: true,&#10;      ),&#10;      darkTheme: ThemeData(&#10;        colorScheme: ColorScheme.fromSeed(&#10;          // seedColor: Colors.greenAccent,&#10;          seedColor: orangeMaterialColor,&#10;          brightness: Brightness.dark,&#10;          // primary: orangeMaterialColor,&#10;          // secondary: greyMaterialColor,&#10;        ),&#10;        useMaterial3: true,&#10;      ),&#10;      home: $MAIN_SCREEN$,&#10;    );&#10;  }" description="Flutter theming materialApp3 from seed" toReformat="true" toShortenFQNames="true">
+    <variable name="MAIN_SCREEN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="f_theming_light_dark_from_swatch" value="  ThemeData darkThemeData() {&#10;    return ThemeData(&#10;      colorScheme: ColorScheme.fromSwatch(&#10;        primarySwatch: greyMaterialColor,&#10;        brightness: Brightness.dark,&#10;      ).copyWith(&#10;        secondary: orangeMaterialColor,&#10;      ),&#10;    );&#10;  }&#10;&#10;  ThemeData lightThemeData() {&#10;    return ThemeData(&#10;      colorScheme: ColorScheme.fromSwatch(&#10;        primarySwatch: greyMaterialColor,&#10;      ).copyWith(&#10;        secondary: orangeMaterialColor,&#10;      ),&#10;    );&#10;  }" description="Flutter theming light and dark from swatch" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
