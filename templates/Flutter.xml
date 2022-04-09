@@ -1686,7 +1686,7 @@
   <template name="f_theming_materialApp3" value="MaterialApp buildMaterialApp3() {&#10;    return MaterialApp(&#10;      title: 'Flutter Demo',&#10;      // The Mandy red, light theme.&#10;      theme: ThemeData(&#10;        colorSchemeSeed: blueMaterialColor,&#10;        useMaterial3: true,&#10;      ),&#10;      home: const $MAIN_SCREEN$,&#10;    );&#10;  }  " description="Flutter theming materialApp3" toReformat="true" toShortenFQNames="true">
     <variable name="MAIN_SCREEN" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="DART_STATEMENT" value="true" />
+      <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
 </templateSet>
