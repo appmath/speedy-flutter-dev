@@ -1533,7 +1533,7 @@
       <option name="DART" value="true" />
     </context>
   </template>
-  <template name="f_tip_error_no_mediaquery_widget_ancestor_found" value="// Error: no MediaQuery widget ancestor found.&#10;&#10;// THE APP SHOULD BE launched with MaterialApp (or something similar)&#10;// void main() {&#10;//   runApp(&#10;//     MaterialApp(&#10;//         debugShowCheckedModeBanner: false,&#10;//         title: 'Responsive ',&#10;//         theme: buildThemeData(),&#10;//         home: App()),&#10;//   );&#10;// }" description="MissingPluginException" toReformat="false" toShortenFQNames="true">
+  <template name="f_tip_error_no_mediaquery_widget_ancestor_found" value="// Error: no MediaQuery widget ancestor found.&#10;&#10;// THE APP SHOULD BE launched with MaterialApp (or something similar)&#10;// void main() {&#10;//   runApp(&#10;//     MaterialApp(&#10;//         debugShowCheckedModeBanner: false,&#10;//         title: 'Responsive ',&#10;//         theme: buildThemeData(),&#10;//         home: App()),&#10;//   );&#10;// }&#10;&#10;// There are 2 easy ways of solving this:&#10;// &#10;// Create a new Stateless/Stateful widget and pass it to the home parameter OR&#10;// Use the Builder widget and pass it to the home parameter.&#10;//  @override&#10;//   Widget build(BuildContext context) {&#10;//     return MaterialApp(&#10;//       title: 'App name',&#10;//       home: Builder(builder: (BuildContext context) { &#10;//       ...&#10;//       } )," description="MissingPluginException" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
