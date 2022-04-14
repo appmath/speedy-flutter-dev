@@ -1703,4 +1703,10 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="f_nav_pushOfReplacement" value="Navigator.pushReplacement(&#10;                    context,&#10;                    MaterialPageRoute(&#10;                        builder: (BuildContext context) =&gt; $WIDGET_NAME$()))&#10;" description="Replace a screen to avoid adding it to the stack." toReformat="false" toShortenFQNames="true">
+    <variable name="WIDGET_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
