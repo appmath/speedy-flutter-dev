@@ -961,7 +961,8 @@
   <template name="f_widget_button_iconButton" value="IconButton(icon: const Icon($ICON$), onPressed: () {},),&#10;" description="Icon Button" toReformat="false" toShortenFQNames="true">
     <variable name="ICON" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="DART_STATEMENT" value="true" />
+      <option name="DART" value="true" />
+      <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
   <template name="f_theme_errorColor" value="Theme.of(context).errorColor" description="Error color theme" toReformat="false" toShortenFQNames="true">
