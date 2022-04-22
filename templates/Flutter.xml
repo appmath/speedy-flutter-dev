@@ -130,9 +130,10 @@
       <option name="DART" value="true" />
     </context>
   </template>
-  <template name="f_nav_pop" value="Navigator.pop(context);" description="Pop the current screen" toReformat="false" toShortenFQNames="true">
+  <template name="f_nav_pop" value="Navigator.pop(context)" description="Pop the current screen" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="DART_STATEMENT" value="true" />
+      <option name="DART" value="true" />
+      <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
   <template name="f_widget_textField_hintText_icon_border" value="TextField(&#10;                  style: TextStyle(&#10;                    color: Colors.black,&#10;                  ),&#10;                  decoration: InputDecoration(&#10;                      filled: true,&#10;                      fillColor: Colors.white,&#10;                      hintText: 'Enter City Name',&#10;                      hintStyle: TextStyle(&#10;                        color: Colors.grey,&#10;                      ),&#10;                      icon: Icon(&#10;                        Icons.location_city,&#10;                        color: Colors.white,&#10;                      ),&#10;                      border: OutlineInputBorder(&#10;                        borderRadius: BorderRadius.all(&#10;                          Radius.circular(10.0),&#10;                        ),&#10;                        borderSide: BorderSide.none,&#10;                      )),&#10;                )," description="Extensive TextField example" toReformat="false" toShortenFQNames="true">
