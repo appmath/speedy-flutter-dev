@@ -1786,4 +1786,10 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="f_widget_appBar_navigation_drawer_example" value="import 'package:appbar_widgets/src/util/az_material_colors.dart';&#10;import 'package:appbar_widgets/src/widgets/drawer_widget.dart';&#10;import 'package:flutter/material.dart';&#10;&#10;///  https://www.youtube.com/watch?v=TlbbIQykHK0&#10;///  App with a navigation drawer&#10;class NavigationDrawer extends StatefulWidget {&#10;  @override&#10;  State&lt;NavigationDrawer&gt; createState() =&gt; _NavigationDrawerState();&#10;}&#10;&#10;class _NavigationDrawerState extends State&lt;NavigationDrawer&gt; {&#10;  @override&#10;  Widget build(BuildContext context) {&#10;    return buildMaterialApp3();&#10;  }&#10;&#10;  MaterialApp buildMaterialApp3() {&#10;    return MaterialApp(&#10;      debugShowCheckedModeBanner: false,&#10;      title: 'Appbar Widgets',&#10;      // The Mandy red, light theme.&#10;      theme: ThemeData(&#10;        colorSchemeSeed: blueMaterialColor,&#10;        useMaterial3: true,&#10;      ),&#10;      home: Builder(builder: (context) {&#10;        return SafeArea(&#10;          child: Scaffold(&#10;            appBar: AppBar(&#10;              title: const Text('Appbar Widgets'),&#10;            ),&#10;            drawer: isPortraitMode(context) ? DrawerWidget() : null,&#10;          ),&#10;        );&#10;      }),&#10;    );&#10;  }&#10;&#10;  Center getText(String title) =&gt; Center(&#10;          child: Text(&#10;        title,&#10;        style: const TextStyle(&#10;          color: Colors.white,&#10;          fontSize: 25,&#10;        ),&#10;      ));&#10;&#10;  bool isPortraitMode(BuildContext context) {&#10;    return MediaQuery.of(context).orientation == Orientation.portrait;&#10;  }&#10;}&#10;" description="AppBar with a navigation Drawer" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_TOPLEVEL" value="false" />
+    </context>
+  </template>
 </templateSet>
