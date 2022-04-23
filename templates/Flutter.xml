@@ -950,13 +950,9 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="f_widget_showAlertDialog" value="showDialog(&#10;          context: context,&#10;          builder: (ctx) =&gt; AlertDialog(&#10;            title: Text('$TITLE$'),&#10;            content: Text(&#10;              '$CONTENT$',&#10;            ),&#10;            actions: [&#10;              TextButton(&#10;                style: TextButton.styleFrom(&#10;                  textStyle: const TextStyle(fontSize: 20),&#10;                ),&#10;                onPressed: () {&#10;&#10;                },&#10;                child: const Text('$NEGATIVE$'),&#10;              ),&#10;              TextButton(&#10;                style: TextButton.styleFrom(&#10;                  textStyle: const TextStyle(fontSize: 20),&#10;                ),&#10;                onPressed: () {},&#10;                child: const Text('$POSITIVE$'),&#10;              ),&#10;            ],&#10;          ),&#10;        );" description="Displays an AlertDialog" toReformat="false" toShortenFQNames="true">
-    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="NEGATIVE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="POSITIVE" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="f_widget_showAlertDialog" value="Future&lt;bool?&gt; showMyDialog(BuildContext context) =&gt; showDialog&lt;bool&gt;(&#10;      context: context,&#10;      builder: (BuildContext context) =&gt; AlertDialog(&#10;            title: const Text('Do you want to go back'),&#10;            actions: [&#10;              TextButton(&#10;                onPressed: () =&gt; Navigator.pop(context, false),&#10;                child: const Text('Cancel'),&#10;              ),&#10;              TextButton(&#10;                onPressed: () =&gt; Navigator.pop(context, true),&#10;                child: const Text('Yes'),&#10;              ),&#10;            ],&#10;          ));" description="Displays an AlertDialog" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="DART_STATEMENT" value="true" />
+      <option name="DART" value="true" />
     </context>
   </template>
   <template name="f_widget_button_iconButton" value="IconButton(icon: const Icon($ICON$), onPressed: () {},),&#10;" description="Icon Button" toReformat="false" toShortenFQNames="true">
