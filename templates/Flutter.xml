@@ -1836,4 +1836,9 @@
       <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
+  <template name="f_widget_getTextMethod" value=" Widget getText(String title) =&gt;&#10;      Text(&#10;        title,&#10;        style: const TextStyle(&#10;          color: Colors.black,&#10;          fontSize: 25,&#10;        ),&#10;      );" description="Method for styling some text" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
