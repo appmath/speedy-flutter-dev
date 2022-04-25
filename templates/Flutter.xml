@@ -274,7 +274,8 @@
       <option name="DART" value="true" />
     </context>
   </template>
-  <template name="f_widget_textButton" value="TextButton(&#10;  style: ButtonStyle(&#10;    foregroundColor: MaterialStateProperty.all&lt;Color&gt;(Colors.blue),&#10;  ),&#10;  onPressed: () { },&#10;  child: Text('TextButton'),&#10;)" description="Simple TextButton" toReformat="false" toShortenFQNames="true">
+  <template name="f_widget_textButton" value="TextButton(&#10;  style: ButtonStyle(&#10;    foregroundColor: MaterialStateProperty.all&lt;Color&gt;(Colors.blue),&#10;  ),&#10;  onPressed: () { },&#10;  child: Text('$TEXT$'),&#10;)" description="Simple TextButton" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
