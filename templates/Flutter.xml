@@ -1828,4 +1828,9 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="f_widget_appbar_iconButton" value="IconButton(&#10;            icon: const Icon(Icons.refresh),&#10;            onPressed: () {},&#10;          )," description="IconButton for the AppBar" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
