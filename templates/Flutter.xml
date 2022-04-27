@@ -951,7 +951,7 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="f_widget_showAlertDialog" value="Future&lt;bool?&gt; showMyDialog(BuildContext context) =&gt; showDialog&lt;bool&gt;(&#10;      context: context,&#10;      builder: (BuildContext context) =&gt; AlertDialog(&#10;            title: const Text('Do you want to go back'),&#10;            actions: [&#10;              TextButton(&#10;                onPressed: () =&gt; Navigator.pop(context, false),&#10;                child: const Text('Cancel'),&#10;              ),&#10;              TextButton(&#10;                onPressed: () =&gt; Navigator.pop(context, true),&#10;                child: const Text('Yes'),&#10;              ),&#10;            ],&#10;          ));" description="Displays an AlertDialog" toReformat="false" toShortenFQNames="true">
+  <template name="f_widget_showAlertDialog_return_value" value="Future&lt;bool?&gt; showMyDialog(BuildContext context) =&gt; showDialog&lt;bool&gt;(&#10;      context: context,&#10;      builder: (BuildContext context) =&gt; AlertDialog(&#10;            title: const Text('Do you want to go back'),&#10;            actions: [&#10;              TextButton(&#10;                onPressed: () =&gt; Navigator.pop(context, false),&#10;                child: const Text('Cancel'),&#10;              ),&#10;              TextButton(&#10;                onPressed: () =&gt; Navigator.pop(context, true),&#10;                child: const Text('Yes'),&#10;              ),&#10;            ],&#10;          ));" description="Displays an AlertDialog that returns a value" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART" value="true" />
     </context>
@@ -1063,7 +1063,7 @@
       <option name="DART" value="true" />
     </context>
   </template>
-  <template name="f_widget_showAlertDialogFunction" value="  void _showErrorDialog(String message) {&#10;    showDialog(&#10;      context: context,&#10;      builder: (ctx) =&gt; AlertDialog(&#10;        title: Text(message),&#10;        actions: [&#10;          TextButton(&#10;            style: TextButton.styleFrom(&#10;              textStyle: const TextStyle(fontSize: 20),&#10;            ),&#10;            onPressed: () {&#10;              Navigator.pop(context);&#10;            },&#10;            child: const Text('OK'),&#10;          ),&#10;        ],&#10;      ),&#10;    );&#10;  }" description="Function displays an AlertDialog" toReformat="false" toShortenFQNames="true">
+  <template name="f_widget_showAlertDialogFunction" value="void _showErrorDialog(String title, String content, BuildContext context) {&#10;    showDialog(&#10;      context: context,&#10;      builder: (context) =&gt; AlertDialog(&#10;        title: Text(title),&#10;        content: Text(content),&#10;        actions: [&#10;          TextButton(&#10;            style: TextButton.styleFrom(&#10;              textStyle: const TextStyle(fontSize: 20),&#10;            ),&#10;            onPressed: () {&#10;              Navigator.pop(context);&#10;            },&#10;            child: const Text('OK'),&#10;          ),&#10;        ],&#10;      ),&#10;    );&#10;  }" description="Function displays an AlertDialog" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART" value="true" />
       <option name="DART_STATEMENT" value="false" />
@@ -1672,9 +1672,9 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="f_theming_themeData_light_dark_from_swatch" value="  ThemeData darkThemeData() {&#10;    return ThemeData(&#10;      colorScheme: ColorScheme.fromSwatch(&#10;        primarySwatch: greyMaterialColor,&#10;        brightness: Brightness.dark,&#10;      ).copyWith(&#10;        secondary: orangeMaterialColor,&#10;      ),&#10;    );&#10;  }&#10;&#10;  ThemeData lightThemeData() {&#10;    return ThemeData(&#10;      colorScheme: ColorScheme.fromSwatch(&#10;        primarySwatch: greyMaterialColor,&#10;      ).copyWith(&#10;        secondary: orangeMaterialColor,&#10;      ),&#10;    );&#10;  }" description="Flutter theming light and dark from swatch" toReformat="true" toShortenFQNames="true">
+  <template name="f_theming_themeData_light_dark_from_swatch" value="// MaterialApp(&#10;//  themeMode: ThemeMode.light,&#10;//  theme: lightThemeData(),&#10;//  darktheme: darkThemeData(),...&#10;  ThemeData lightThemeData() {&#10;    return ThemeData(&#10;      colorScheme: ColorScheme.fromSwatch(&#10;        primarySwatch: greyMaterialColor,&#10;      ).copyWith(&#10;        secondary: orangeMaterialColor,&#10;      ),&#10;    );&#10;  }&#10;  &#10;  // MaterialApp( darktheme: darkThemeData(),...&#10;  ThemeData darkThemeData() {&#10;    return ThemeData(&#10;      colorScheme: ColorScheme.fromSwatch(&#10;        primarySwatch: greyMaterialColor,&#10;        brightness: Brightness.dark,&#10;      ).copyWith(&#10;        secondary: orangeMaterialColor,&#10;      ),&#10;    );&#10;  }" description="Flutter theming light and dark from swatch" toReformat="true" toShortenFQNames="true">
     <context>
-      <option name="DART_STATEMENT" value="true" />
+      <option name="DART" value="true" />
     </context>
   </template>
   <template name="f_theming_flex_color_scheme" value="MaterialApp buildMaterialAppFlexColorScheme() {&#10;    return MaterialApp(&#10;      title: 'Flutter Demo',&#10;      // The Mandy red, light theme.&#10;      theme: FlexThemeData.light(scheme: FlexScheme.sanJuanBlue),&#10;      // The Mandy red, dark theme.&#10;      darkTheme: FlexThemeData.dark(scheme: FlexScheme.mandyRed),&#10;      // Use dark or light theme based on system setting.&#10;      themeMode: ThemeMode.light,&#10;      home: const home: $MAIN_SCREEN$,&#10;    );&#10;  }&#10;" description="Flutter theming FlexColorScheme" toReformat="true" toShortenFQNames="true">
