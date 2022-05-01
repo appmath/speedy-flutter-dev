@@ -250,7 +250,7 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="f_provider_2_register_changeNotifierProvider" value="// Rebuilds only the widgets that are listening&#10;ChangeNotifierProvider(&#10;      create: (ctx) =&gt; $CHANGE_LISTNER$,&#10;      child: MaterialApp(&#10;        home: $SCREEN_CLASS$,&#10;      ),&#10;);" description="Starting point: define a ChangNotifierProvider in main.dart" toReformat="true" toShortenFQNames="true">
+  <template name="f_provider_2_register_changeNotifierProvider_child_materialDesign" value="// Rebuilds only the widgets that are listening&#10;ChangeNotifierProvider(&#10;      create: (ctx) =&gt; $CHANGE_LISTNER$,&#10;      child: MaterialApp(&#10;        home: $SCREEN_CLASS$,&#10;      ),&#10;);" description="Starting point: define a ChangNotifierProvider in main.dart" toReformat="true" toShortenFQNames="true">
     <variable name="CHANGE_LISTNER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SCREEN_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -1829,6 +1829,13 @@
     </context>
   </template>
   <template name="f_widget_appbar_iconButton" value="IconButton(&#10;            icon: const Icon(Icons.refresh),&#10;            onPressed: () {},&#10;          )," description="IconButton for the AppBar" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="f_provider_2_register_changeNotifierProvider" value="// Rebuilds only the widgets that are listening&#10;ChangeNotifierProvider(&#10;      create: (ctx) =&gt; $CHANGE_LISTNER$,&#10;      child: $SCREEN_CLASS$,&#10;)," description="Starting point: define a ChangNotifierProvider in main.dart" toReformat="true" toShortenFQNames="true">
+    <variable name="CHANGE_LISTNER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SCREEN_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
