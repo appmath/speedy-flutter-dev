@@ -1279,7 +1279,7 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="f_widget_button_elevatedButton_basic_styleFrom_raisedButton" value=" ElevatedButton(&#10;   style: ElevatedButton.styleFrom(&#10;     &#10;     // onPrimary: is the background color&#10;     primary: Theme.of(context).colorScheme.primary,&#10;    &#10;     // onPrimary: is the foreground color&#10;     textStyle:&#10;         const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),&#10;   ),&#10;   child: const Text('$TEXT$'),&#10;   onPressed: () {},&#10;)," description="ElevatedButton using styleFrom (without) icon is the replacement for RaisedButton" toReformat="true" toShortenFQNames="true">
+  <template name="f_widget_button_elevatedButton_basic_styleFrom_raisedButton" value=" ElevatedButton(&#10;   style: ElevatedButton.styleFrom(&#10;     primary: Theme.of(context).colorScheme.primary,&#10;     textStyle:&#10;         const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),&#10;   ),&#10;   child: const Text('$TEXT$'),&#10;   onPressed: () {},&#10;)," description="ElevatedButton using styleFrom (without) icon is the replacement for RaisedButton" toReformat="true" toShortenFQNames="true">
     <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
@@ -1836,6 +1836,12 @@
   <template name="f_provider_2_register_changeNotifierProvider" value="// Rebuilds only the widgets that are listening&#10;ChangeNotifierProvider(&#10;      create: (ctx) =&gt; $CHANGE_LISTNER$,&#10;      child: $SCREEN_CLASS$,&#10;)," description="Starting point: define a ChangNotifierProvider in main.dart" toReformat="true" toShortenFQNames="true">
     <variable name="CHANGE_LISTNER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SCREEN_CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="f_widget_button_elevatedButton_basic_styleFrom_padding_raisedButton" value=" ElevatedButton(&#10;   style: ElevatedButton.styleFrom(&#10;     primary: Theme.of(context).colorScheme.primary,&#10;     padding: const EdgeInsets.all(20),&#10;     textStyle:&#10;         const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),&#10;   ),&#10;   child: const Text('$TEXT$'),&#10;   onPressed: () {},&#10;)," description="Same as above but with padding....ElevatedButton using styleFrom (without) icon is the replacement for RaisedButton" toReformat="true" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
