@@ -102,9 +102,13 @@
           <option name="url" value="https://github.com/afzalali15/Flutter-Provider.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/khanhnwin/dash-fanclub.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/dev/src/mobile/flutter/github" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/dev/src/mobile/flutter/github/khanhnwin" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="COLUMN_ID_ORDER">
