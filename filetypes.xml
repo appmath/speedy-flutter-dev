@@ -8,21 +8,21 @@
     </extensionMap>
   </component>
   <component name="FileTypeManager" version="18">
-    <ignoreFiles list="*.pyc;*.pyo;*.rbc;*~;.DS_Store;.IJI.*;.git;.hg;.sbas;.svn;CVS;RCS;SCCS;__pycache__;_svn;vssver.scc;vssver2.scc;" />
+    <ignoreFiles list="*.pyc;*.pyo;*.rbc;*~;.DS_Store;.IJI.*;.git;.hg;.sbas;.svn;CVS;RCS;SCCS;__pycache__;_svn;vssver.scc;vssver2.scc" />
     <extensionMap>
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
       <mapping ext="rar" type="Native" />
-      <mapping pattern="beans.json" type="PLAIN_TEXT" />
+      <mapping pattern="Highlights" type="PLAIN_TEXT" />
+      <mapping pattern="httpSuccessVsError" type="PLAIN_TEXT" />
+      <mapping pattern="Benefits" type="PLAIN_TEXT" />
       <mapping pattern="!MyNotes" type="PLAIN_TEXT" />
+      <mapping pattern="TheRule" type="PLAIN_TEXT" />
+      <mapping pattern="beans.json" type="PLAIN_TEXT" />
       <mapping pattern="BookReview" type="PLAIN_TEXT" />
       <mapping pattern="HOW-TO-SIGN-APP" type="PLAIN_TEXT" />
-      <mapping pattern="DomainTest" type="PLAIN_TEXT" />
-      <mapping pattern="Benefits" type="PLAIN_TEXT" />
-      <mapping pattern="TheRule" type="PLAIN_TEXT" />
       <mapping pattern="DesignPatternList" type="PLAIN_TEXT" />
-      <mapping pattern="httpSuccessVsError" type="PLAIN_TEXT" />
-      <mapping pattern="Highlights" type="PLAIN_TEXT" />
+      <mapping pattern="DomainTest" type="PLAIN_TEXT" />
       <mapping ext="csv" type="PLAIN_TEXT" />
       <mapping ext="jasper" type="PLAIN_TEXT" />
       <mapping ext="dta" type="PLAIN_TEXT" />
@@ -43,6 +43,7 @@
       <mapping ext="tps" type="DBN-PSQL" />
       <mapping ext="trg" type="DBN-PSQL" />
       <mapping ext="vw" type="DBN-SQL" />
+      <mapping pattern="temp" type="SQL" />
     </extensionMap>
   </component>
 </application>

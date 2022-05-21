@@ -1,0 +1,10 @@
+<application>
+  <component name="AdvancedSettings">
+    <option name="settings">
+      <map>
+        <entry key="localHistory.daysToKeep" value="15" />
+        <entry key="terminal.buffer.max.lines.count" value="3000" />
+      </map>
+    </option>
+  </component>
+</application>
